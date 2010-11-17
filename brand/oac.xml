@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<brand owner="steve.toub@ucop.edu">
+  
+  <links>
+
+
+    <link media="screen" type="text/css" rel="stylesheet" href="http://oac.cdlib.org:8083/css/oacstyle.css"/>
+    <link media="print" type="text/css" rel="stylesheet" href="http://oac.cdlib.org:8083/css/oacstyle-print.css"/>
+    <meta name="robots" content="noindex">
+
+  </links>
+  
+  <header>
+    <!-- start header -->
+    <map name="header_750x70_home_map" id="map1">
+      <area shape="rect" coords="50,0,200,50" href="http://oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page"/>
+      <area shape="rect" coords="50,50,530,70" href="http://oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page"/>
+      <area shape="rect" coords="582,50,637,70" href="http://oac.cdlib.org/search.findingaid.html" title="Search" alt="Search"/>
+      <area shape="rect" coords="531,50,581,70" href="http://oac.cdlib.org/about/" title="About OAC" alt="About OAC"/>
+      <area shape="rect" coords="638,50,704,70" href="http://oac.cdlib.org/sitemap.html" title="Site Map" alt="Site Map"/>
+      <area shape="rect" coords="705,50,750,70" href="http://oac.cdlib.org/help/" title="Help" alt="Help"/>
+    </map>
+    <table cellspacing="0" class="maintable" width="100%" cellpadding="0" border="0">
+      <tr>
+        <td colspan="2" class="topheader">
+          <img src="http://oac.cdlib.org:8083/images/header_nohighlight.gif" border="0"
+            alt="Online Archive of California [imagemap menu]" usemap="#header_750x70_home_map"/>
+        </td>
+      </tr>
+    </table>
+    <!-- end header -->
+  </header>
+  
+  <header.dynaxml.header>
+    <!-- start header -->
+    <tr>
+      <td colspan="2" class="topheader">
+        <map name="header_750x70_home_map" id="map1">
+          <area shape="rect" coords="50,0,200,50" href="http://oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page" target="_top" />
+          <area shape="rect" coords="50,50,530,70" href="http://oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page" target="_top" />
+          <area shape="rect" coords="582,50,637,70" href="http://oac.cdlib.org/texts" title="Search" alt="Search" target="_top" />
+          <area shape="rect" coords="531,50,581,70" href="http://oac.cdlib.org/about/" title="About OAC" alt="About OAC" target="_top" />
+          <area shape="rect" coords="638,50,704,70" href="http://oac.cdlib.org/sitemap.html" title="Site Map" alt="Site Map" target="_top" />
+          <area shape="rect" coords="705,50,750,70" href="http://oac.cdlib.org/help/" title="Help" alt="Help" target="_top" />
+        </map>
+        <img src="http://oac.cdlib.org:8083/images/header_nohighlight.gif" border="0" 
+          alt="Online Archive of California [imagemap menu]" usemap="#header_750x70_home_map"/>
+      </td>
+    </tr>
+    <!-- end header -->
+  </header.dynaxml.header>
+  
+  <footer>
+    <!-- start footer -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="100" align="right" class="footer" bgcolor="#b7cfe5">
+          <img src="http://oac.cdlib.org:8083/images/cdlogo.gif" width="38" height="36" alt="CDL"/>
+        </td>
+        <td width="550" align="center" class="footer" bgcolor="#b7cfe5">
+          <a href="http://oac.cdlib.org/help/help.cgi"> Comments?</a>
+          <a href="http://oac.cdlib.org/help/help.cgi">Questions?</a> | <a href="http://oac.cdlib.org/about/copyright.html">Copyright
+            Statement &amp; Conditions of Use</a>
+          <br/> The Online Archive of California (OAC) is an initiative of the <a
+            href="http://www.cdlib.org/"> California Digital Library </a>
+          <br/> &#169; 2006 by The Regents of The University of California <br/>
+        </td>
+        <td width="100" class="footer" bgcolor="#b7cfe5">&#160;</td>
+      </tr>
+    </table>
+    <!-- end footer -->  
+  </footer>
+
+</brand>

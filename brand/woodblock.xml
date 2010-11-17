@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<brand owner="gordon.lai@library.ucsf.edu" href="woodblock.xml" multi-use="default-breadcrumb">
+  <links>
+    <!-- link to the entry .css file; CHANGE THIS TO YOUR PROJECT'S ENTRY .css FILE, which includes the default.css -->
+    <link rel="stylesheet" href="http://asian.library.ucsf.edu/styles/woodblock-entry.css" type="text/css" xmlns="http://www.w3.org/1999/xhtml" />
+
+    <!-- Main style sheet for Japanese Woodblock -->
+    <link rel="stylesheet" href="http://asian.library.ucsf.edu/styles/ucsf_woodblock_search.css" type="text/css" media="screen" charset="utf-8" xmlns="http://www.w3.org/1999/xhtml" />
+
+    <!-- Style sheet drop down menus -->
+    <link rel="stylesheet" href="http://asian.library.ucsf.edu/styles/navigation_woodblock.css" type="text/css" media="screen" charset="utf-8" xmlns="http://www.w3.org/1999/xhtml" />
+
+    <!-- Additional styles -->
+    <link rel="stylesheet" href="http://asian.library.ucsf.edu/styles/more_styles.css" type="text/css" media="screen" charset="utf-8" xmlns="http://www.w3.org/1999/xhtml" />
+
+    <!-- link to the .js files -->
+    <script src="http://content.cdlib.org/default/js/nifty.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+    <!-- CHANGE THE LINK TO YOUR PROJECT'S .js FILE -->
+    <script src="http://asian.library.ucsf.edu/styles/woodblock.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+
+    <script src="http://asian.library.ucsf.edu/styles/sfhover.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+  </links>
+  
+  <header>
+    <map name="ucsf" id="ucsf">
+      <area shape="rect" alt="UCSF home page" coords="83,8,282,21" href="http://www.ucsf.edu/" />
+      <area shape="rect" alt="About UCSF" coords="297,9,363,22" href="http://www.ucsf.edu/about_ucsf/" />
+      <area shape="rect" alt="UCSF home page" coords="26,0,76,28" href="http://www.ucsf.edu/" />
+      <area shape="rect" alt="Search UCSF" coords="374,9,445,22" href="http://www.ucsf.edu/search/" />
+
+      <area shape="rect" alt="UCSF Medical Center" coords="462,9,577,22" href="http://www.ucsfhealth.org/" />
+    </map>
+    <img src="http://asian.library.ucsf.edu/images/top_banner.jpg" alt="UCSF navigation bar" width="800" height="31" border="0" usemap="#ucsf" /><a href="http://asian.library.ucsf.edu"><img src="http://asian.library.ucsf.edu/images/header.jpg" border="0" height="88" /></a><div id="navcontainer">
+
+    <ul id="main_nav">
+
+    <li id="active"><a href="http://asian.library.ucsf.edu" id="current">Home</a></li>
+    <li><img src="http://asian.library.ucsf.edu/images/red_line.jpg" /></li>
+    <li><a href="http://asian.library.ucsf.edu/about.html">About the Collection </a></li>
+    <li><img src="http://asian.library.ucsf.edu/images/red_line.jpg" /></li>
+    <li><a href="http://content.cdlib.org/search?relation=ark%3A%2F13030%2Fkt3t1nc589&amp;style=cui&amp;brand=woodblock&amp;facet=type-tab&amp;keyword=&amp;keyword-join=and">View the Prints </a></li>
+    <li><img src="http://asian.library.ucsf.edu/images/red_line.jpg" /></li>
+
+    <li><a href="http://asian.library.ucsf.edu/intro1.html">View by Theme </a>
+    	<ul>
+    				<li><a href="http://asian.library.ucsf.edu/intro1.html">Introduction</a></li>
+    				<li><a href="http://asian.library.ucsf.edu/contag.html">Contagious Disease </a></li>
+    				<li><a href="http://asian.library.ucsf.edu/drugads.html">Drug Advertisements </a></li>
+    				<li><a href="http://asian.library.ucsf.edu/foreign.html">Foreigners &amp; Disease </a></li>
+    				<li><a href="http://asian.library.ucsf.edu/religion.html">Religion &amp; Health</a></li>
+    			        <li><a href="http://asian.library.ucsf.edu/women.html">Women's Health</a></li>
+    	</ul>
+        <li><img src="http://asian.library.ucsf.edu/images/red_line.jpg" /></li>
+
+        <li><form method="get" action="http://content.cdlib.org/search?">
+              <input type="hidden" name="relation" value="ark:/13030/kt3t1nc589"/>
+              <input type="hidden" name="style" value="cui"/>
+              <input type="hidden" name="brand" value="woodblock"/>
+              <input type="hidden" name="facet" value="type-tab"/>
+
+              <input name="keyword" type="text" size="5"/>
+              <input value="Search" type="submit"/>
+              <select name="keyword-join"><option value="and">All terms</option><option value="or">Any terms</option></select>
+            </form>
+        </li>
+        <li><a href="http://asian.library.ucsf.edu/about.html#help">?</a></li>
+    </li>
+    </ul>
+    </div>
+    <div class="clear"></div>
+  </header>
+  
+  <footer>
+    <!-- links should be target="_top" for the framed pages -->
+    <div id="footer">
+    <div id="footercontent">
+    &#169;2007 The Regents of the University of California
+    </div>
+    <div id="footerlinks"><a href="http://asian.library.ucsf.edu/terms.html"><span class="style3">Terms of Use</span></a> | <a href="http://asian.library.ucsf.edu/contact.cgi"><span class="style3">Contact Us</span></a></div>
+    <div id="footerlogo"><a href="http://www.library.ucsf.edu/" target="_top"><img src="http://asian.library.ucsf.edu/images/library_logo.jpg" border="0" /></a></div>
+    </div>
+  </footer>
+  
+  <!-- navigation arrows on the left-side of the object views -->
+  <arrow.up src="http://content.cdlib.org/default/images/blue_arrow_up.gif" width="9" height="11" border="0" />
+  <arrow.dn src="http://content.cdlib.org/default/images/blue_arrow_dn.gif" width="11" height="9" border="0" />
+
+  <!-- the icon that says "Printable Version" -->
+  <print.img src="http://asian.library.ucsf.edu/images/printable_version.gif" width="110" height="16" />
+  
+  <search.title>UCSF Japanese Woodblock Print Collection: Search Results</search.title>
+</brand>

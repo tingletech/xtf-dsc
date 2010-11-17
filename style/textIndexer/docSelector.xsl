@@ -3,12 +3,16 @@
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-   xmlns:FileUtils="java:org.cdlib.xtf.xslt.FileUtils"
-   extension-element-prefixes="FileUtils"
-   exclude-result-prefixes="#all">
+        xmlns:saxon="http://saxon.sf.net/"
+        xmlns:xtf="http://cdlib.org/xtf"
+        xmlns:mets="http://www.loc.gov/METS/"
+        xmlns:date="http://exslt.org/dates-and-times"
+        xmlns:mprofile="http://www.cdlib.org/mets/profiles"
+        extension-element-prefixes="date"
+        exclude-result-prefixes="#all">
 
 <!--
-   Copyright (c) 2008, Regents of the University of California
+   Copyright (c) 2005, Regents of the University of California
    All rights reserved.
  
    Redistribution and use in source and binary forms, with or without 
@@ -54,8 +58,9 @@
     The output of this stylesheet should be an XML document like this:
       
     <indexFiles>
-        <indexFile fileName="{file name #1}"
-                   type="{XML|PDF|HTML|MSWord...}"
+        <indexFile dirPath="{path of the directory}"
+                   fileName="{file name #1}"
+                   type="{XML|PDF|HTML|...}"
                    preFilter="{path to input filter stylesheet}"
                    displayStyle="{path to display stylesheet}"/>
         <indexFile .../>
@@ -66,13 +71,9 @@
       
       - If no files should be indexed, the output document should be empty.
       
-      - If you use relative paths for the input filter or display style 
-        attributes, they will be interpreted as being relative
-        to XTF_HOME.
+      - All filesystem paths are relative to the XTF home directory.
       
-      - The 'fileName' attribute is required, and SHOULD NOT contain path
-        information. Essentially, this should be one of the file names 
-        from an input <file... /> tag.
+      - The 'dirPath' and 'fileName' attributes are required
       
       - The other attributes ('type', 'preFilter' and 'displayStyle') are
         all optional.
@@ -96,135 +97,233 @@
     The 'displayStyle' attribute simply specifies a stylesheet that the
     text indexer will look in to gather XSLT key definitions. Then it will
     pre-compute all of these keys for the document and store them on disk.
+    
 -->
+
+<!-- bct extention function to tie into profile logic -->
+   <!-- {http://www.cdlib.org/mets/profiles}:URItoDisplayXslt($URI) returns xslt file name -->
+   <xsl:import href="../../mets-support/xslt/mets-profile.xsl"/>
 
 <!-- ====================================================================== -->
 <!-- Templates                                                              -->
 <!-- ====================================================================== -->
+
+  <!-- Create indexFiles Element -->  
+  <xsl:template match="directory">
+    <indexFiles>
+      <xsl:apply-templates/>
+    </indexFiles>
+  </xsl:template>
   
-   <xsl:template match="directory">
-      <indexFiles>
-         <xsl:apply-templates/>
-      </indexFiles>
-   </xsl:template>
-   
-   <xsl:template match="file">
-      <xsl:variable name="dirPath" select="parent::*/@dirPath"/>
-      <xsl:choose>
-         <!-- XML files -->
-         <xsl:when test="ends-with(@fileName, '.xml')">
-            
-            <xsl:choose>
-               <!-- Skip document-less METS and DC files -->
-               <xsl:when test="ends-with(@fileName, '.mets.xml') or ends-with(@fileName, '.dc.xml')"/>
-               
-               <xsl:otherwise>
-                  
-                  <xsl:variable name="fileName" select="@fileName"/>
-                  <xsl:variable name="file" select="concat($dirPath,$fileName)"/>
-                  
-                  <!-- We need to determine what kind of XML file we're looking at. XTF provides a
-                       handy function that quickly reads in only the first part of an XML file
-                       (up to the first close element tag, e.g. </element>). We make our decision
-                       based on the name of the root element, the entity information, and namespace.
-                       
-                       Note that the "unparsed-entity-public-id" and "unparsed-entity-uri" XPath
-                       functions operate on whatever document is the current context. We use
-                       <xsl:for-each> to switch to the target document's context, rather than the
-                       context of the input we received from the textIndexer. In this case,
-                       "for-each" is a bit of a misnomer, since the stub is a single document
-                       so the code below runs only once.
-                  -->
-                  <xsl:for-each select="FileUtils:readXMLStub($file)">
-                     
-                     <xsl:variable name="root-element-name" select="name(*[1])"/>
-                     <xsl:variable name="pid" select="unparsed-entity-public-id($root-element-name)"/>
-                     <xsl:variable name="uri" select="unparsed-entity-uri($root-element-name)"/>
-                     <xsl:variable name="ns" select="namespace-uri(*[1])"/>
-                     
-                     <xsl:choose>
-                        <!-- Look for EAD XML files -->
-                        <xsl:when test="matches($root-element-name,'^ead$') or
-                                        matches($pid,'EAD') or 
-                                        matches($uri,'ead\.dtd') or 
-                                        matches($ns,'ead')">
-                           <indexFile fileName="{$fileName}"
-                              preFilter="style/textIndexer/ead/eadPreFilter.xsl"
-                              displayStyle="style/dynaXML/docFormatter/ead/eadDocFormatter.xsl"/>
-                        </xsl:when>
-                        <!-- Look for NLM XML files -->
-                        <xsl:when test="matches($root-element-name,'^article$') or
-                                        matches($pid,'NLM') or 
-                                        matches($uri,'journalpublishing\.dtd') or 
-                                        matches($ns,'nlm')">
-                           <indexFile fileName="{$fileName}"
-                              preFilter="style/textIndexer/nlm/nlmPreFilter.xsl"
-                              displayStyle="style/dynaXML/docFormatter/nlm/nlmDocFormatter.xsl"/>
-                        </xsl:when>
-                        <!-- Look for TEI XML file -->
-                        <xsl:when test="matches($root-element-name,'^TEI') or 
-                           matches($pid,'TEI') or 
-                           matches($uri,'tei2\.dtd') or 
-                           matches($ns,'tei')">
-                           <indexFile fileName="{$fileName}"
-                              preFilter="style/textIndexer/tei/teiPreFilter.xsl"
-                              displayStyle="style/dynaXML/docFormatter/tei/teiDocFormatter.xsl"/>
-                        </xsl:when>
-                        <!-- DjVu files are typically subordinate to a main doc -->
-                        <xsl:when test="matches($root-element-name, 'DjVuXML')">
-                           <!-- skip -->
-                        </xsl:when>
-                        <!-- Look for METS-encoded scanned books, skip other METS files as likely subordinate -->
-                        <xsl:when test="matches($root-element-name,'^METS')">
-                           <xsl:variable name="metsData" select="document($file)"/>
-                           <xsl:if test="$metsData//*:book">
-                              <indexFile fileName="{$fileName}"
-                                 preFilter="style/textIndexer/bookreader/bookPreFilter.xsl"
-                                 displayStyle="style/dynaXML/docFormatter/bookreader/bookDocFormatter.xsl"/>
-                           </xsl:if>
-                        </xsl:when>
-                        <!-- Default processing for XML files -->
-                        <xsl:otherwise>
-                           <indexFile fileName="{$fileName}" 
-                              type="XML"
-                              preFilter="style/textIndexer/default/defaultPreFilter.xsl"/>
-                           <xsl:message select="'Unrecognized XML structure. Indexing using the default preFilter.'"/>
-                        </xsl:otherwise>
-                     </xsl:choose>
-                  </xsl:for-each>
-               </xsl:otherwise>
-            </xsl:choose>
-         </xsl:when>
-         
-         <!-- HTML files -->
-         <xsl:when test="ends-with(@fileName, 'html') or ends-with(@fileName, '.xhtml')">
-            <indexFile fileName="{@fileName}" 
-               type="HTML"
-               preFilter="style/textIndexer/html/htmlPreFilter.xsl"/>
-         </xsl:when>
-         
-         <!-- PDF files -->
-         <xsl:when test="ends-with(@fileName, '.pdf')">
-            <indexFile fileName="{@fileName}" 
-               type="PDF"
-               preFilter="style/textIndexer/default/defaultPreFilter.xsl"/>
-         </xsl:when>
-         
-         <!-- Microsoft Word documents -->
-         <xsl:when test="ends-with(@fileName, '.doc')">
-            <indexFile fileName="{@fileName}" 
-               type="MSWord"
-               preFilter="style/textIndexer/default/defaultPreFilter.xsl"/>
-         </xsl:when>
-         
-         <!-- Plain text files. Exception: skip book/*.txt as they're typically subordinate. -->
-         <xsl:when test="ends-with(@fileName, '.txt') and not(matches($dirPath, '/bookreader/'))">
-            <indexFile fileName="{@fileName}" 
-               type="text"
-               preFilter="style/textIndexer/default/defaultPreFilter.xsl"/>
-         </xsl:when>
-      </xsl:choose>
+  <!-- Create indexFile Element -->    
+  <xsl:template match="file">    
+<!-- xsl:message><xsl:copy-of select="."/></xsl:message -->
+    <!-- File Type? -->
+    <xsl:choose>
+	  <xsl:when test="@fileName='cache_info.storable'"/>
+	  <xsl:when test="@fileName='source.mets.xml'"/>
+      <!-- .xml? -->
+      <xsl:when test="ends-with(@fileName, '.xml')">
+        <!-- is this the .mets.xml; and there is no .xml? -->
+        <xsl:choose>
+          <xsl:when test="ends-with(@fileName, '.mets.xml')">
+            <!-- not sibling .xml? -->
+            <xsl:variable name="xmlFile" select="replace(@fileName,'\.mets','')"/>
+            <xsl:if test="not(parent::directory/file[@fileName = $xmlFile])">
+              <xsl:call-template name="METS"/>
+            </xsl:if>
+          </xsl:when>
+          <xsl:when test="ends-with(@fileName, '.mods3.xml')">
+            <xsl:call-template name="MODS"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <!-- not .dc.xml? -->
+            <xsl:if test="not(ends-with(@fileName, '.dc.xml'))">
+              <!-- sibling .dc.xml and .mets.xml? -->
+              <xsl:choose>
+                <xsl:when test="parent::directory/file[ends-with(@fileName, '.dc.xml')] and 
+                                parent::directory/file[ends-with(@fileName, '.mets.xml')]">                      
+                  <xsl:call-template name="XML"/>
+                </xsl:when>
+                <!-- Error -->
+                <xsl:otherwise>
+                  <xsl:message select="concat('WARNING: ', @fileName, ' does not have an associated .dc.xml or .mets.xml file')"/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:if>     
+          </xsl:otherwise>
+        </xsl:choose>        
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- .pdf? -->
+        <xsl:choose>       
+          <xsl:when test="ends-with(@fileName, '.pdf')">
+            <xsl:call-template name="PDF"/>
+          </xsl:when>
+          <xsl:when test="ends-with(@fileName, '.marc')">
+            <xsl:call-template name="MARC"/>
+          </xsl:when>
+          <xsl:when test="ends-with(@fileName, '.htm') or
+                          ends-with(@fileName, '.html') or
+                          ends-with(@fileName, '.xhtml')">
+            <xsl:call-template name="HTML"/>
+          </xsl:when>          
+          <!-- Error -->
+          <xsl:otherwise>
+            <xsl:message select="concat('WARNING: Unknown filetype: ', @fileName)"/>
+          </xsl:otherwise>
+        </xsl:choose>       
+      </xsl:otherwise>
+    </xsl:choose>    
+  </xsl:template>   
+
+  <!-- PDF -->
+  <xsl:template name="PDF">
+    <indexFile fileName="{@fileName}" type="PDF"/>
+    <!--<xsl:message select="'Profile: PDF'"/>-->
+  </xsl:template>
+ 
+  <!-- HTML -->
+  <xsl:template name="HTML">
+    <indexFile fileName="{@fileName}" type="HTML"/>
+    <!--<xsl:message select="'Profile: HTML'"/>-->
+  </xsl:template>
       
-   </xsl:template>
+  <!-- METS -->
+  <xsl:template name="METS">
+    
+    <xsl:variable name="dirPath" select="parent::directory/@dirPath"/>
+    <xsl:variable name="METS" select="document(concat($dirPath, @fileName))"/>
+    <!-- Read METS PROFILE attribute -->
+    <xsl:variable name="metsProfile" select="string($METS//mets:mets/@PROFILE)"/>
+    <xsl:variable name="metsProfileXslt" select="mprofile:URItoDisplayXslt($metsProfile)"/>
+
+    <xsl:choose>
+	<!-- removed items Remove  -->
+	<xsl:when test="$metsProfile = 'http://ark.cdlib.org/ark:/13030/kt4199q42g'">
+          <indexFile fileName="{@fileName}" preFilter="style/textIndexer/mets/extimg/removeFilter.xsl" displayStyle="{$metsProfileXslt}"/>
+        </xsl:when>
+
+        <!-- lii records -->
+	<xsl:when test="$metsProfile = ''">
+          <indexFile fileName="{@fileName}" preFilter="style/textIndexer/mets-simple/preFilter.xsl" 
+              type="XML"
+              displayStyle="style/dynaXML/docFormatter/tei/oac/docFormatter.xsl"/>
+
+        </xsl:when>
+
+      <xsl:when test="$metsProfileXslt">
+
+        <!-- Associate preFilter and docFormatter -->
+          <indexFile fileName="{@fileName}" preFilter="style/textIndexer/mets/extimg/preFilter.xsl" displayStyle="{$metsProfileXslt}"/>
+      </xsl:when>
+
+	<xsl:when test="contains($metsProfileXslt,'kt3v19p5bk')">
+        <xsl:message>WARNING: no XSLT fround for metsProfile <xsl:value-of select="$metsProfile"/> in <xsl:value-of select="@fileName"/>; should not be just a .mets.xml </xsl:message>
+        </xsl:when>
+
+      <xsl:otherwise>
+        <xsl:message>WARNING: no XSLT fround for metsProfile <xsl:value-of select="$metsProfile"/> in <xsl:value-of select="@fileName"/></xsl:message>
+      </xsl:otherwise>
+    </xsl:choose>
+    
+  </xsl:template>
+  
+  <!-- MODS -->
+  <xsl:template name="MODS">
+    <indexFile fileName="{@fileName}" preFilter="style/textIndexer/mods/preFilter.xsl"/>
+  </xsl:template>
+  
+  <!-- MARC -->
+
+  <xsl:template name="MARC">
+    <indexFile
+                        fileName="{@fileName}"
+                        type="MARC"
+                        preFilter="style/marc/MARC21slim2XTFDC.xsl"
+                        />
+  </xsl:template>
+
+
+  <!-- XML -->  
+  <xsl:template name="XML">
+    
+    <xsl:variable name="dirPath" select="parent::directory/@dirPath"/>      
+    <xsl:variable name="fileName" select="replace(@fileName,'\.xml','.mets.xml')"/>
+    <xsl:variable name="METS" select="document(concat($dirPath, $fileName))"/>
+    <!-- Read METS PROFILE attribute -->
+    <xsl:variable name="metsProfile" select="string($METS//mets:mets/@PROFILE)"/>
+    <xsl:variable name="metsProfileXslt" select="mprofile:URItoDisplayXslt($metsProfile)"/>
+    
+    <!-- Determine "Profile" -->
+    <xsl:variable name="profile">
+      <xsl:choose>
+        <xsl:when test="contains($metsProfile, 'kt3v19p5bk') or
+                        contains($metsProfile, 'kt5z09p6zn')">
+          <xsl:value-of select="'tei-eschol'"/>
+        </xsl:when>
+        <xsl:when test="
+			contains($metsProfile, 'kt5k40135s') or
+			contains($metsProfile, '00000003.xml') or
+			contains($metsProfile, '00000004.xml') or
+			contains($metsProfile, '00000002.xml') or
+                        contains($metsProfile, 'kt7j49p867')">
+          <xsl:value-of select="'tei-oac'"/>
+        </xsl:when>
+        <xsl:when test="contains($metsProfile, 'kt0t1nb6x7')">
+          <xsl:value-of select="'ead-oac'"/>
+        </xsl:when>
+        <xsl:when test="contains($metsProfile, 'UCBTextProfile')">
+          <xsl:value-of select="'tei-oac'"/>
+        </xsl:when>
+        <xsl:when test="contains($metsProfile, 'kt4g5012g0') or
+                        contains($metsProfile, 'kt400011f8')">
+          <xsl:value-of select="'image-oac'"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="'tei-oac'"/>
+        </xsl:otherwise>
+      </xsl:choose>      
+    </xsl:variable>       
+    
+    <!-- Associate preFilter and docFormatter -->
+    <xsl:choose>
+	<!-- removed items Remove  -->
+	<xsl:when test="$metsProfile = 'http://ark.cdlib.org/ark:/13030/kt4199q42g'">
+          <indexFile fileName="{@fileName}" preFilter="style/textIndexer/mets/extimg/removeFilter.xsl" displayStyle="{$metsProfileXslt}"/>
+        </xsl:when>
+      <xsl:when test="$profile = 'ead-oac'">
+        <indexFile fileName="{@fileName}" 
+          preFilter="style/textIndexer/ead/preFilter.xsl" 
+          displayStyle="style/dynaXML/docFormatter/ead/oac/docFormatter.xsl"/>
+        <!--<xsl:message select="'Profile: xml-ead-oac'"/>-->
+      </xsl:when>
+      <xsl:when test="$profile = 'tei-eschol'">
+        <indexFile fileName="{@fileName}" 
+          preFilter="style/textIndexer/tei/eschol/preFilter.xsl" 
+          displayStyle="style/dynaXML/docFormatter/tei/eschol/docFormatter.xsl"/>
+        <!--<xsl:message select="'Profile: xml-tei-eschol'"/>-->
+      </xsl:when>
+      <xsl:when test="$profile = 'tei-oac'">
+        <indexFile fileName="{@fileName}" 
+          preFilter="style/textIndexer/tei/oac/preFilter.xsl" 
+          displayStyle="style/dynaXML/docFormatter/tei/oac/docFormatter.xsl"/>
+        <!--<xsl:message select="'Profile: xml-tei-oac'"/>-->
+      </xsl:when>
+      <xsl:when test="$profile = 'image-oac'">
+        <indexFile fileName="{@fileName}" 
+          preFilter="style/textIndexer/mets/extimg/preFilter.xsl" 
+          displayStyle="style/dynaXML/docFormatter/mets/extimg/docFormatter.xsl"/>
+        <!--<xsl:message select="'Profile: xml-tei-oac'"/>-->
+      </xsl:when>
+      <xsl:otherwise>
+        <indexFile fileName="{@fileName}" 
+          preFilter="style/textIndexer/default/preFilter.xsl" 
+          displayStyle="style/dynaXML/docFormatter/tei/oac/docFormatter.xsl"/>
+        <!--<xsl:message select="'Profile: xml-default'"/>-->
+      </xsl:otherwise>
+    </xsl:choose>
+    
+  </xsl:template>
 
 </xsl:stylesheet>

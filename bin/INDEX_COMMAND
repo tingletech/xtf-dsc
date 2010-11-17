@@ -1,0 +1,1 @@
+./textIndexer -clean -nobuildlazy -index cdl 2>&1 | tee indexLog.log

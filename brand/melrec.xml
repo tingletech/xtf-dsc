@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<brand owner="steve.toub@ucop.edu">
+  
+  <!-- LINKS -->
+  <links>
+    <link rel="stylesheet" href="css/melrec/styles.css" type="text/css" media="screen"/>
+  </links>
+  
+  <!-- HEADER -->
+  <header>
+    <!-- BEGIN HEADER -->
+    <div id="header">
+      <table width="100%" border="0">
+        <tr>
+          <td id="masthead">
+            <a href="search?style=melrec&amp;brand=melrec"><img src="/melrec/images/relvyl_logo.gif" alt="Relvyl" title="Relvyl" border="0"/></a>
+          </td>
+          <td id="site-nav" align="right">
+            <a href="search?style=melrec&amp;brand=melrec">Home</a> | <a href="search?style=melrec&amp;brand=melrec&amp;smode=advanced">Advanced Search</a> | <a href="/melrec/help.html">Help</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- END HEADER -->
+  </header>
+  
+  <!-- FOOTER -->
+  <footer>
+    <!-- BEGIN FOOTER -->
+    <div id="footer">Relvyl is a research and development prototype of the <a target="new" href="http://www.cdlib.org/">California Digital Library</a>. Learn more <a href="/melrec/about.html">about this project</a>.<br/> Copyright &#169; 2006 by The Regents of The University of California </div>
+    <!-- END FOOTER -->
+  </footer>
+  
+</brand>

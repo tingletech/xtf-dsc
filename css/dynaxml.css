@@ -1,0 +1,48 @@
+/* This is the Technical Solutions Group stylesheet */
+
+BODY
+{ 
+color: #000000;
+background-color: #FFFFF0;
+font-family: Times New Roman, times, serif;
+font-size: 12pt;
+line-height: 120%;
+}
+
+DIV.header
+{
+color: #000066;
+font-family: Arial, sans-serif;
+font-weight: bold;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+DIV.footer
+{
+color: #000066;
+font-family: Arial, sans-serif;
+font-size: 10pt;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+H1,H2,H3,H4
+{ 
+color: #000066;
+font-family: Arial, sans-serif;
+}
+
+A:link { font-family: Arial, sans-serif; font-size: 12pt; color: #000066; text-decoration: none; }
+A:active { font-family: Arial, sans-serif; font-size: 12pt; color: #000066; text-decoration: none; }
+A:visited { font-family: Arial, sans-serif; font-size: 12pt; color: #000066; text-decoration: none; }
+
+HR
+{
+color: #000066;
+height: 1px;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+UL.nobullet { list-style-type: none; }

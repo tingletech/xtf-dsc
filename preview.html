@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>CDL Remote Preview</title>
+    <link href="css/web.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    
+    <h1>CDL Remote Preview and Best Practice Checking</h1>
+    
+    <p>These forms allow you to preview or perform a best practice check on 
+      your content remotely, prior to submission to the California Digital 
+      Library. They require that your content be available via HTTP and validate 
+      against the appropriate DTD or Schema.</p>
+    
+    <div align="center">
+      <br/>
+      <hr/>
+    </div>
+     
+    <h2>Preview</h2>
+    
+    <p>Enter a valid URL for the XML document of your choice, 
+    then select the desired desired style and click preview to see your 
+    document in the target interface.</p>
+   
+    <div align="center">
+      <table width="80%" border="1" cellspacing="0" cellpadding="20" bgcolor="silver">
+        <tbody>
+          <tr>
+            <td align="left">
+              <!-- form action="/xtf/servlet/org.cdlib.xtf.web.PreviewXML" method="get" -->
+              <form action="/xtf/view" method="get">
+                <span>&#160;&#160;URL:&#160;&#160;</span>
+                <input type="text" name="source" size="50"/>
+                <span>&#160;&#160;STYLE:&#160;&#160;</span>
+                <select name="docId">
+                  <option value="eschol-preview">eScholarship Digital Books</option>
+                  <option value="oac-preview">OAC Etexts</option>
+                  <option value="ead-preview">OAC EAD Finding Aids</option>
+                  <option value="ead-v1to02-preview">EAD v1 to 2002 Conversion</option>
+                </select>
+                <span>&#160;&#160;&#160;&#160;</span>
+                <input type="submit" name="action" value="PREVIEW"/>
+                <input type="reset" value="RESET"/>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div align="center">
+      <br/>
+      <hr/>
+    </div>
+      
+    <h2>Best Practice Checking</h2>
+
+    <p>Enter a valid URL for the XML document of your choice, then select 
+    the desired guideline and click BPC to see a best practice report 
+    for your document.</p>
+    
+    <div align="center">
+      <table width="80%" border="1" cellspacing="0" cellpadding="20" bgcolor="silver">
+        <tbody>      
+          <tr>
+            <td align="left">
+              <form action="/xtf/view" method="get">
+                <span>&#160;&#160;URL:&#160;&#160;</span>
+                <input type="text" name="source" size="50"/>
+                <span>&#160;&#160;GUIDELINE:&#160;&#160;</span>
+                <select name="docId">
+                  <option value="cdl-book-bpg">CDL Book Encoding</option>
+                  <option value="cdl-lite-bpg">CDL Lite Encoding</option>
+                </select>
+                <span>&#160;&#160;&#160;&#160;</span>
+                <input type="submit" value="BPC"/>
+                <input type="reset" value="RESET"/>
+              </form>              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div align="center">
+      <br/>
+      <hr/>
+    </div>    
+    
+  </body>
+</html>

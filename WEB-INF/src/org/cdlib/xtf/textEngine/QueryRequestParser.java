@@ -35,6 +35,11 @@ package org.cdlib.xtf.textEngine;
  * was made possible by a grant from the Andrew W. Mellon Foundation,
  * as part of the Melvyl Recommender Project.
  */
+
+/* 2009/8/11 - MAR - Got null pointer exception in method deChunk( ).
+ *	Adding the check for the null got rid of that problem.
+ */
+
 import java.io.File;
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -410,14 +415,13 @@ public class QueryRequestParser
       "^(" + 
       "query|term|all|range|phrase|exact|near" + 
       "|and|or|not|orNear|allDocs" +
-      "|moreLike" + 
-      "|orderedNear" + // experimental
+      "|moreLike" + // experimental
       "|combine|meta|text)$")) // old stuff, for compatability
      
     {
       error(
         "Expected one of: (query term all allDocs range phrase " +
-        "exact near orNear and or not moreLike orderedNear); " +
+        "exact near orNear and or not moreLike); " +
         "found '" + name + "'");
     }
 
@@ -488,14 +492,6 @@ public class QueryRequestParser
       result = combo;
     }
 
-    // If a subDocument query was specified, add that to the mix.
-    SpanQuery subDoc = parseSubDocument(parent, field, maxSnippets);
-    if (subDoc != null) {
-      SpanQuery combo = new SpanSectionTypeQuery((SpanQuery)result, subDoc);
-      combo.setSpanRecording(((SpanQuery)result).getSpanRecording());
-      result = combo;
-    }
-
     // All done!
     return result;
   } // parseQuery()
@@ -548,7 +544,7 @@ public class QueryRequestParser
     // 'orNear' is a special case which also allows specifying slop, but
     //          activates a different query.
     //
-    if (name.matches("^(all|phrase|exact|near|orNear|orderedNear)$")) {
+    if (name.matches("^(all|phrase|exact|near|orNear)$")) {
       int slop = name.equals("all") ? 999999999
                  : name.equals("phrase") ? 0
                  : name.equals("exact") ? -1 : parseIntAttrib(parent, "slop");
@@ -579,7 +575,7 @@ public class QueryRequestParser
       EasyNode el = parent.child(i);
       if (!el.isElement())
         continue;
-      if (el.name().matches("^(sectionType|subDocument)$"))
+      if (el.name().equals("sectionType"))
         continue; // handled elsewhere
       else if (el.name().equalsIgnoreCase("resultData"))
         continue; // ignore, handled by client's resultFormatter.xsl
@@ -764,10 +760,6 @@ public class QueryRequestParser
         queryList.add(q);
       }
     }
-    
-    // If no sub-queries, there's nothing to do.
-    if (queryList.isEmpty())
-      return null;
 
     // Form the final query.
     SpanQuery[] subQueries = (SpanQuery[])queryList.toArray(
@@ -972,7 +964,7 @@ public class QueryRequestParser
       req.maxDocs = onceOnlyAttrib(req.maxDocs, el, attrName);
 
     else if (attrName.equals("indexPath"))
-      req.indexPath = onceOnlyAttrib(req.indexPath, el, attrName);
+      req.indexPath = onceOnlyPath(req.indexPath, el, attrName);
 
     else if (attrName.equals("termLimit"))
       req.termLimit = onceOnlyAttrib(req.termLimit, el, attrName);
@@ -983,9 +975,6 @@ public class QueryRequestParser
     else if (attrName.equals("sortDocsBy") ||
              attrName.equals("sortMetaFields")) // old, for compatibility
       req.sortMetaFields = onceOnlyAttrib(req.sortMetaFields, el, attrName);
-
-    else if (attrName.equals("returnMetaFields"))
-      req.returnMetaFields = onceOnlyAttrib(req.returnMetaFields, el, attrName);
 
     else if (attrName.equals("maxContext") || attrName.equals("contextChars"))
       req.maxContext = onceOnlyAttrib(req.maxContext, el, attrName);
@@ -1050,7 +1039,7 @@ public class QueryRequestParser
              el.name().equals("range"))
       ; // handled elsewhere
 
-    else if (attrName.equals("slop") && el.name().matches("^(near|orNear|orderedNear)$"))
+    else if (attrName.equals("slop") && el.name().matches("^(near|orNear)$"))
       ; // handled elsewhere
 
     else if (attrName.matches("^(slop|boosts)$") &&
@@ -1093,7 +1082,7 @@ public class QueryRequestParser
       return null;
 
     // These sectionType queries only belong in the "text" field.
-    if (!"text".equals(field))
+    if (!(field.equals("text")))
       error(
         "'sectionType' element is only appropriate in queries on the 'text' field");
 
@@ -1107,35 +1096,6 @@ public class QueryRequestParser
 
     return (SpanQuery)ret;
   } // parseSectionType()
-
-  /**
-   * Parse a 'subDocument' query element, if one is present. If not,
-   * simply returns null.
-   */
-  private SpanQuery parseSubDocument(EasyNode parent, String field,
-                                     int maxSnippets)
-    throws QueryGenException 
-  {
-    // Find the subDocument element (if any)
-    EasyNode subDocument = parent.child("subDocument");
-    if (subDocument == null)
-      return null;
-
-    // These subDocument queries only belong in the "text" field.
-    if (!"text".equals(field))
-      error(
-        "'subDocument' element is only appropriate in queries on the 'text' field");
-
-    // Make sure it only has one child.
-    if (subDocument.nChildren() != 1)
-      error("'subDocument' element requires exactly " + "one child element");
-
-    Query ret = parseQuery(subDocument.child(0), "subDocument", maxSnippets);
-    if (!(ret instanceof SpanQuery))
-      error("'subDocument' sub-query must use proximity");
-
-    return (SpanQuery)ret;
-  } // parseSubDocument()
 
   /**
    * If the given element has a 'field' attribute, return its value;
@@ -1156,9 +1116,6 @@ public class QueryRequestParser
     if (attVal.equals("sectionType") &&
         (parentField == null || !parentField.equals("sectionType")))
       error("'sectionType' is not valid for the 'field' attribute");
-    if (attVal.equals("subDocument") &&
-        (parentField == null || !parentField.equals("subDocument")))
-      error("'subDocument' is not valid for the 'field' attribute");
     if (parentField != null && !parentField.equals(attVal))
       error("Cannot override ancestor 'field' attribute");
 
@@ -1197,10 +1154,6 @@ public class QueryRequestParser
       //
       q = new SpanOrNearQuery(subQueries, 999999999, true);
     }
-    else if (name.equals("orderedNear")) 
-    {
-      q = new SpanNearQuery(subQueries, 999999999, true);
-    }
     else if (!name.equals("or")) {
       // We can't know the actual slop until the query is run against
       // an index (the slop will be equal to max proximity). So set
@@ -1232,7 +1185,10 @@ public class QueryRequestParser
     // field.
     //
     SpanQuery sq = (SpanQuery)q;
-    if (!sq.getField().equals("text"))
+	/* 2009/8/11 - MAR - Got null pointer exception here.  Adding the
+	 * check for the null got rid of that problem.
+	 */
+    if ((sq.getField( ) != null) && (!sq.getField().equals("text")))
       return q;
 
     // If it's already de-chunked, no need to do it again.
@@ -1399,7 +1355,7 @@ public class QueryRequestParser
         //
         notVec.add(parseQuery2(el, "not", field, maxSnippets));
       }
-      else if (el.name().matches("^(sectionType|subDocument)$"))
+      else if (el.name().equals("sectionType"))
         continue; // handled elsewhere
       else {
         SpanQuery q;
@@ -1436,10 +1392,6 @@ public class QueryRequestParser
     // Handle orNear queries specially.
     else if (parent.name().equals("orNear"))
       q = new SpanOrNearQuery(termQueries, slop, true);
-
-    // Ordered near - true means in order
-    else if (parent.name().equals("orderedNear"))
-      q = new SpanNearQuery(termQueries, slop, true);
 
     // Make a 'near' query out of it. Zero slop implies in-order.
     else

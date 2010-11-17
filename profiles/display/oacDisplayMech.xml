@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<displayMech ID="oac">
+   <style path="style/dynaXML/docFormatter/tei/oac/docFormatter.xsl"/>
+</displayMech>
+

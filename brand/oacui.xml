@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<brand owner="eric.satzman@ucop.edu" href="oacui.xml" multi-use="oac-breadcrumb">
+  
+  <links>
+      <link rel="stylesheet" href="http://www.calisphere.universityofcalifornia.edu/oac/css/oac-entry.css" type="text/css" xmlns="http://www.w3.org/1999/xhtml" />
+	  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="http://www.calisphere.universityofcalifornia.edu/css/print.css" type="text/css" media="print"/>
+	<script type="text/javascript" src="/default/js/nifty.js" xmlns="http://www.w3.org/1999/xhtml"></script>
+    <script src="http://www.calisphere.universityofcalifornia.edu/oac/js/oac.js" xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript" />
+  </links>
+  
+  <header>
+<div id="header">
+<div id="masthead">
+<map name="header_map">
+<area shape="rect" coords="50,0,200,50" href="http://www.oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page" target="_top" />
+<area shape="rect" coords="50,50,530,70" href="http://www.oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page" target="_top" />
+<area shape="rect" coords="582,50,637,70" href="http://www.oac.cdlib.org/search.findingaid.html" title="Search" alt="Search" target="_top" />
+<area shape="rect" coords="531,50,581,70" href="http://www.oac.cdlib.org/about/" title="About OAC" alt="About OAC" target="_top" />
+<area shape="rect" coords="638,50,704,70" href="http://www.oac.cdlib.org/sitemap.html" title="Site Map" alt="Site Map" target="_top" />
+<area shape="rect" coords="705,50,750,70" href="http://www.oac.cdlib.org/help/" title="Help" alt="Help" target="_top" />
+</map>
+<img src="http://ark.cdlib.org/images/header_nohighlight.gif" border="0" alt="Online Archive of California [imagemap menu]" usemap="#header_map" />
+</div>
+</div>
+  </header>
+  
+  <header.dynaxml.header>
+    <!-- start header -->
+    <tr xmlns="http://www.w3.org/1999/xhtml">
+      <td colspan="2" class="topheader">
+        <map name="header_750x70_home_map" id="map1">
+          <area shape="rect" coords="50,0,200,50" href="http://oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page" target="top"/>
+          <area shape="rect" coords="50,50,530,70" href="http://oac.cdlib.org/" title="OAC Home Page" alt="OAC Home Page" target="_top"/>
+          <area shape="rect" coords="582,50,637,70" href="http://oac.cdlib.org/texts" title="Search" alt="Search" target="_top"/>
+          <area shape="rect" coords="531,50,581,70" href="http://oac.cdlib.org/about/" title="About OAC" alt="About OAC" target="_top"/>
+          <area shape="rect" coords="638,50,704,70" href="http://oac.cdlib.org/sitemap.html" title="Site Map" alt="Site Map" target="_top"/>
+          <area shape="rect" coords="705,50,750,70" href="http://oac.cdlib.org/help/" title="Help" alt="Help" target="_top"/>
+        </map>
+        <img src="http://oac.cdlib.org/images/header_nohighlight.gif" border="0" 
+          alt="Online Archive of California [imagemap menu]" usemap="#header_750x70_home_map"/>
+      </td>
+    </tr>
+    <!-- end header -->
+  </header.dynaxml.header>
+  
+  <footer>
+  <!-- BEGIN FOOTER -->
+<div id="footer">
+<div id="footer-wrapper">
+<div id="logo"><a target="_top" href="http://www.cdlib.org"><img src="http://ark.cdlib.org/images/cdlogo.gif" width="38" height="36" alt="CDL" border="0" /></a></div>
+
+<div id="text"><a target="_top" href="http://www.oac.cdlib.org/help/help.cgi" >Comments &amp; Technical Support</a>&#160;<a target="_top" href="http://www.oac.cdlib.org/about/copyright.html">Copyright Statement &amp; Conditions of Use</a><br/>
+The Online Archive of California (OAC) is an initiative of the <a target="_top" href="http://www.cdlib.org/">California Digital Library </a><br/>
+&#169; 2007 by The Regents of The University of California
+
+</div>
+</div>
+
+<br clear="all" />
+</div>
+    <!-- END FOOTER -->  
+  </footer>
+  
+    <arrow.up src="/default/images/icons/arrows/blue_arrow_up.gif" width="9" height="11" border="0"/>
+  
+  <arrow.dn src="/default/images/icons/arrows/blue_arrow_dn.gif" width="11" height="9" border="0"/>
+
+  <print.img src="/default/images/icons/headings_text/printable_version.gif" width="110" height="16" />
+  
+  <search.img>
+<input src="/default/images/icons/buttons/search-wht-blue_bg.gif" class="search-button" alt="Search" title="Search" type="image" />
+  </search.img>
+
+  <in.prev src="/default/images/icons/arrows/b_inprev_oac.gif" border="0" alt="previous hit" />
+
+  <in.next src="/default/images/icons/arrows/b_innext_oac.gif" border="0" alt="next hit" />
+
+</brand>

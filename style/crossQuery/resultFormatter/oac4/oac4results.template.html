@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<html xmlns:tmpl="xslt://template">
+  <head>
+    <title>OAC Search Results / short_search_summary </title>
+    <link rel="stylesheet" href="/yui_2.3.0/build/reset/reset-min.css" type="text/css"/>
+    <link rel="stylesheet" href="/yui_2.3.0/build/fonts/fonts-min.css" type="text/css"/>
+    <link rel="stylesheet" href="/yui_2.2.2/build/grids/grids-min.css" type="text/css"/>
+    <!-- link rel="stylesheet" href="/styles/oac4/res.css" type="text/css"/ -->
+		<style type="text/css">
+h1 { font-size: 110%; font-weight: bolder; }
+div.searchSummary { border: ridge; }
+div.searchLimits { border: ridge; }
+div#hd, div#ft { border: outset; background-color: #f4f4f4;}
+div.searchSummary span.searchTerms { font-weight: bolder; }
+div.searchSummary span.searchCount { font-weight: bolder; }
+div.searchLimits ul { margin-left: 1em;}
+div.docHitSnippet a { font-size: 90%; color: grey;}
+div.docHit { margin-bottom: 1em; } 
+.docHitTitle { font-size: 125%; } 
+.docHitBottom { color: green; } 
+.docHitDetails a { color: DarkOliveGreen ; font-size: 102%}
+//div#searchResults p { margin-left: 1em; } 
+//div.docHit { border: solid;}
+	  </style>
+		<link href="http://content-dev.cdlib.org/yui_2.3.0/build/treeview/assets/skins/sam/treeview.css
+" rel="stylesheet" type="text/css"/>
+		<script src="http://content-dev.cdlib.org/yui_2.3.0/build/yahoo/yahoo-min.js" type="text/javascript"></script>
+		<script src="http://content-dev.cdlib.org/yui_2.3.0/build/dom/dom-min.js" type="text/javascript"></script>
+		<script src="http://content-dev.cdlib.org/yui_2.3.0/build/event/event-min.js" type="text/javascript"></script>
+		<script src="http://content-dev.cdlib.org/yui_2.3.0/build/animation/animation-min.js" type="text/javascript"></script>
+		<script src="http://content-dev.cdlib.org/yui_2.3.0/build/treeview/treeview-min.js" type="text/javascript"></script>
+		<script src="/yui_2.3.0/cdl/oacSearchResults.js" type="text/javascript"></script>
+  </head>
+  <body class="yui-skin-sam">
+    <div id="doc3" class="yui-t6">
+      <div id="hd">
+        <!--  start HEADER yui header -->
+        <div class="yui-ge"><!-- nested yui grid -->
+          <div class="yui-u first">
+            <a href="http://cassatt.cdlib.org/~tingle/oac4/">
+              <img src="http://cassatt.cdlib.org/~tingle/oac4/top.gif" valign="middle" border="0"/>
+            </a>
+            <sup>prototype 0.4.0.1</sup>
+          </div>
+          <div class="yui-u">
+            <form action="http://content-dev.cdlib.org/search">
+              <input name="style" value="oac4" type="hidden"/>
+              <input name="query"/>
+            </form>
+          </div>
+        </div>
+        <!-- end HEADER yui header -->
+      </div>
+      <div id="bd">
+        <div id="yui-main">
+          <div class="yui-b">
+            <div class="yui-g">
+        <!-- search results go here -->
+
+							<div class="yui-gc">
+								<div class="yui-u first">
+								<h1>Search Results</h1> 
+								</div>
+								<div class="yui-u">
+sort: relavance | <a href="">title</a>
+								</div>
+							</div>
+						<br clear="clear"/>	
+              <tmpl:searchResults/>
+            </div>
+          </div>
+        </div>
+        <div class="yui-b">
+        <!-- start YUI LEFT yui left yuileft -->
+          <tmpl:searchSummary/>
+							<tmpl:spellingSuggestion/>
+          <tmpl:searchLimits/>
+        <!-- end YUI LEFT yui left yuileft -->
+        </div>
+        <div id="ft">
+        <!-- start YUI FOOTER yui footer yuifooter -->
+          <div class="yui-gb">
+            <div class="yui-u first">
+              <a href="http://www.calisphere.universityofcalifornia.edu/contact-us-faq.html">contact us</a>
+            </div>
+            <div class="yui-u" style="text-align:center;">Copyright &#xA9; 2007 UC Regents</div>
+            <div class="yui-u" style="text-align:right;">
+              <a href="http://www.calisphere.universityofcalifornia.edu/copyright-cs.html">terms of use</a>
+            </div>
+          </div>
+        <!-- end YUI FOOTER yui footer yuifooter -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

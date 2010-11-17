@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<brand owner="bdykman@library.berkeley.edu" href="lo.xml" multi-use="default-breadcrumb">
+  <links>
+  
+    <link rel="stylesheet" href="http://bancroft.berkeley.edu/collections/loyaltyoath/loentry.css" type="text/css" xmlns="http://www.w3.org/1999/xhtml" />
+
+    <!-- link to the .js files -->
+    <script src="http://content.cdlib.org/default/js/nifty.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+    <script src="http://content.cdlib.org/default/js/default.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+    <script src="http://bancroft.berkeley.edu/collections/loyaltyoath/lowebsite.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" /> 
+  </links>
+  
+  <search.title>The California Loyalty Oath Digital Collection</search.title>
+  
+  <header>
+   <img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/header_index.gif" alt="The California Loyalty Oath Digital Collection" /><br />
+   <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+   <td id="menu">
+   <img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/index.html">INTRODUCTION</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/timeline_intro.html">TIMELINE</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/search.html">SEARCH</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/browse.html">BROWSE</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/resources.html">RESOURCES</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/about.html">ABOUT&#160;THE&#160;PROJECT</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />
+   </td>
+   </tr>
+   </table>
+  </header>
+  
+  <header.dynaxml.header>
+    <!-- links should be target="_top" for the framed pages -->
+   
+   <img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/header_index.gif" alt="The California Loyalty Oath Digital Collection" /><br />
+   <table cellpadding="0" cellspacing="0" border="0">
+   <tr>
+   <td id="menu">
+   <img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/index.html" target="_top">INTRODUCTION</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/timeline_intro.html" target="_top">TIMELINE</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/search.html" target="_top">SEARCH</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/browse.html" target="_top">BROWSE</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/resources.html" target="_top">RESOURCES</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />&#160;<a href="http://bancroft.berkeley.edu/collections/loyaltyoath/about.html" target="_top">ABOUT&#160;THE&#160;PROJECT</a>&#160;<img src="http://bancroft.berkeley.edu/collections/loyaltyoath/images/divider.gif" align="absmiddle" alt="" />
+   </td>
+   </tr>
+   </table>
+  </header.dynaxml.header>
+
+  
+  <footer>
+    <!-- links should be target="_top" for the framed pages -->
+    
+    <div id="footernav" align="center">
+    | <a href="http://bancroft.berkeley.edu/" target="_top">Bancroft Home</a> | <a href="http://bancroft.berkeley.edu/info/" target="_top">General Information</a> | <a href="http://bancroft.berkeley.edu/collections/" target="_top">Collections</a> | <a href="http://bancroft.berkeley.edu/researchprograms/" target="_top">Research Programs</a> |<br />| <a href="http://bancroft.berkeley.edu/reference/" target="_top">Reference and Access Services</a> | <a href="http://blogs.lib.berkeley.edu/bancroft_events.php" target="_top">News, Events, Exhibitions, Publications</a> |<br />| <a href="http://bancroft.berkeley.edu/friends/" target="_top">Friends of The Bancroft Library</a> | <a href="http://bancroft.berkeley.edu/sitemap.html" target="_top">Site Map</a> | <a href="http://bancroft.berkeley.edu/search.html" target="_top">Search The Bancroft Library Website</a> |<br />| <a href="http://www.lib.berkeley.edu/" target="_top">UC Berkeley Library Home</a> | <a href="http://www.lib.berkeley.edu/Catalogs/" target="_top">Catalogs</a> | <a href="http://www.lib.berkeley.edu/Help/searchlib.html" target="_top">Search the Library Website</a> |
+    </div>
+    <br />
+
+    <div id="footercopyright" align="center">
+    Copyright &#169; 2007 The Regents of the University of California. <em>All rights reserved.</em><br />
+    Document maintained by <a href="http://bancroft.berkeley.edu/comment_form.html">The Bancroft Library</a>.<br />
+    Last updated 00/00/07. Server manager: <a href="http://www.lib.berkeley.edu/Comments/">Contact</a>
+    </div>
+  </footer>
+ 
+  <!-- navigation arrows on the left-side of the object views --> 
+  <arrow.up src="http://content.cdlib.org/default/images/blue_arrow_up.gif" width="9" height="11" border="0" />
+  <arrow.dn src="http://content.cdlib.org/default/images/blue_arrow_dn.gif" width="11" height="9" border="0" />
+
+  <!-- the icon that says "Printable Version" -->
+  <print.img src="http://content.cdlib.org/default/images/printable_version.gif" width="110" height="16" />
+  
+  <!-- the search button  for searching within a TEI -->
+  <search.img>
+  <input src="http://content.cdlib.org/default/images/search.gif" class="search-button" alt="Search" title="Search" type="image" />
+  </search.img>
+
+  <!-- previous and next buttons for jumping from hit to hit after searching within a TEI -->
+  <in.prev src="http://content.cdlib.org/default/images/b_inprev.gif" border="0" alt="previous hit" />
+  <in.next src="http://content.cdlib.org/default/images/b_innext.gif" border="0" alt="next hit" />
+
+</brand>

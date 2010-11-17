@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<brand owner="bdykman@library.berkeley.edu">
+
+<links>
+<link type="text/css" rel="stylesheet" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/eqf.css" />
+</links>
+
+<header>
+<!-- start header -->
+<div class="eqfheader" align="center">
+
+<img src="http://bancroft.berkeley.edu/collections/earthquakeandfire/images/header_eqf.gif" width="776" height="95" border="0" alt="The 1906 San Francisco Earthquake and Fire" usemap="#header_eqf" />
+
+<map name="header_eqf">
+
+<area shape="rect" coords="404,42,544,91" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/interactivemap/index.html" title="Interactive Map (link)" alt="Interactive Map (link)" />
+
+<area shape="rect" coords="543,42,638,91" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/panorama/panorama.html" title="Panorama (link)" alt="Panorama (link)" />
+
+<area shape="rect" coords="280,42,405,91" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/exhibit/index.html" title="Online Exhibit (link)" alt="Online Exhibit (link)" />
+
+<area shape="rect" coords="701,21,765,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/about.html" title="About (link)" alt="About (link)" />
+
+<area shape="rect" coords="602,21,701,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/resources.html" title="Resources (link)" alt="Resources (link)" />
+
+<area shape="rect" coords="528,21,602,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/browse.html" title="Browse (link)" alt="Browse (link)" />
+
+<area shape="rect" coords="454,21,528,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/search.html" title="Search (link)" alt="Search (link)" />
+
+<area shape="rect" coords="335,21,454,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/index2.html" title="Introduction (link)" alt="Introduction (link)" />
+
+</map>
+
+</div>
+
+<!-- end header -->
+</header>
+
+<header.dynaxml.header>
+<!-- start header -->
+
+<div class="eqfheader" align="center">
+
+<img src="http://bancroft.berkeley.edu/collections/earthquakeandfire/images/header_eqf.gif" width="776" height="95" border="0" alt="The 1906 San Francisco Earthquake and Fire" usemap="#header_eqf" />
+
+<map name="header_eqf">
+
+<area shape="rect" coords="404,42,544,91" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/interactivemap/index.html" title="Interactive Map (link)" alt="Interactive Map (link)" target="_top" />
+
+<area shape="rect" coords="543,42,638,91" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/panorama/panorama.html" title="Panorama (link)" alt="Panorama (link)" target="_top" />
+
+<area shape="rect" coords="280,42,405,91" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/exhibit/index.html" title="Online Exhibit (link)" alt="Online Exhibit (link)" target="_top" />
+
+<area shape="rect" coords="701,21,765,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/about.html" title="About (link)" alt="About (link)" target="_top" />
+
+<area shape="rect" coords="602,21,701,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/resources.html" title="Resources (link)" alt="Resources (link)" target="_top" />
+
+<area shape="rect" coords="528,21,602,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/browse.html" title="Browse (link)" alt="Browse (link)" target="_top" />
+
+<area shape="rect" coords="454,21,528,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/search.html" title="Search (link)" alt="Search (link)" target="_top" />
+
+<area shape="rect" coords="335,21,454,41" href="http://bancroft.berkeley.edu/collections/earthquakeandfire/index2.html" title="Introduction (link)" alt="Introduction (link)" target="_top" />
+
+</map>
+
+</div>
+
+<!-- end header -->
+
+
+
+</header.dynaxml.header>
+
+<footer>
+
+
+
+<!-- start footer -->
+
+<div class="eqffooter" align="center">
+
+
+<h6>
+
+
+| <a href="http://bancroft.berkeley.edu/">Bancroft Home</a> | <a href="http://bancroft.berkeley.edu/info/">General Information</a> | <a href="http://bancroft.berkeley.edu/collections/">Collections</a> | <a href="http://bancroft.berkeley.edu/researchprograms/">Research Programs</a> |<br />| <a href="http://bancroft.berkeley.edu/reference/">Reference and Access Services</a> | <a href="http://bancroft.berkeley.edu/events/">News, Events, Exhibitions, Publications</a> |<br />| <a href="http://bancroft.berkeley.edu/friends/">Friends of The Bancroft Library</a> | <a href="http://bancroft.berkeley.edu/sitemap.html">Site Map</a> | <a href="http://bancroft.berkeley.edu/search.html">Search The Bancroft Library Website</a> |<br />| <a href="http://www.lib.berkeley.edu/">UC Berkeley Library Home</a> | <a href="http://www.lib.berkeley.edu/Catalogs/">Catalogs</a> | <a href="http://www.lib.berkeley.edu/Help/searchlib.html">Search the Library Website</a> |</h6>
+
+
+
+
+
+<h6>
+
+
+Copyright &#169; 2006 The Regents of the University of California. <em>All rights reserved.</em><br />
+
+
+Document maintained by <a href="http://bancroft.berkeley.edu/comment_form.html">The Bancroft Library</a>.<br />
+
+
+Last updated 01/03/06. Server manager: <a href="http://www.lib.berkeley.edu/Comments/">contact</a></h6>
+</div>
+<!-- end footer -->
+</footer>
+
+
+
+</brand>

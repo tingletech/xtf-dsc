@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<displayMech ID="ead">
+   <style path="style/dynaXML/docFormatter/ead/oac/docFormatter.xsl"/>
+</displayMech>
+

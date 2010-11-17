@@ -1,0 +1,45 @@
+How to get a working CDL tree, linked up to the appropriate parts of the
+SourceForge Tree:
+
+% cd <place-to-put-dirs>
+% export CVSROOT=:pserver:mhaye@cvs.cdlib.org:/cvs/root
+
+    Replace 'mhaye' above with your login.
+
+% cvs co -AP xtf-cdl
+% export CVS_RSH=ssh
+
+    You might want to add the above command to your .bashrc. Anytime you access
+    the SourceForge tree you'll need to have it set.
+
+% export CVSROOT=:ext:mhaye@cvs.sourceforge.net:/cvsroot/xtf
+
+    Again, replace 'mhaye' in the above command with your login.
+
+% cvs co -AP -d xtf-sf xtf
+
+    You now have two directories: xtf-sf, and xtf-cdl. The first has all
+    the stuff from SourceForge; the latter all the stuff from CDL.
+
+% xtf-cdl/bin/linkup $PWD/xtf-sf $PWD/xtf-cdl
+
+    Now xtf-cdl has all the CDL stuff, plus symbolic links to all of the 
+    non-overlapping SourceForge stuff.
+
+% export XTF_HOME=$PWD/xtf-cdl
+% cd $XTF_HOME
+% ls
+
+    Use xtf-cdl for your development. Remember that 'cvs update', 'cvs add', 
+    'cvs remove', etc. will use whichever server you run the command from 
+    (it doesn't care what your $CVSROOT is.)
+
+    For instance, if you went to $XTF_HOME/brand and did an update, it
+    would access the CDL tree (since it has mixed CDL and SourceForge
+    contents). Whereas if you went to $XTF_HOME/conf (which only exists
+    in the SourceForge tree), it would access SourceForge.
+
+    You can always tell which tree will be accessed by doing:
+
+% cat CVS/Root
+

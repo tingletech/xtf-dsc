@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<formatters>
+    <formatter name="generic" url="style/cms/resultFormatter/generic.xslt"/>
+    <formatter name="OAC" url="style/cms/resultFormatter/OAC.xslt"/>
+    <formatter name="eScholarship" url="style/cms/resultFormatter/eScholarship.xslt"/>
+    <formatter name="ucpress" url="style/cms/resultFormatter/ucpress.xslt"/>
+    <formatter name="pacbell" url="style/cms/resultFormatter/pacbell.xslt"/>
+
+
+    <formatter name="moac" url="http://www.bampfa.berkeley.edu/moac/moacstyles/moac.xslt"/>
+    <formatter name="moactest" url="http://www.bampfa.berkeley.edu/moac/moacstyles/moactest.xslt"/>
+    <formatter name="moaccol" url="http://www.bampfa.berkeley.edu/moac/moacstyles/moaccol.xslt"/>
+    <formatter name="moaccoltest" url="http://www.bampfa.berkeley.edu/moac/moacstyles/moaccoltest.xslt"/>
+    <formatter name="moacdet" url="http://www.bampfa.berkeley.edu/moac/moacstyles/moacdet.xslt"/>
+    <formatter name="moacdettest" url="http://www.bampfa.berkeley.edu/moac/moacstyles/moacdettest.xslt"/>
+
+
+    <formatter name="pacbell2" url="style/cms/resultFormatter/pacbell2.xslt"/>
+    <formatter name="pacbell-browse" url="style/cms/resultFormatter/pacbell.xslt"/>
+    <formatter name="oac" url="style/cms/resultFormatter/thumbnails.xslt"/>
+    <formatter name="oactextbrowse" url="style/cms/resultFormatter/oac-text-browse.xslt"/>
+    <formatter name="museums" url="style/cms/resultFormatter/thumbnails.xslt"/>
+    <formatter name="pacbellall" url="style/cms/resultFormatter/pacbell-all.xslt"/>
+    <formatter name="thumbnails" url="style/cms/resultFormatter/generic.xslt"/>
+    <formatter name="publicdl" url="style/cms/resultFormatter/publicdl-browse.xslt"/>
+    <formatter name="tabpublicdl" url="style/cms/resultFormatter/publicdl.xslt"/>
+    <formatter name="publicdl-tab" url="$cvs/hhtdocs/xslt/publicdl.xslt"/>
+    <formatter name="jarda" url="http://jarda.cdlib.org/xslt/default.xslt"/>
+    <formatter name="jardatest" url="http://jarda-dev.cdlib.org:8081/xslt/test.xslt"/>
+    <formatter name="jarda-findtext-browse" url="http://jarda.cdlib.org/xslt/findtext-browse.xslt"/>
+    <formatter name="jarda-findtext-browse-test" url="http://jarda-dev.cdlib.org:8081/xslt/findtext-browse-test.xslt"/>
+    <formatter name="jarda-text-browse" url="http://jarda.cdlib.org/xslt/text-browse.xslt"/>
+    <formatter name="jarda-text-browse-test" url="http://jarda-dev.cdlib.org:8081/xslt/text-browse-test.xslt"/>
+
+    <formatter name="coca" url="style/cms/resultFormatter/coca.search.xslt"/>
+
+    <formatter name="stoub" url="http://kahlo.cdlib.org:8080/~stoub/xslt/default.xslt"/>
+    <formatter name="stoubtest" url="http://kahlo.cdlib.org:8080/~stoub/xslt/test.xslt"/>
+
+    <formatter name="jarda-image-sr" url="http://jarda.cdlib.org/xslt/image-sr.xslt"/>
+    <formatter name="jarda-image-sr-test" url="http://jarda-dev.cdlib.org:8081/xslt/image-sr-test.xslt"/>
+    <formatter name="jarda-image-metadata" url="http://jarda.cdlib.org/xslt/image-metadata.xslt"/>
+    <formatter name="jarda-image-metadata-test" url="http://jarda-dev.cdlib.org:8081/xslt/image-metadata-test.xslt"/>
+    <formatter name="jarda-text-sr" url="http://jarda.cdlib.org/xslt/text-sr.xslt"/>
+    <formatter name="jarda-text-sr-test" url="http://jarda-dev.cdlib.org:8081/xslt/text-sr-test.xslt"/>
+    <formatter name="jarda-text-metadata" url="http://jarda.cdlib.org/xslt/text-metadata.xslt"/>
+    <formatter name="jarda-text-metadata-test" url="http://jarda-dev.cdlib.org:8081/xslt/text-metadata-test.xslt"/>
+
+    <formatter name="calher-fa-browse" url="http://sunsite.berkeley.edu/CalHeritage/xslt/fa-browse.xslt"/>
+    <formatter name="calher-fa-browse-test" url="http://sunsite.berkeley.edu/CalHeritage/xslt/fa-browse-test.xslt"/>
+    <formatter name="calher" url="http://sunsite.berkeley.edu/CalHeritage/xslt/calher.xslt"/>
+    <formatter name="calher-col" url="http://sunsite.berkeley.edu/CalHeritage/xslt/calhercol.xslt"/>
+    <formatter name="calher-coltest" url="http://sunsite.berkeley.edu/CalHeritage/xslt/calhercoltest.xslt"/>
+    <formatter name="calher-det" url="http://sunsite.berkeley.edu/CalHeritage/xslt/calherdet.xslt"/>
+    <formatter name="calher-dettest" url="http://sunsite.berkeley.edu/CalHeritage/xslt/calherdettest.xslt"/>
+    <formatter name="calher-test" url="http://sunsite.berkeley.edu/CalHeritage/xslt/calhertest.xslt"/>
+
+    <formatter name="pacific-findaid-results-browse-test" url="http://iisstage.uop.edu/library/cdl/findaid-results-browse-test.xslt"/>
+    <formatter name="pacific-image-results-test" url="http://iisstage.uop.edu/library/cdl/image-results-test.xslt"/>
+    <formatter name="pacific-image-single-test" url="http://iisstage.uop.edu/library/cdl/image-single-test.xslt"/>
+    <formatter name="pacific-text-results-browse-test" url="http://iisstage.uop.edu/library/cdl/text-results-browse-test.xslt"/>
+    <formatter name="pacific-text-results-test" url="http://iisstage.uop.edu/library/cdl/text-results-test.xslt"/>
+    <formatter name="pacific-text-single-test" url="http://iisstage.uop.edu/library/cdl//text-single-test.xslt"/>
+    <formatter name="pacific-findaid-results-browse" url="http://iisstage.uop.edu/library/cdl/findaid-results-browse.xslt"/>
+    <formatter name="pacific-image-results" url="http://iisstage.uop.edu/library/cdl/image-results.xslt"/>
+    <formatter name="pacific-image-single" url="http://iisstage.uop.edu/library/cdl/image-single.xslt"/>
+    <formatter name="pacific-text-results-browse" url="http://iisstage.uop.edu/library/cdl/text-results-browse.xslt"/>
+    <formatter name="pacific-text-results" url="http://iisstage.uop.edu/library/cdl/text-results.xslt"/>
+    <formatter name="pacific-text-single" url="http://iisstage.uop.edu/library/cdl/text-single.xslt"/>
+
+    <formatter name="seaadoc-image-single-test" url="http://seaadoc.lib.uci.edu/xslt/image-single-test.xslt"/>
+    <formatter name="seaadoc-image-results-test" url="http://seaadoc.lib.uci.edu/xslt/image-results-test.xslt"/>
+    <formatter name="seaadoc-image-single" url="http://seaadoc.lib.uci.edu/xslt/image-single.xslt"/>
+    <formatter name="seaadoc-image-results" url="http://seaadoc.lib.uci.edu/xslt/image-results.xslt"/>
+    <formatter name="seaadoc-image-only-test" url="http://seaadoc.lib.uci.edu/xslt/image-only-test.xslt"/>
+    <formatter name="seaadoc-image-only" url="http://seaadoc.lib.uci.edu/xslt/image-only.xslt"/>
+</formatters>

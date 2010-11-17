@@ -1,0 +1,580 @@
+/* "A" definitions.  Standard colors & style for normal, site-wide links */
+a:link {
+text-decoration: underline;
+color: #000066;
+}
+
+a:visited {
+text-decoration: underline;
+color: #660066;
+}
+
+a:hover {
+text-decoration: underline;
+color: #FF9900;
+}
+
+a:active {
+text-decoration: underline;
+color: #000066;
+}
+
+/* setting the color & font for serif body text across the site */
+FORM, BODY, P, PRE, TD, TH, DT, DL, H3, H2, H1, OL, UL, LI, TABLE {
+	color: #000066;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* setting the color & font for sans-serif headers across the site */
+H4, H3, H2, H1 {
+	color: #000066;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* margins on H4s: space on top, but none on bottom */
+h4 {
+  /* margin: 1em 0em 0em 0em; */
+}
+
+/* making sure the bullets don't show */
+li {
+list-style-type: none;
+}
+
+/* making sure the bullets don't show in embedded ul */
+li ul li {
+list-style-type: none;
+}
+
+/* making sure numbered bullets show */
+ol li {
+list-style-type: decimal;
+}
+
+/* making sure lower alpha bullets show */
+ol ol li {
+list-style-type: lower-alpha;
+}
+
+/* making sure upper alpha bullets show */
+ul ol {
+list-style-type: upper-alpha;
+}
+
+/* showing bullets when I want them to show */
+ul.showBullets li {
+list-style-type: square;
+}
+
+/* making sure upper alpha bullets show */
+ol.upperAlpha li {
+list-style-type: upper-alpha;
+}
+
+/* setting the anchor name to no underline for Netscape */
+a.nounderline {text-decoration:none;}
+	color: #000066;
+	text-decoration: none;
+}
+
+/* setting the color & font for sans-serif text across the site */
+.oacstyleSans {
+	color: #000066;
+	font-size: 95%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* again, a standard style.  Not sure why needed, but is used in some places. Maybe so as not to get doubling-up on size? */
+.oacstyle {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 95%;
+	color : #000066;
+}
+
+/* Used to highlight areas of text, ie. the current selected page in the finding-aid view */
+.hilite {
+	font-weight: bold;
+	color: #CC0000;
+}
+
+/* various definitions for page elements */
+h1 {
+	font-size: 120%;
+	font-weight : bold;	
+	line-height : 150%; 
+	margin-bottom : 0;
+}
+
+/* Used in single image view.  H1-ish, but without vert spacing */ 
+.noreturn {
+        font-size: 120%;
+        font-weight : bold;
+}
+
+h2 {
+	font-size: 110%;
+	font-weight : bold;
+	margin-bottom : 10;
+}
+
+dt {
+	padding-top: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+hr {
+	width : 100%;
+	height : 1px;
+}
+
+/* color for divider table cells */
+.divideLine {
+	background-color : #999999;
+}
+
+/* definitions for the body tag */
+body {
+	background-color: #ffffff;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/* used in sidebar cells */
+.padded {
+	font-size: 95%;
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+/* main table holding sidebar and main content */
+.maintable {
+	background-color : #ffffff;
+	padding : 0px;
+	border : 0px;
+	margin : 0px;
+	vertical-align : top;
+        width : 100%;
+}
+
+/* main table holding sidebar and main content */
+.maintableFixed {
+	background-color : #ffffff;
+	padding : 0px;
+	border : 0px;
+	margin : 0px;
+	vertical-align : top;
+	width: 650px;
+}
+/* main table for home page*/
+.hometable {
+	background-color : #ffffff;
+	padding : 0px;
+	border : 0px;
+	margin : 0px;
+	vertical-align : top;
+	width: 750px; 
+}
+
+/* background for nav bar image */
+.topheader {
+	background-color : #112189;
+/*	height: 70px; */
+}
+
+/* green breadcrumb table cell */
+.findingheaderback {
+	background-color : #D5EEDD;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	padding-left : 0px;
+	padding-right : 0px;
+	border : 0px;
+	margin : 0px;
+	text-align : left;
+	vertical-align : middle;
+	font-size : 90%;
+	font-weight : normal;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/* red breadcrumb table cell */
+.textheaderback {
+        background-color : #D7A5A4;
+        padding-top : 10px;
+        padding-bottom : 10px;
+        padding-left : 0px;
+        padding-right : 0px;
+        border : 0px;
+        margin : 0px;
+        text-align : left;
+        vertical-align : middle;
+        font-size : 90%;
+        font-weight : normal;
+        text-decoration: none;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* beige breadcrumb table cell */
+.imageheaderback {
+        background-color : #FFEECD;
+        padding-top : 10px;
+        padding-bottom : 10px;
+        padding-left : 0px;
+        padding-right : 0px;
+        border : 0px;
+        margin : 0px;
+        text-align : left;
+        vertical-align : middle;
+        font-size : 90%;
+        font-weight : normal;
+        text-decoration: none;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.searchboxback {
+	background-color : #D5EEDD;
+	padding : 5px;
+	border : 0px;
+	margin : 0px;
+	text-align : left;
+	vertical-align : middle;
+	font-size : 90%;
+	font-weight : normal;
+	text-decoration: none;
+}
+
+/* blue breadcrumb table cell */
+.hheaderback {
+	background-color : #b7cfe5;
+	padding-top : 10px;
+	padding-bottom : 10px;
+	padding-left : 0px;
+	padding-right : 0px;
+	border : 0px;
+	margin : 0px;
+	text-align : left;
+	vertical-align : middle;
+	font-size : 90%;
+	font-weight : normal;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* items on the browse pages */
+.listItem {
+        padding-top : 0px;
+        padding-bottom : 6px;
+        padding-left : 0px;
+        padding-right : 0px;
+        border : 0px;
+        margin : 0px;
+        text-align : left;
+        vertical-align : middle;
+        font-size : 90%;
+        font-weight : normal;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* items on the browse pages */
+.listIcon {
+        padding-top : 0px;
+        padding-bottom : 6px;
+        padding-left : 0px;
+        padding-right : 0px;
+        border : 0px;
+        margin : 0px;
+        text-align : right;
+        vertical-align : top;
+}
+
+/* orange "next prev" box */
+.searchresultsnav {
+	background-color : #F2ECD7;
+}
+
+/* only used on the About page.  Blue sidebar */
+.bluenav {
+	background-color : #b7cfe5;
+}
+
+/* small print used for search examples, tips, notes, etc. */
+.searchexample {
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* cell colors used in search widgets on home page 
+and in advanced search*/
+.widgetback {
+	background-color : #FFFAE2;
+}
+
+.widgetback2 {
+	background-color : #F1ECD6;
+}
+
+/* rendering of [Box: 1 Folder: 1], etc. */
+.boxFolder {
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #996600;
+}
+
+
+
+/* style for the headers of left side top level navigation elements --like "View Options" and "Contents" and "Related Pages" */
+
+.navHeader {
+padding-top : 4px;
+border : 0px;
+margin-bottom: 0px;
+text-align : left;
+vertical-align : middle;
+font-size : 85%;
+font-weight : bold; 
+line-height: 120%;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* used for bold nav elements -- like the "Collection Inventory"*/
+.navCategory {
+padding-top : 4px;
+border : 0px;
+margin-bottom: 0px;
+text-align : left;
+vertical-align : middle;
+font-weight : bold;
+font-size : 95%;
+line-height: 120%;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* used for bold nav elements -- like the "Collection Inventory"*/
+.navCategorySelected {
+padding-top : 4px;
+border : 0px;
+margin: 0px;
+text-align : left;
+vertical-align : middle;
+font-size : 95%;
+font-weight : bold;
+line-height: 120%;
+color: #996600;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* used for non bold nav elements -- like the view options */
+.navItem {
+padding-top : 4px;
+border : 0px;
+margin-bottom: 0px;
+text-align : left;
+vertical-align : middle;
+font-weight : normal;
+font-size : 95%;
+line-height: 120%;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* used for non bold nav elements -- Related Pages */
+.navItemRelated {
+padding-top : 8px;
+border : 0px;
+margin-bottom: 0px;
+text-align : left;
+vertical-align : middle;
+font-weight : normal;
+font-size : 95%;
+line-height: 120%;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* indicates current page in left navigation--dark gold */
+.navSelected {
+padding-top : 4px;
+border : 0px;
+margin: 0px;
+text-align : left;
+vertical-align : middle;
+font-size : 95%;
+font-weight : normal;
+line-height: 120%;
+color: #996600;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* background color for normal navigation sidebar */
+.navbg {
+	background-color: #D5EEDD;
+	vertical-align : top;
+}
+
+/* used for submenu-level items in sidebar */
+.otlc01menu {
+	padding-left : 15px;
+	padding-top : 4px;
+	border : 0px;
+	margin-left : 15px;
+	text-align : left;
+	vertical-align : middle;
+	font-size: 85%;
+	line-height: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* current-page submenu-level items in sidebar */
+.otlc01selected {
+	padding-top : 4px;
+	padding-left : 15px;
+	border : 0px;
+	text-align : left;
+	vertical-align : middle;
+	font-size: 85%;
+	line-height: 100%;	
+	color: #996600;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* used for submenu-level items in sidebar */
+.otlc02menu {
+	padding-left : 30px;
+	padding-top : 4px;
+	border : 0px;
+	margin-left : 15px;
+	text-align : left;
+	vertical-align : middle;
+	font-size: 80%;
+	line-height: 100%;	
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* current-page submenu-level items in sidebar */
+.otlc02selected {
+	padding-top : 4px;
+	padding-left : 30px;
+	border : 0px;
+	text-align : left;
+	vertical-align : middle;
+	font-size: 80%;
+	line-height: 100%;	
+	color: #996600;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* used on search results pages */
+.resultsNumber {
+	text-align : right;
+	vertical-align : top;
+}
+
+.resultsTitle {
+/*	padding-bottom : 4px;
+	padding-right : 4px;
+	border : 0px;
+	margin : 0px; */
+	text-align : right;
+	vertical-align : top;
+	font-weight : bold; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.resultsInfo {
+/*	padding-bottom : 4px;
+	border : 0px;
+	margin : 0px; */
+	text-align : left; 
+	vertical-align : top;
+}
+
+
+.siteMapHed {
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 100%; color: #000066;
+	vertical-align: middle;
+	text-align: left;
+	margin-top: 20px;
+	line-height: 130%;
+}
+
+.siteMapSubHed {
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 100%; color: #000066;
+	vertical-align: middle;
+	text-align: left;
+	margin-left: 15px;
+}
+
+/* footer information */
+.footer {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+		color: #000066;
+		padding-top : 4px;
+		padding-bottom : 4px;
+        }
+
+.footer a:link {
+        font-weight: bold;
+		color: #000066;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px
+        }
+
+.footer a:visited {
+        font-weight: bold;
+		color: #660066;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px
+        }
+.footer a:hover {
+        font-weight: bold; 
+		color: #FFCC33;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px
+        }
+
+.footer a:active {
+        font-weight: bold;
+		color: #FFCC33;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px
+        }
+
+/* used for submenu-level items in sidebar */
+.hc01 { margin-left : 5%; }
+.hc02 { margin-left : 10%; }
+.hc03 { margin-left : 15%; }
+.hc04 { margin-left : 20%; }
+.hc05 { margin-left : 25%; }
+.hc06 { margin-left : 30%; }
+.hc07 { margin-left : 35%; }
+.hc08 { margin-left : 40%; }
+.hc09 { margin-left : 45%; }
+.hc10 { margin-left : 50%; }
+.hc11 { margin-left : 55%; }
+
+/* .hc02 { margin-left : 60px; } */
+
+.otlc02selected {
+	padding-top : 4px;
+	padding-left : 30px;
+	border : 0px;
+	text-align : left;
+	vertical-align : middle;
+	font-size: 80%;
+	line-height: 100%;	
+	color: #996600;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+}

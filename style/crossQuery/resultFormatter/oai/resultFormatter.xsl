@@ -48,6 +48,8 @@
    <!-- Output                                                                 -->
    <!-- ====================================================================== -->
    
+<xsl:include href="../../queryParser/oai/OAI_sets.xsl"/>
+
    <xsl:output method="xml" encoding="UTF-8" media-type="text/xml" indent="yes" exclude-result-prefixes="#all"/>
    
    <!-- ====================================================================== -->
@@ -82,9 +84,9 @@
    <!-- totalDocs param -->
    <xsl:param name="totalDocs" select="/crossQueryResult/@totalDocs"/>
    <!-- nextPage param -->
-   <xsl:param name="nextPage" select="$startDoc + 20"/>
+   <xsl:param name="nextPage" select="$startDoc + number($OAI_page_size)"/>
    <!-- cursor param -->
-   <xsl:param name="cursor" select="$nextPage - 21"/>
+   <xsl:param name="cursor" select="$nextPage - number($OAI_page_size) - 1"/>
    
    <!-- ====================================================================== -->
    <!-- Local parameters                                                       -->
@@ -162,7 +164,7 @@
    <!-- verb: Identify -->
    <xsl:template name="Identify">
       
-      <xsl:variable name="earliestDateStamp" select="//docHit[matches(meta/dateStamp,'^[0-9]{4}-[0-9]{2}-[0-9]{2}$')][1]/meta/dateStamp[1]"/>
+      <xsl:variable name="earliestDateStamp" select="//docHit[1]/meta/dateStamp[1]"/>
       
       <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -172,12 +174,12 @@
             <xsl:value-of select="$http.URL"/>
          </request>
          <Identify>
-            <repositoryName>XTF Sample Repository</repositoryName>
+            <repositoryName>Online Archive of California Repository</repositoryName>
             <!-- CHANGE -->
-            <baseURL>http://www.server.org/default/oai</baseURL>
+            <baseURL>http://content.cdlib.org/oai</baseURL>
             <protocolVersion>2.0</protocolVersion>
             <!-- CHANGE -->
-            <adminEmail>admin@server.org</adminEmail>
+            <adminEmail>mark.redar@ucop.edu</adminEmail>
             <earliestDatestamp>
                <xsl:value-of select="$earliestDateStamp"/>
             </earliestDatestamp>
@@ -205,6 +207,10 @@
                <xsl:if test="$totalDocs > $nextPage">
                   <resumptionToken completeListSize="{$totalDocs}" cursor="{$cursor}">
                      <xsl:value-of select="concat(replace($http.URL,'[;&amp;]resumptionToken=[0-9]+',''),'::',$nextPage)"/>
+                      <!--
+                     <xsl:value-of select="concat(replace($http.URL,'[;&amp;]resumptionToken=[0-9]+',''),'&amp;resumptionToken=',$nextPage)"/>
+                     <xsl:value-of select="$nextPage"/>
+                     -->
                   </resumptionToken>
                </xsl:if>
                </ListIdentifiers>
@@ -259,6 +265,10 @@
                <xsl:if test="$totalDocs > $nextPage">
                   <resumptionToken completeListSize="{$totalDocs}" cursor="{$cursor}">
                      <xsl:value-of select="concat(replace($http.URL,'[;&amp;]resumptionToken=[0-9]+',''),'::',$nextPage)"/>
+                     <!--
+                     <xsl:value-of select="concat(replace($http.URL,'[;&amp;]resumptionToken=[0-9]+',''),'&amp;resumptionToken=',$nextPage)"/>
+                     <xsl:value-of select="$nextPage"/>
+                     -->
                   </resumptionToken>
                </xsl:if>
                </ListRecords>
@@ -285,7 +295,10 @@
             <xsl:value-of select="$http.URL"/>
          </request>
          <ListSets>
+            <xsl:call-template name="setList"/>
+<!--
             <xsl:apply-templates select="crossQueryResult/facet/group"/>
+-->
          </ListSets>
       </OAI-PMH>
       
@@ -300,7 +313,7 @@
       <record xmlns="http://www.openarchives.org/OAI/2.0/">
          <header>
             <identifier>
-               <xsl:value-of select="replace($identifier,'.+/','')"/>
+               <xsl:value-of select="replace($identifier,'.+/([0-9]{5})/','$1/')"/>
             </identifier>
             <datestamp>
                <xsl:value-of select="$dateStamp"/>
@@ -326,7 +339,7 @@
       
       <header xmlns="http://www.openarchives.org/OAI/2.0/">
          <identifier>
-            <xsl:value-of select="replace($identifier,'.+/','')"/>
+            <xsl:value-of select="replace($identifier,'.+/([0-9]{5})/','$1/')"/>
          </identifier>
          <datestamp>
             <xsl:value-of select="$dateStamp"/>
@@ -336,7 +349,7 @@
    </xsl:template>
    
    <!-- Add namespace to metadata elements -->
-   <xsl:template match="title|creator|subject|description|publisher|contributor|date|type|format|identifier|source|language|relation|coverage|rights" mode="DC">
+   <xsl:template match="title|creator|subject|description|publisher|contributor|date|type|format|source|language|relation|coverage|rights" mode="DC">
       <xsl:element name="{concat('dc:',local-name())}" namespace="http://purl.org/dc/elements/1.1/">
          <xsl:apply-templates/>
       </xsl:element>
@@ -344,6 +357,23 @@
    
    <!-- skip non-standard dublin core elements -->
    <xsl:template match="*" mode="DC"/>
+
+   <!-- Speciliazed template for identifier metadata elements -->
+   <xsl:template match="identifier" mode="DC">
+      <xsl:element name="{concat('dc:',local-name())}" namespace="http://purl.org/dc/elements/1.1/">
+       <xsl:choose>
+           <xsl:when test="../oac4-tab = 'Collections::ead'">
+               <!-- if this element's value is a URL of from http://ark.cdlib.org/ark:/13030/<xxxx>, change to http://www.oac.cdlib.org/findaid/ark:/13030/<xxxx>
+               -->
+               <xsl:value-of select="replace(., 'http://ark.cdlib.org', 'http://www.oac.cdlib.org/findaid')"/>
+           </xsl:when>
+           <xsl:otherwise>
+               <xsl:apply-templates/>
+           </xsl:otherwise>
+       </xsl:choose>
+      </xsl:element>
+   </xsl:template>
+
    
    <!-- set formatting -->
    <xsl:template match="group">

@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+
+<brand owner="lishelp@uci.edu">
+  <links>
+    <link rel="stylesheet" href="http://lib.uci.edu/neh/styles/global.css"/>
+  </links>
+
+  <header>
+    <!-- start header -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#276A78">
+      <tr align="right">
+        <td width="172" height="92" rowspan="2" bgcolor="#70C0D0">
+          <a href="http://lib.uci.edu/neh/index.html">
+            <img src="http://lib.uci.edu/neh/images/seaadoc_logo.gif" width="172" height="92" border="0" />
+          </a>
+        </td>
+        <td width="51" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/about.html" class="topnavlink">ABOUT</a></td></tr></table>
+        </td>
+        <td width="49" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/learn.html" class="topnavlink">LEARN</a></td></tr></table>
+        </td>
+        <td width="59" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#D2E7EC'" onMouseout="style.backgroundColor='#FFF3D9'" bgcolor="#FFF3D9">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/search.html" class="topnavlinkon">SEARCH</a></td></tr></table>
+        </td>
+        <td width="49" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/teach.html" class="topnavlink">TEACH</a></td></tr></table>
+        </td>
+        <td width="34" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/help.html" class="topnavlink">help</a></td></tr></table>
+        </td>
+        <td width="65" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/copy.html" class="topnavlink">copyright</a></td></tr></table>
+        </td>
+        <td width="93" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/repro.html" class="topnavlink">reproductions</a></td></tr></table>
+        </td>
+        <td width="72" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/contact.html" class="topnavlink">contact us</a></td></tr></table>
+        </td>
+        <td height="25" align="left" valign="top" bgcolor="#D2E7EC">&#160;</td>
+      </tr>
+    </table>
+    <!-- end header -->
+  </header>
+  
+  <header.dynaxml.header>
+    <!-- start header -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#276A78">
+      <tr align="right">
+        <td width="172" height="92" rowspan="2" bgcolor="#70C0D0">
+          <a href="http://lib.uci.edu/neh/index.html">
+            <img src="http://lib.uci.edu/neh/images/seaadoc_logo.gif" width="172" height="92" border="0" />
+          </a>
+        </td>
+        <td width="51" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/about.html" class="topnavlink">ABOUT</a></td></tr></table>
+        </td>
+        <td width="49" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/learn.html" class="topnavlink">LEARN</a></td></tr></table>
+        </td>
+        <td width="59" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#D2E7EC'" onMouseout="style.backgroundColor='#FFF3D9'" bgcolor="#FFF3D9">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/search.html" class="topnavlinkon">SEARCH</a></td></tr></table>
+        </td>
+        <td width="49" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/teach.html" class="topnavlink">TEACH</a></td></tr></table>
+        </td>
+        <td width="34" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/help.html" class="topnavlink">help</a></td></tr></table>
+        </td>
+        <td width="65" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/copy.html" class="topnavlink">copyright</a></td></tr></table>
+        </td>
+        <td width="93" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/repro.html" class="topnavlink">reproductions</a></td></tr></table>
+        </td>
+        <td width="72" height="25" align="center" valign="middle" onMouseover="style.backgroundColor='#FFF3D9'" onMouseout="style.backgroundColor='#D2E7EC'" bgcolor="#D2E7EC">
+          <table cellpadding="1" border="0"><tr><td><a href="http://lib.uci.edu/neh/contact.html" class="topnavlink">contact us</a></td></tr></table>
+        </td>
+        <td height="25" align="left" valign="top" bgcolor="#D2E7EC">&#160;</td>
+      </tr>
+    </table>
+    <!-- end header -->
+  </header.dynaxml.header>
+  
+  <footer>
+    <!-- start footer -->
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#276A78">
+      <tr align="center">
+        <td height="57" colspan="10" valign="top" bgcolor="#AED3DD">
+          <table width="100%" border="0" align="right" cellpadding="4" cellspacing="0">
+            <tr>
+              <td width="26%" height="57" align="left" valign="top" class="footertext">
+                <a href="http://www.lib.uci.edu">
+                  <img src="http://lib.uci.edu/neh/images/ucilibfooter.gif" name="Image20" width="167" height="23" border="0" id="Image20"/>
+                </a>
+                <br />&#160;&#160;&#160;&#160;&#160;&#160;<a class="footerlink" href="http://www.lib.uci.edu/webmanager.html?loc=SEAAdoc" title="E-mail the Web Manager for the U.C. Irvine Libraries.">Comments ? Questions ?</a>
+              </td >
+              <td width="74%" align="right" valign="top" class="footertext">
+                A service of the <a href="http://libraries.universityofcalifornia.edu/">UC Libraries</a>, powered by the <a href="http://www.cdlib.org/">CDL</a>.
+                <br />&#169; 2004 The Regents of the University of California
+                <br />All Rights Reserved
+              </td >
+            </tr>
+          </table>
+        </td >
+      </tr>
+    </table>
+    <!-- end footer -->
+  </footer>
+</brand>
+

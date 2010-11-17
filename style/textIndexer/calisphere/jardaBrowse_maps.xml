@@ -1,0 +1,1074 @@
+<!--jardaBrowse keyword mapping -->
+
+<xtf:maps xmlns:xtf="http://cdlib.org/xtf">
+
+<xtf:keyword-map type="jardaBrowse"> 
+
+<!--PLACES BROWSE TERMS-->
+
+<!--Before Evacuation -->
+
+<xtf:mapping>
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:group>Before Evacuation</xtf:group>
+</xtf:mapping>
+
+
+<!--Before Evacuation, various California cities -->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Arcadia</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Arcadia</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Byron</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Byron</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Centerville</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Centerville</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Florin</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Florin</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Hayward</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Hayward</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Loomis</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Loomis</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Los Angeles</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Los Angeles before evacuation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Mission San Jose</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Mission San Jose</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Mountain View</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Mountain View before evacuation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Oakland</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Oakland before evacuation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Penryn</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Penryn</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Sacramento</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Sacramento before evacuation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>San Francisco</xtf:keyword>
+	</xtf:join>
+	<xtf:group>San Francisco before evacuation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Stockton</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Stockton before evacuation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Woodland</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Woodland</xtf:group>
+</xtf:mapping>
+
+
+<!--Before Evacuation, photographers -->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Clem Albers</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Clem Albers</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Dorothea Lange</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Dorothea Lange</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 14: preevacuation</xtf:keyword>
+	<xtf:keyword>Francis Stewart</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Francis Stewart</xtf:group>
+</xtf:mapping>
+
+
+<!--Relocation During the War, Assembly Centers -->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>merced</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Merced, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>pomona</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Pomona, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>puyallup</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Puyallup, WA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>sacramento</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Sacramento, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>salinas</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Salinas, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>santa anita</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Santa Anita Park, Arcadia, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>sharp park</xtf:keyword>
+	<xtf:group>Sharp Park, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>stockton</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Stockton, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>tanforan</xtf:keyword>
+	<xtf:group>Tanforan, San Bruno, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>turlock</xtf:keyword>
+	<xtf:keyword>assembly center</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Turlock, CA</xtf:group>
+</xtf:mapping>
+
+
+<!--Relocation During the War, Internment Camps -->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>granada</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Amache (Granada), CO</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>gila river</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Gila River, AZ</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>heart mountain</xtf:keyword>
+	<xtf:group>Heart Mountain, WY</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>jerome</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Jerome, AR</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>manzanar</xtf:keyword>
+	<xtf:group>Manzanar, CA</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>minidoka</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Minidoka, ID</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>poston</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Poston (Colorado River), AZ</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>rohwer</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Rohwer, AR</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>topaz</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Topaz, UT</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>tule lake</xtf:keyword>
+	<xtf:group>Tule Lake, CA</xtf:group>
+</xtf:mapping>
+
+
+<!--Repatriation to Japan-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>repatriation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Repatriation to Japan</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>repatriates</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Repatriation to Japan</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>enoshima maru</xtf:keyword>
+	<xtf:group>Sinking of Enoshima Maru</xtf:group>
+</xtf:mapping>
+
+
+<!--Effect on Japanese American Communities and Property-->
+
+<xtf:mapping>
+	<xtf:keyword>bronzeville</xtf:keyword>
+	<xtf:group>Bronzeville, Los Angeles</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="or">
+	<xtf:keyword>property owned by evacuee</xtf:keyword>
+	<xtf:keyword>farm formerly operated by</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Farms</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>formerly inhabited by Japanese</xtf:keyword>
+	<xtf:group>Stores and Homes</xtf:group>
+</xtf:mapping>
+
+
+<!--Resettlement after the War-->
+
+<xtf:mapping>
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:group>Resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 12: relocation</xtf:keyword>
+	<xtf:keyword>formerly</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 13: relocation</xtf:keyword>
+	<xtf:keyword>formerly</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Resettlement</xtf:group>
+</xtf:mapping>
+
+
+<!--Resettlement after the War, Cities-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>los angeles</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Los Angeles resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>mountain view</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Mountain View resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>oakland</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Oakland resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>palo alto</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Palo Alto</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>petaluma</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Petaluma</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>redwood city</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Redwood City</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>sacramento</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Sacramento resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>san francisco</xtf:keyword>
+	</xtf:join>
+	<xtf:group>San Francisco resettlement</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>san jose</xtf:keyword>
+	</xtf:join>
+	<xtf:group>San Jose</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>san mateo</xtf:keyword>
+	</xtf:join>
+	<xtf:group>San Mateo</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>series 16: resettlement</xtf:keyword>
+	<xtf:keyword>stockton</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Stockton resettlement</xtf:group>
+</xtf:mapping>
+
+
+<!--PEOPLE BROWSE TERMS-->
+
+<!--People-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>father</xtf:keyword>
+	<xtf:keyword>son</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Families</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>father</xtf:keyword>
+	<xtf:keyword>daughter</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Families</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>grandfather</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Families</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>grandmother</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Families</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>mother</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Families</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>women</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Women</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>Children</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Children</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>orphans</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Orphans</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>workers</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Workers</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>field</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Agriculture</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>weeding</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Agriculture</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>planting</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Agriculture</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>harvesting</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Agriculture</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>medical</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Medical</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>nurse</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Medical</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>patient</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Medical</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>soldiers</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Military</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>teacher</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Teachers</xtf:group>
+</xtf:mapping>
+
+
+<!--War Relocation Photographers-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>clem</xtf:keyword>
+	<xtf:keyword>albers</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Clem Albers</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>bud</xtf:keyword>
+	<xtf:keyword>aoyama</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Bud Aoyama</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: clark, fred</xtf:keyword>
+	<xtf:group>Fred Clark</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: cook, john d.</xtf:keyword>
+	<xtf:group>John D. Cook</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>fujihira, toge</xtf:keyword>
+	<xtf:group>Toge Fujihira</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>iwai, henry</xtf:keyword>
+	<xtf:group>Henry Iwai</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>iwasaki</xtf:keyword>
+		<xtf:keyword>hikaru</xtf:keyword> 
+	<xtf:group>Hikaru Iwasaki</xtf:group>
+	</xtf:join>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>war relocation</xtf:keyword>
+	<xtf:keyword>lange</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Dorothea Lange</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: lynn, charles</xtf:keyword>
+	<xtf:group>Charles Lynn</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+		<xtf:keyword>photographer: mace, charles</xtf:keyword>
+		<xtf:group>Charles Mace</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: mcclelland, joe</xtf:keyword>
+	<xtf:group>Joe McClelland</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: parker, tom</xtf:keyword>
+	<xtf:group>Tom Parker</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: stewart, francis</xtf:keyword>
+	<xtf:group>Francis Stewart</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>photographer: van tassel</xtf:keyword>
+	<xtf:group>Gretchen Van Tassel</xtf:group>
+</xtf:mapping>
+
+<!--Selected Internee Photographers-->
+
+<xtf:mapping>
+	<xtf:keyword>jack iwata</xtf:keyword>
+	<xtf:group>Jack Iwata</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>moriyuki shimada</xtf:keyword>
+	<xtf:group>Moriyuki Shimada</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>walter muramoto</xtf:keyword>
+	<xtf:group>Walter Muramoto</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>yoshikawa family</xtf:keyword>
+	<xtf:group>Yoshikawa Family</xtf:group>
+</xtf:mapping>
+
+<!--Internee Artists-->
+
+<xtf:mapping>
+	<xtf:keyword>hisako hibi</xtf:keyword>
+	<xtf:group>Hisako Hibi</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>estelle ishigo</xtf:keyword>
+	<xtf:keyword>artist</xtf:keyword>
+	<xtf:group>Estelle Ishigo</xtf:group>
+	</xtf:join>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>henry sugimoto</xtf:keyword>
+	<xtf:group>Henry Sugimoto</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>yoshiko uchida</xtf:keyword>
+	<xtf:keyword>watercolor</xtf:keyword>
+	<xtf:group>Yoshiko Uchida</xtf:group>
+	</xtf:join>
+</xtf:mapping>
+
+<!--DAILY LIFE BROWSE TERMS-->
+
+<!--Housing Meals-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>barracks</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Barracks</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>meals</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Meals</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>dinner</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Meals</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>lunch</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Meals</xtf:group>
+</xtf:mapping>
+
+<!--Work (see People, Workers)-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>administrative</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Administration</xtf:group>
+</xtf:mapping>
+
+<!--Study-->
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>students</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Teachers and Students</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>school</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Teachers and Students</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>topaz</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>manzanar high school</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>amache</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>heart mountain</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	<xtf:keyword>announcement</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>jerome</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>rohwer</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>tule lake</xtf:keyword>
+	<xtf:keyword>graduation</xtf:keyword>
+	</xtf:join>
+	<xtf:group>High School Graduation</xtf:group>
+</xtf:mapping>
+
+<!--Social Life-->
+
+<xtf:mapping>
+	<xtf:keyword>cooperative beauty salon</xtf:keyword>
+	<xtf:group>Beauty Salon</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>crafts</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Crafts</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>dancing</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Dancing</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>dance</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Dancing</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>high school band</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Music</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>war relocation</xtf:keyword>
+	<xtf:keyword>playing</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Playing</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>sport</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Sports</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>baseball</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Baseball</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>basketball</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Basketball</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>football</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Football</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>judo</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Judo</xtf:group>
+</xtf:mapping>
+
+<!--Events-->
+
+<xtf:mapping>
+	<xtf:keyword>newell kazuo noda</xtf:keyword>
+	<xtf:group>Births</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>stork</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Births</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>james wakasa</xtf:keyword>
+	<xtf:group>Deaths</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>isaburo nakano</xtf:keyword>
+	<xtf:group>Deaths</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:keyword>matsunosuke murakami</xtf:keyword>
+	<xtf:group>Deaths</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>rohwer</xtf:keyword>
+	<xtf:keyword>cemetery</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Deaths</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>parade</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Parades and Festivals</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>festival</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Parades and Festivals</xtf:group>
+</xtf:mapping>
+
+<xtf:mapping>
+	<xtf:join operator="and">
+	<xtf:keyword>japanese</xtf:keyword>
+	<xtf:keyword>relocation</xtf:keyword>
+	<xtf:keyword>wedding</xtf:keyword>
+	</xtf:join>
+	<xtf:group>Weddings</xtf:group>
+</xtf:mapping>
+
+</xtf:keyword-map>
+
+</xtf:maps>
+

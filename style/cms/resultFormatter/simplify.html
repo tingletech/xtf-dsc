@@ -1,0 +1,135 @@
+<html>
+
+<head>
+<title>ark: search results:</title>
+<!-- <insert-Css/> -->
+<style type="text/css">
+
+
+	
+	body {
+		margin: 5px;
+ font-family: Georgia, Garamond, "Times New Roman", Times, serif; 
+	}
+	.pagenation {
+ padding-top: 0px;
+ margin-top: -.6em;
+	float: right;
+	align: right;
+	}
+ .creator {
+
+ }
+	.summary {
+ padding-top: 0px;
+ margin-top: -.6em;
+	float: left;
+	}
+	.tab-holder {
+clear: both;
+	}
+		
+ .label {
+   font-weight:200;
+	color: #aaa;
+	size: 80%;
+	
+ }
+ .item {
+  /* border:1px solid #900; */
+ border:1px dashed #c00;
+ border-bottom: none;
+ padding:15px;
+margin-top:0px;
+margin-bottom:0px;
+	
+ }
+
+ .first-line {
+ display: block;	
+ }
+
+A.onpage:link { color: #777; }       /* unvisited link */
+A.onpage:visited { color: #666; }   /* visited links */
+A.onpage:active { color: #555; }    /* active links */
+
+A:link { color: #c93; }       /* unvisited link */
+A:visited { color: #c93; }   /* visited links */
+A:active { color: #cf3; }    /* active links */
+
+
+h1 {
+  font-size:170%;
+  padding-bottom:5px;
+  border-bottom:1px solid #900;
+  }
+h2 {
+  font-size:153%;
+  font-weight:normal;
+  margin-top:30px;
+  padding-bottom:5px;
+	  border-bottom:1px dashed #000;
+	  }
+	.title {
+		font-size:125%;
+	  /* font-weight:600; */
+	}
+
+	h3 {
+	  font-size:100%;
+	  color:#900;
+	  }
+	h4 {
+  font-size:85%;
+  color:#666;
+  }
+em { background-color: #FFFF99; }
+</style>
+	
+</head>
+
+<body>
+<h1><a name="top" href="/">ark.cdlib.org</a></h1>
+<p class="summary"><insert-SummaryShort/>
+</p>
+<p class="pagenation">
+<insert-previous/>
+<!-- <insert-PagenationShort/> -->
+<insert-Fisheye/>
+<insert-next/>
+<!-- <insert-PagenationMore/> -->
+</p>
+
+<p class="tab-holder">
+<insert-Tabs/> 
+</p>
+<a name="results"></a>
+
+
+<insert-SearchResults/>
+
+<a name="modify">
+<h2>Modify your previous search</h2>
+</a>
+
+<insert-SearchForm/>
+
+
+
+<h2>Administrivia</h2>
+<p class="notice">
+<a href="http://www.cdlib.org"><img src="http://www.cdlib.org/images/logo.gif" align="left" /></a>
+This service is provided to the general public by the 
+<a href="http://www.cdlib.org/">California Digital Library</a>,  an 
+<a href="http://www.ucop.edu/acadinit/">academic initiative</a> of the 
+<a href="http://www.ucop.edu/">University of California Office of the President</a>.  
+<a href="http://www.universityofcalifornia.edu/aboutuc/terms.html">Copyright 2002</a> <a href="http://www.ucop.edu/regents/">The Regents</a> of 
+<a href="http://www.universityofcalifornia.edu/">The University of California</a>.
+</p>
+
+<p><a class="onpage" href="#top">return to top</a>
+<a href="/">ark.cdlib.org</a>
+</p>
+
+</body>
+</html>

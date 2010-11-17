@@ -187,9 +187,10 @@
       <h3>An unexpected servlet error has occurred.</h3>
       <xsl:apply-templates/>
       <p>
-         If you have questions, need further technical assistance, or believe that you have 
-         reached this page in error, send email to the CDL 
-         (<a href="{concat('mailto:cdl@www.cdlib.org?subject=Access%20denied%20-%20', encode-for-uri($reason))}">cdl@www.cdlib.org</a>) or call the CDL Helpline (510.987.0555). Be sure to include the above message and/or stack trace in your communication.</p>
+	If you have questions, need further technical assistance, or believe that you have reached this page in error, please contact us via e-mail at
+	<a href="{concat('mailto:oacops@cdlib.org?subject=Access%20denied%20-%20', encode-for-uri($reason))}">oacops@cdlib.org</a>.
+	In your e-mail, include the text of any error messages that you may have received.
+</p>
    </xsl:template>
    
    

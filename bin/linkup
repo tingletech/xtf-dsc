@@ -1,0 +1,192 @@
+#!/usr/bin/env perl
+# This script creates a melding of a CDL-only tree with a SourceForge-only
+# tree. The result has symbolic links to one or the other. If a file is
+# present in both, the CDL tree is preferred.
+#
+
+$primaryDir = "xtf-cdl";
+$secondaryDir = "xtf-sf";
+$targetDir = "xtf";
+
+mkdir $targetDir;
+
+# main merging happens in process1 and process2
+process1( $primaryDir, $secondaryDir, $targetDir, ".." );
+process2( $secondaryDir, $primaryDir, $targetDir, ".." );
+
+# symlinks to other places that we need to set up as well
+symlinkWrap("../mets-support","$targetDir/mets-support");
+symlinkWrap("../data", "$targetDir/data");
+symlinkWrap("../data-nonark", "$targetDir/data-nonark");
+symlinkWrap("../mets-support/xslt/view/common", "$targetDir/style/common");
+
+exit 0;
+
+# ------------
+#
+# Added code to install two additional links:
+#
+#	xtf/mets-support -> ../mets-support
+#	xtf/data -> ../data
+#
+#							MAR 2007/2/27
+# ------------
+#
+# If the above files exist, don't create symlinks there.	MAR 2007/2/28
+#
+# ------------
+#
+# One more link:
+#
+#	xtf/data-nonark -> ../data-nonark
+#
+#								MAR 2007/3/2
+# bct20070928 refactor and an another link; removed prototypes from sub defs
+
+sub symlinkWrap {
+	my ($b, $a) = @_ ;
+	unless ( -e $a ) {
+		if (symlink($b, $a)) {
+			print "Link $b";
+		} else {
+			print STDERR "installation of symbolic link from ",
+				"\"$a\" to \"$b\" ",
+				"failed, $!\n";
+		}
+	}
+}
+
+# Link everything from srcDir to dstDir, unless something is in ref, in
+# which case a dir is made.
+#
+sub process1
+{
+    my $srcDir = shift;
+    my $refDir = shift;
+    my $dstDir = shift;
+    my $dots   = shift;
+
+    opendir( DIR, $srcDir ) || die( "cannot open source dir $srcDir" );
+    my @files = readdir( DIR );
+    foreach my $srcFile (sort @files) {
+        if( $srcFile eq "." || $srcFile eq ".." ) { next; }
+        if( $srcFile eq "CVS" ) { next; }
+        if( $srcFile eq ".sf" || $srcFile eq ".cdl" ) { next; }
+
+        my $refFile = "$refDir/$srcFile";
+        $dstFile = "$dstDir/$srcFile";
+        $srcFile = "$srcDir/$srcFile";
+
+        if( -e $refFile ) {
+            if( -d $refFile && -d $srcFile ) {
+                mkdir $dstFile;
+                process1( $srcFile, $refFile, $dstFile, "../$dots" );
+            }
+            elsif( (-d $refFile) || (-d $srcFile) ) {
+                print "Directory mismatch: $refFile vs $srcFile... ABORTING.\n";
+                exit 1;
+            }
+            else {
+                print "Link $srcFile\n";
+                makeLink( "$dots/$srcFile", "$dstFile" );
+                #system( "ln -s $dots/$srcFile $dstFile" );
+            }
+        }
+        else {
+            print "Link $srcFile\n";
+            makeLink( "$dots/$srcFile", "$dstFile" );
+            #system( "ln -s $dots/$srcFile $dstFile" );
+        }
+    }
+
+    closedir( DIR );
+}
+
+# Link things from source that aren't in ref, to target
+sub process2
+{
+    my $srcDir = shift;
+    my $refDir = shift;
+    my $dstDir = shift;
+    my $dots   = shift;
+
+    opendir( DIR, $srcDir ) || die( "cannot open source dir" );
+    my @files = readdir( DIR );
+    foreach my $srcFile (sort @files) {
+        if( $srcFile eq "." || $srcFile eq ".." ) { next; }
+        if( $srcFile eq "CVS" ) { next; }
+        if( $srcFile eq ".sf" || $srcFile eq ".cdl" ) { next; }
+
+        my $refFile = "$refDir/$srcFile";
+        $dstFile = "$dstDir/$srcFile";
+        $srcFile = "$srcDir/$srcFile";
+
+        if( -e $refFile ) {
+            if( -d $refFile && -d $srcFile ) {
+                mkdir $dstFile;
+                process2( $srcFile, $refFile, $dstFile, "../$dots" );
+            }
+            elsif( (-d $refFile) || (-d $srcFile) ) {
+                print "Directory mismatch: $refFile vs $srcFile... ABORTING.\n";
+                exit 1;
+            }
+        }
+        else {
+            print "Link $srcFile\n";
+            makeLink( "$dots/$srcFile", "$dstFile" );
+            #system( "ln -s $dots/$srcFile $dstFile" );
+        }
+    }
+
+    closedir( DIR );
+}
+
+sub makeLink()
+{
+    my $src = shift;
+    my $dst = shift;
+
+    my $srcDir = getDir( $src );
+    my $dstDir = getDir( $dst );
+
+    my $linkName = $srcDir;
+    $linkName =~ s/(\.\.\/)*//;
+    $slashPos = index( $linkName, "/" );
+    $linkName = ($slashPos < 0) ? $linkName : substr( $linkName, 0, $slashPos );
+    $linkName =~ s/xtf-//;
+    $linkName = ".$linkName";
+
+    my $dstLink = "$dstDir/$linkName";
+    if( !(-e $dstLink) ) {
+        system( "ln -s $srcDir $dstLink" );
+    }
+
+    my $srcFile = getFile( $src );
+    my $dstFile = getFile( $dst );
+    if( !(-e "$dstDir/$dstFile") ) {
+        system( "ln -s $linkName/$srcFile $dstDir/$dstFile" );
+    }
+}
+
+sub getDir()
+{
+    my $file = shift;
+    my $slashPos = rindex( $file, "/" );
+    if( $slashPos < 0 ) {
+        return "";
+    } else {
+        return substr( $file, 0, $slashPos );
+    }
+}
+
+sub getFile()
+{
+    my $file = shift;
+    my $slashPos = rindex( $file, "/" );
+    if( $slashPos < 0 ) {
+        return $file;
+    } else {
+        return substr( $file, $slashPos+1 );
+    }
+}
+

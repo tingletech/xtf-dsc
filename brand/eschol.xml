@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+
+<brand owner="steve.toub@ucop.edu">
+  
+  <!-- LINKS -->
+  
+  <links>
+    <link href="/styles/escholarship-combined.css" rel="stylesheet" type="text/css"/>
+  </links>
+ 
+  <!-- HEADER -->
+  
+  <header>
+    <!--  BEGIN HEADER ROW  -->
+    <tr>
+      <td class="header-left" width="312" height="75" align="left">
+        <map name="header_left" id="header_left">
+          <area shape="rect" coords="23,13,314,58" href="/escholarship/" alt="escholarship"/>
+        </map>
+        <map name="header_right" id="header_right">
+          <area shape="rect" coords="347,16,393,61" href="http://www.cdlib.org/" alt="CDL"/>
+        </map>
+        <img src="/images/escholarship_editions_header_lt.jpg" width="312"
+          height="75" border="0" usemap="#header_left" alt="eScholarship Editions"/>
+      </td>
+      <td width="100%" class="header-middle">&#160;</td>
+      <td class="header-right" width="408" height="75" align="right">
+        <img src="/images/escholarship_editions_header_rt.jpg" width="408"
+          height="75" border="0" usemap="#header_right" alt="eScholarship Editions"/>
+      </td>
+    </tr>
+    <!--  END HEADER ROW  -->
+    
+    <!--  BEGIN TOPNAV ROW  -->
+    <tr>
+      <td class="topnav-outer" colspan="3" width="100%" height="31" align="center" valign="middle">
+        
+        <!--  BEGIN TOPNAV LEFT  -->
+        <table width="100%" height="27" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="topnav-inner" width="25%" align="center" valign="middle">
+              
+              <!--  BEGIN TOPNAV LEFT INNER TABLE  -->
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr align="left" valign="middle">
+                  <td width="15" nowrap="nowrap">
+                    <a class="topnav" href="/escholarship/">
+                      <img src="/images/arrow.gif" width="15" height="15"
+                        border="0" alt="Home"/>
+                    </a>
+                  </td>
+                  <td nowrap="nowrap">&#160;<a class="topnav" href="/escholarship/">Home</a></td>
+                  <td width="15" nowrap="nowrap">
+                    <img src="/images/spacer.gif" width="15" alt=""/>
+                  </td>
+                  <td width="15" nowrap="nowrap">
+                    <a class="topnav" href="/search?style=eschol&amp;brand=eschol">
+                      <img src="/images/arrow.gif" width="15" height="15"
+                        border="0" alt="Search"/>
+                    </a>
+                  </td>
+                  <td nowrap="nowrap">&#160;<a class="topnav" href="/search?style=eschol&amp;brand=eschol">Search</a></td>
+                  <td width="15" nowrap="nowrap">
+                    <img src="/images/spacer.gif" width="15" alt=""/>
+                  </td>
+                  <td width="15" nowrap="nowrap">
+                    <a class="topnav" href="/escholarship/subjects.html">
+                      <img src="/images/arrow.gif" width="15" height="15"
+                        border="0" alt="Search"/>
+                    </a>
+                  </td>
+                  <td nowrap="nowrap">&#160;<a class="topnav" href="/escholarship/subjects.html">Browse</a></td>
+                </tr>
+              </table>
+              <!--  END TOPNAV LEFT INNER TABLE  -->
+              
+            </td>
+            <!--  END TOPNAV LEFT  -->
+            
+            <td width="2">
+              <img src="/images/spacer.gif" width="2" alt=""/>
+            </td>
+            
+            <!--  BEGIN TOPNAV CENTER  -->
+            <td class="topnav-inner" width="50%" align="center" nowrap="nowrap">&#160;</td>
+            <!--  END TOPNAV CENTER  -->
+            
+            <td width="2">
+              <img src="/images/spacer.gif" width="2" alt=""/>
+            </td>
+            
+            <!--  BEGIN TOPNAV RIGHT  -->
+            <td class="topnav-inner" width="25%" align="center" valign="middle">
+              
+              <!--  BEGIN TOPNAV RIGHT INNER TABLE  -->
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr align="right" valign="middle">
+                  <td width="15" nowrap="nowrap">
+                    <a class="topnav" href="/escholarship/about.html">
+                      <img src="/images/arrow.gif" width="15" height="15"
+                        border="0" alt="About Us"/>
+                    </a>
+                  </td>
+                  <td nowrap="nowrap">&#160;<a class="topnav"
+                    href="/escholarship/about.html">About Us</a>
+                  </td>
+                  <td width="15" nowrap="nowrap">
+                    <img src="/images/spacer.gif" width="15" alt=""/>
+                  </td>
+                  <td width="15" nowrap="nowrap">
+                    <a class="topnav" href="/escholarship/help.html">
+                      <img src="/images/arrow.gif" width="15" height="15"
+                        border="0" alt="Help"/>
+                    </a>
+                  </td>
+                  <td nowrap="nowrap">&#160;<a class="topnav" href="/escholarship/help.html">Help</a>
+                  </td>
+                </tr>
+              </table>
+              <!--  END TOPNAV RIGHT INNER TABLE  -->
+              
+            </td>
+            <!--  END TOPNAV RIGHT  -->
+            
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!--  END TOPNAV ROW  -->
+  </header>
+
+  <header.dynaxml.header>
+    <!-- BEGIN HEADER ROW -->
+    <tr width="100%">
+      <td class="header-left" width="50%" height="44" align="left">
+        <a href="/escholarship/" target="_top">
+          <img src="/xtf/icons/eschol/escholarship_editions.gif" border="0" width="272" height="44" alt="eScholarship Editions"/>
+        </a>
+      </td>
+      <td class="header-right" width="50%" height="44" align="right">
+        <a href="http://www.cdlib.org" target="_top">
+          <img class="cdl-logo" src="/xtf/icons/eschol/cdl_logo.gif" border="0" width="36" height="36" alt="CDL"/>
+        </a>
+      </td>
+    </tr>
+    <!-- END HEADER ROW -->
+  </header.dynaxml.header>
+
+  <!-- FOOTER -->
+  
+  <footer> 
+    <!--  BEGIN FOOTER ROW  -->
+    <tr>
+      <td colspan="3" align="left">
+        <div class="footer2">
+          <a href="/cgi/mail.eschol">Comments? Questions?</a>
+          <br/> eScholarship Editions are published by <a
+            href="/escholarship">eScholarship</a>, the <a
+              href="http://www.cdlib.org/">California Digital Library</a>
+          <br/> &#169; 2006 The Regents of the University of California</div>
+      </td>
+    </tr>
+    <!--  END FOOTER ROW  -->
+  </footer>
+  
+</brand>

@@ -1,0 +1,284 @@
+/*
+  /css/melrec/styles.css
+ */
+/* BEGIN LAYOUT IDs */
+body {
+    margin:2em;
+    font-family:sans-serif;
+    font-size:100%
+}
+#search-simple #content-primary {
+    margin-top: 5em;
+    text-align: center
+}
+#header {
+    padding:0;
+    border-bottom:1px #2F4779 solid;
+/* margin-bottom:1em; */
+/* border: 1px red solid; */
+}
+#masthead {
+    font-size:120%;
+    font-weight:bold;
+    float:left;
+/* border: 1px black solid; */
+}
+#site-nav {
+    text-align:right
+}
+h1.page-title {
+    font-size:100%;
+    margin:1em
+}
+#search-advanced h1.page-title {
+    font-size:100%;
+    margin: 0em;
+}
+#static h1,
+#static h2 {
+    font-size: 90%;
+}
+#header-secondary {
+    margin: 1em 0.5em;
+}
+.error {
+    text-align: center;
+    background-color: #FCC;
+    color: black;
+    padding: 1em 0.5em;
+    margin: 0em -0.5em
+}
+#login-status {
+    clear:both;
+    float:right;
+    margin-top:0em;
+    padding-top:0.5em;
+    margin-bottom:2em;
+    font-size:80%
+}
+#refine {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #EEE;
+    color: black;
+    margin-bottom: 1em;
+}
+fieldset {
+    border: none
+}
+#viewoptions {
+    padding: 0.5em;
+}
+#limit-year,
+#limit-language,
+#limit-format,
+#limit-location {
+    margin-left:0em
+}
+#results-tools {
+    float:left;
+    margin-left:2em;
+}
+.pagination {
+    float:right;
+}
+#metadata .pagination {
+    clear:both;
+}
+#metadata
+#content-primary {
+    margin:1em;
+/*
+  float:left;
+  width: 280px;
+ */
+}
+#metadata #content-secondary {
+/* float: right; */
+/* border: 1px #2F4779 solid; */
+/* width: 300px; */
+    padding: 2em;
+    margin-bottom: 2em;
+}
+#footer {
+    clear:both;
+    border-top:1px #2F4779 solid;
+    margin-top:7em;
+    padding-top:0.5em;
+    margin-bottom:2em;
+    font-size:80%
+}
+#search-simple #footer {
+    margin-top: 12em;
+}
+/* END LAYOUT IDs */
+a:link, a:visited,
+a:hover,
+a:active {
+    font-weight:normal;
+    font-size:100%
+}
+a:link {
+    color:#2F4779;
+}
+a:visited, a:hover,
+a:active {
+    color:#C90;
+}
+.button {
+    border:1px black solid;
+    margin-left: 1em;
+    font-weight:bold;
+    background-color:#FC0;
+    color: black
+}
+label {
+    display: block;
+    width: 150px;
+    float: left;
+    margin-left: 0;
+    margin-bottom: 30px;
+    text-align: right;
+    padding-right: 20px;
+}
+br {
+    clear: left;
+}
+span.format {
+    font-weight:bold
+}
+.search-term,
+span.keyword {
+    font-weight:bold;
+    color:#C90;
+}
+.search-type {
+    font-weight:bold
+}
+ol {
+    padding-top:2em;
+}
+li {
+    padding: 1em 0;
+}
+.even {
+    background-color: #EEEEEE;
+    color: black
+}
+#results .assess-hit h2,
+#metadata
+#content-primary h2,
+#refine h2,
+#viewoptions h2 {
+    display:inline;
+    font-weight:bold;
+    font-size:100%;
+}
+#refine h2 {
+    margin-bottom: 5em;
+}
+#results li p,
+#metadata
+#content-primary p {
+    margin:0px;
+}
+a.grouped {
+    border: 0;
+}
+/* more details popup */
+div#go2details a
+span {
+    display:none
+}
+div#go2details a:hover span#moreBlock {
+    border:1px #2F4779 solid;
+    display:block;
+    width:800px;
+    padding:5px;
+    margin:10px;
+    background-color:#FFF;
+    color: black;
+    text-align:left
+}
+div#go2details
+a:hover
+span#moreBlock
+span.keyword {
+    display:inline;
+    color:#C90;
+}
+span.keyword {
+    display:inline;
+    color:#C90
+}
+div#go2details h2 {
+    text-align:right;
+}
+/* Assessment Styles */
+/* Top Box  or in page body */
+div.assess,
+#assess-intro #header-secondary,
+#assess-intro #content-primary,
+#recommendHeader {
+    background-color: white;
+    color: black;
+    border: none;
+    margin-bottom: 0;
+    padding: 0
+}
+#metadata #content-secondary h2 {
+    font-size: 100%;
+    margin-top: -3em;
+    margin-bottom: .5em
+}
+#metadata #content-secondary ol {
+    margin-top: -2em
+}
+th {
+    font-weight: bold;
+    border-bottom: 1px solid black
+}
+#assess-intro #content-primary {
+    text-align: center;
+    margin: 1em 0.5em;
+}
+/* Rating Checkbox */
+.assess-rate table {
+    font-size: 75%;
+    background-color: #E5E5F5;
+    color: black;
+    border: 1px #2F4779 solid;
+    margin: 0 1em 1em 1em;
+    padding: 5px
+}
+/* Hit Metadata */
+.assess-hit {
+    padding-bottom: 1em;
+}
+.assess-hit td {
+    margin:0
+}
+span.assess-label {
+    color: #2F4779;
+    font-weight: bold
+}
+br.clear {
+    clear:both
+}
+div.radio_buttons {
+    font-size: 75%;
+    background-color: #E5E5F5;
+    color: black;
+    border: 1px #2F4779 solid;
+    margin: 0.5em 1em 1em 1em;
+    padding: 5px
+}
+div.showID {
+    font-size: 50%;
+}
+span.harshMellow {
+    background-color: #FC0;
+    color: black;
+    border:black solid .5px;
+    padding: 5px
+}

@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 import org.cdlib.xtf.util.ProcessRunner.CommandFailedException;
+import org.cdlib.xtf.util.Trace;
 
 /**
  * Copyright (c) 2009, Regents of the University of California
@@ -75,11 +76,42 @@ public class DirSync
   public void syncDirs(File srcDir, File dstDir) 
     throws IOException
   {
-    linkCmds = new StringBuffer();
-    syncDirs(srcDir, dstDir, 0);
-    flushLinks();
+    if ( true ) { 	/* could this be a config option? */
+      rsyncDirs(srcDir, dstDir);
+    } else { 		/* old code path */
+      linkCmds = new StringBuffer();
+      syncDirs(srcDir, dstDir, 0);
+      flushLinks();
+    }
   }
   
+  /**
+   * rsync the files from source to dest.
+   * 
+   * @param srcDir      Directory to match
+   * @param dstDir      Directory to modify
+   * @throws IOException If anything goes wrong
+   */
+  public void rsyncDirs(File srcDir, File dstDir) 
+    throws IOException
+  {
+    try {
+      String[] args = new String[6];
+      args[0] = "rsync";
+      args[1] = "-av";
+      args[2] = "--delete";
+      args[3] = "--link-dest=" + srcDir.getAbsolutePath() + "/";
+      args[4] = srcDir.getAbsolutePath() + "/";
+      args[5] = dstDir.getAbsolutePath();
+      Trace.debug(args[0] + " " + args[1] + " " + args[2] + " " + args[3] + " " + args[4] + " " + args[5]);
+      ProcessRunner.runAndGrab(args, "", 0);
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    } catch (CommandFailedException e) {
+      throw new IOException(e.getMessage());
+    }
+  }
+
   /**
    * The main workhorse of the scanner.
    * 

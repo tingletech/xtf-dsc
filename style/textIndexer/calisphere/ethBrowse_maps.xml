@@ -1,0 +1,2560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xtf:maps xmlns:xtf="http://cdlib.org/xtf">
+    
+    <!-- ethBrowse Keyword Mapping -->
+    
+    <xtf:keyword-map type="ethBrowse">
+        
+<!--
+        <xtf:mapping>
+            <xtf:join operator="or">
+                <xtf:keyword>donner monument</xtf:keyword>
+                <xtf:keyword>donner party</xtf:keyword>
+                <xtf:keyword>breen</xtf:keyword>
+            </xtf:join>
+            <xtf:group>Donner Party</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:keyword>Ralph Abernathy</xtf:keyword>
+            <xtf:group>Abernathy, Ralph</xtf:group>
+        </xtf:mapping>
+        -->
+
+<xtf:mapping>
+  <xtf:keyword>rancheria</xtf:keyword> 
+  <xtf:group>Native Americans, Rancheria</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+  <xtf:keyword>Centro Cultural de La Raza</xtf:keyword> 
+  <xtf:group>Hispanic American, Centro Cultural de La Raza</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+  <xtf:keyword>Galeria de La Raza</xtf:keyword> 
+  <xtf:group>Hispanic American, Galeria de La Raza</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+  <xtf:keyword>La Raza silkscreen center</xtf:keyword> 
+  <xtf:group>Hispanic American, La Raza Silkscreen Center</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+  <xtf:keyword>Royal Chicano Air Force</xtf:keyword> 
+  <xtf:group>Hispanic American, Royal Chicano Air Force</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+  <xtf:keyword>Self-Help Graphics</xtf:keyword> 
+  <xtf:group>Hispanic American, Self-Help Graphics</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Korean Americans -- California -- Newspapers</xtf:keyword> 
+  <xtf:keyword>Koreatown</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Asian Americans, Koreatown Newspaper (1978-1984)</xtf:group> 
+  </xtf:mapping>
+
+
+   <xtf:mapping>
+            <xtf:keyword>Chinese Railroad</xtf:keyword>
+            <xtf:group>Chinese Americans, Railroads</xtf:group>
+        </xtf:mapping>
+
+
+   <xtf:mapping>
+            <xtf:keyword>Resettlement Asia</xtf:keyword>
+            <xtf:group>Asian Americans, Resettlement</xtf:group>
+        </xtf:mapping>
+
+    <xtf:mapping>
+            <xtf:keyword>Refugee Asian</xtf:keyword>
+            <xtf:group>Asian Americans, Refugee </xtf:group>
+        </xtf:mapping>
+
+
+
+
+   <xtf:mapping>
+            <xtf:keyword>Chung Sai Yat Po</xtf:keyword>
+            <xtf:group>Chung Sai Yat Po newspaper collection, 1900-1904</xtf:group>
+        </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Mexican Americans</xtf:keyword> 
+  <xtf:keyword>Women in art</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Hispanic American, Women in art</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Mexican Americans</xtf:keyword> 
+  <xtf:keyword>religious art</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Hispanic American, Religious art</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Mexican Americans</xtf:keyword> 
+  <xtf:keyword>printmaking</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Hispanic American, printmaking</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Mexican Americans</xtf:keyword> 
+  <xtf:keyword>printmaking</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Hispanic American, printmaking</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Mexican Americans</xtf:keyword> 
+  <xtf:keyword>assemblage (art)</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Hispanic American, Assemblage</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>Mexican Americans</xtf:keyword> 
+  <xtf:keyword>altars</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Hispanic American, Altars</xtf:group> 
+</xtf:mapping>
+
+<xtf:mapping>
+  <xtf:keyword>rancho</xtf:keyword> 
+  <xtf:group>Hispanic Americans, Rancho</xtf:group> 
+  </xtf:mapping>
+
+ <xtf:mapping>
+  <xtf:keyword>little saigon</xtf:keyword> 
+  <xtf:group>Asian Americans, Little Saigon</xtf:group> 
+  </xtf:mapping>
+
+ <xtf:mapping>
+  <xtf:keyword>californio</xtf:keyword> 
+  <xtf:group>Hispanic Americans, Californios</xtf:group> 
+  </xtf:mapping>
+
+ <xtf:mapping>
+  <xtf:keyword>californios</xtf:keyword> 
+  <xtf:group>Hispanic Americans, Californios</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>chinese american</xtf:keyword> 
+  <xtf:keyword>tobacco free project</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Ethnic Tobacco Education Networks, Chinese Americans</xtf:group> 
+ </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>pacific islander</xtf:keyword> 
+  <xtf:keyword>tobacco education</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Ethnic Tobacco Education Networks, Pacific Islanders</xtf:group> 
+ </xtf:mapping>
+
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>japanese american</xtf:keyword> 
+  <xtf:keyword>tobacco free project</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Ethnic Tobacco Education Networks, Japanese Americans</xtf:group> 
+ </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>african american</xtf:keyword> 
+  <xtf:keyword>tobacco free project</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Tobacco Free Project, African Americans</xtf:group> 
+ </xtf:mapping>
+
+<xtf:mapping>
+ <xtf:join operator="and">
+  <xtf:keyword>hispanic american</xtf:keyword> 
+  <xtf:keyword>tobacco free project</xtf:keyword> 
+  </xtf:join>
+  <xtf:group>Tobacco Free Project, Hispanic Americans</xtf:group> 
+ </xtf:mapping>
+
+    </xtf:keyword-map>
+    
+    <!-- ethBrowse Subject Mapping -->
+    
+    <xtf:subject-map type="ethBrowse">
+
+
+
+  <xtf:mapping>
+            <xtf:subject>Central Avenue (Los Angeles, Calif.)</xtf:subject>
+            <xtf:group>African Americans, Central Avenue Sounds</xtf:group>
+        </xtf:mapping>
+
+        <xtf:mapping>
+            <xtf:subject>african american children</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american men</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american neighborhoods</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american teenagers</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american women--california</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american women-interviews</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans california</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california-history</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--societies, etc</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>blacks</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>afro-americans</xtf:subject>
+            <xtf:group>African Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Hawkins, Augustus F</xtf:subject>
+            <xtf:group>Hawkins, Augustus F</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Bunche, Ralph J. (Ralph Johnson), 1904-1971</xtf:subject>
+            <xtf:group>Bunche, Ralph</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>simon rodia's towers (los angeles, calif.)</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Watts (Los Angeles, Calif.)</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts neighborhood center (los angeles, calif.)</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts riot, los angeles, calif., 1965</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts towers arts center (los angeles, calif.)</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts riot, los angeles, calif., 1965</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american school children--california--los angeles region</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american women--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california--los angeles county</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--homes and haunts--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--education--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american college students--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american history month--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--housing--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--medical care--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--recreation--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--segregation--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california--oakland</xtf:subject>
+            <xtf:group>African Americans, San Francisco Bay Area</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans-california-richmond</xtf:subject>
+            <xtf:group>African Americans, San Francisco Bay Area</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california--alameda county</xtf:subject>
+            <xtf:group>African Americans, San Francisco Bay Area</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california--san francisco bay area</xtf:subject>
+            <xtf:group>African Americans, San Francisco Bay Area</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans in the san francisco bay area</xtf:subject>
+            <xtf:group>African Americans, San Francisco Bay Area</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american college students-california berkeley</xtf:subject>
+            <xtf:group>African Americans, San Francisco Bay Area</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american civil rights workers</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american civil rights workers--mississippi</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american civil rights workers--southern states</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american mothers--civil rights</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights--alabama--birmingham</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights--congresses</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights--societies, etc</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights--societies, etc.--congresses</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--civil rights--southern states</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>black panther party</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>black panthers</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american political activists</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pickets, protests, rallies and strikes</xtf:subject>
+            <xtf:group>African Americans, Civil Rights</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>African American politicians</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american politicians--california--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american politicians--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american actors</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american air pilots--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american artists</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american athletes</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american baseball players</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american basketball players</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american bishops</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american boxers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american business enterprises</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american chemists--california--los angeles--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american chemists-washington (d.c.)-interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american clergy</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american college athletes--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american comedians</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american composers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american dancers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american dramatists</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american economists california interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american educators--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american entertainers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american evangelists--california</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american fire fighters--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american football players</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american journalists</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american judges</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american judges--california--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american lawyers--california--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american legislators</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american mayors--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american musicians</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american musicians, interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american police--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american scholars</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american singers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american soldiers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american soldiers--england--social conditions</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american sound recording executives and producers</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american teachers--interviews</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african american tennis players</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans in motion pictures</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans in the Professionss</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--education</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--employment</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--employment--california--los angeles</xtf:subject>
+            <xtf:group>African Americans, Professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>los angeles riot, los angeles, california, 1992</xtf:subject>
+            <xtf:group>African Americans, Los Angeles Riots, 1992</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--california--social conditions</xtf:subject>
+            <xtf:group>African Americans, Social conditions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--economic conditions</xtf:subject>
+            <xtf:group>African Americans, Social conditions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--social conditions</xtf:subject>
+            <xtf:group>African Americans, Social conditions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>blacks--africa--social conditions</xtf:subject>
+            <xtf:group>African Americans, Social conditions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>african americans--employment</xtf:subject>
+            <xtf:group>African Americans, Social conditions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>searches and seizures--california--los angeles county</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>simon rodia's towers (los angeles, calif.)</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Watts (Los Angeles, Calif.)</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts neighborhood center (los angeles, calif.)</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts riot, los angeles, calif., 1965</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts towers arts center (los angeles, calif.)</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>watts riot, los angeles, calif., 1965</xtf:subject>
+            <xtf:group>African Americans, Watts Neighborhood</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>buddhism</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>buddhism--customs and practices</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>buddhism--rites and ceremonies</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>buddhist monks</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>buddhist nuns</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>buddhist shrines</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>shinto shrines</xtf:subject>
+            <xtf:group>Asian Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodia--description and travel</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodian americans</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodian americans--california--personal narratives</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodian americans--california--santa ana--statistics</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodian americans--services for--california--santa ana</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodians--california</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodians--california--personal narratives</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cambodians--united states</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>political refugees--cambodia</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees, cambodia</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--cambodia</xtf:subject>
+            <xtf:group>Cambodian Americans</xtf:group>
+        </xtf:mapping>
+
+<xtf:mapping>
+            <xtf:subject>chinatown (san francisco, calif.)--photographs</xtf:subject>
+            <xtf:group>Chinese Americans, Chinatown (San Francisco, CA) </xtf:group>
+        </xtf:mapping>
+
+<xtf:mapping>
+            <xtf:subject>chinatown (san francisco, calif.)--social life and customs</xtf:subject>
+            <xtf:group>Chinese Americans, Chinatown (San Francisco, CA)</xtf:group>
+        </xtf:mapping>
+
+<xtf:mapping>
+            <xtf:subject>Chinatown (San Francisco, Calif.)--Pictorial works</xtf:subject>
+            <xtf:group>Chinese Americans, Chinatown (San Francisco, CA)</xtf:group>
+        </xtf:mapping>
+
+
+
+     
+        <xtf:mapping>
+            <xtf:subject>miscellaneous selections : san francisco's chinatown-business and politics</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american business enterprises--california</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american business enterprises--california--san francisco bay area--telephone directories</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese-american business miscellany, [1900s]-1952</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american business miscellany, [ca. 1920s-1930s]</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american businesspeople--california</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american businesspeople--california--san francisco</xtf:subject>
+            <xtf:group>Chinese Americans, Business</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american children</xtf:subject>
+            <xtf:group> Chinese Americans, Children</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american children--california</xtf:subject>
+            <xtf:group> Chinese Americans, Children</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american children--california--san francisco--photographs </xtf:subject>
+            <xtf:group> Chinese Americans, Children</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american children--photographs</xtf:subject>
+            <xtf:group> Chinese Americans, Children</xtf:group>
+        </xtf:mapping>
+     
+        <xtf:mapping>
+            <xtf:subject>Chinese Americans, 1906 Earthquake Damage</xtf:subject>
+            <xtf:group>san francisco chinese community and earthquake damage</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>operas, chinese</xtf:subject>
+            <xtf:group>Chinese Americans, Opera and Theater</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>operas, chinese--performances--photographs</xtf:subject>
+            <xtf:group>Chinese Americans, Opera and Theater</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>collection of chinese theater images in california</xtf:subject>
+            <xtf:group>Chinese Americans, Opera and Theater</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>operas, chinese--china</xtf:subject>
+            <xtf:group>Chinese Americans, Opera and Theater</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>operas, chinese--performances</xtf:subject>
+            <xtf:group>Chinese Americans, Opera and Theater</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>operas, chinese--performances--photographs</xtf:subject>
+            <xtf:group>Chinese Americans, Opera and Theater</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--los angeles--social life and customs</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--san francisco--social conditions</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--san francisco--social life and customs </xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--san francisco--societies, etc </xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--san francisco--songs and music</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--los angeles--societies, etc</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese--california--san francisco--social life and customs</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--california--los angeles--religion</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese dragon in parade, san francisco</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american families--california</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american neighborhoods--california--los angeles</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--social life and customs</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--societies, etc</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american women--societies and clubs</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese new year</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese new year--california--los angeles</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--recreation--california--san francisco</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--religion</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--religion--congresses</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese americans--religious life</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese--funeral customs and rites--california</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese american families--california--san francisco</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese celebration, chinatown, stockton st., 1896</xtf:subject>
+            <xtf:group>Chinese Americans, Social Conditions and Customs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chinese and westward expansion</xtf:subject>
+            <xtf:group>Chinese Americans, Westward Expansion</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>miscellaneous selections : chinese and westward expansion</xtf:subject>
+            <xtf:group>Chinese Americans, Westward Expansion</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong (asian people)</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong (asian people)--california</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong (asian people)--folklore</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong (asian people)--thailand</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong (asian people)--united states</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong american children--education (elementary)--california, north--case studies</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans--california--folklore</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans--cultural assimilation</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans--food</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans--government policy--minnesota</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans--services for--minnesota</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hmong americans--social life and customs</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--hmong</xtf:subject>
+            <xtf:group>Hmong Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american art</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american business enterprises</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american children</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american children--california--los angeles--social conditions</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american children--portraits</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american dancers</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american families</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american families--portraits</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american men</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american men--portraits</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american neighborhoods--california--los angeles</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american newspapers</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american sculptors</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american women</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american women california interviews</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american women--portraits</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese american youth</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans history 20th century</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans in art</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--biography</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans-california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california, southern--social conditions</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans-california-interviews</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--los angeles</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--los angeles--politics and government--societies, etc</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--los angeles--religion</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--los angeles--social life and customs</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--los angeles--societies and clubs, etc</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--modesto</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--california--newspapers</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--civil rights--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--claims</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--education</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--employment</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--employment--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--employment--california, southern</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--history--20th century</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--housing--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--housing--california, southern</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--housing--california--burbank (los angeles county)</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans-interviews</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--legal status, laws, etc</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--legal status, laws, etc.--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--music</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--poetry</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--public welfare--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--rites and ceremonies</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--social conditions</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese california biography</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese farmers--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese teachers</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--california--terminal island</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--housing--california--terminal island</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--legal status, laws, etc.--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--press coverage--california</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--united states</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese--united states--history--20th century</xtf:subject>
+            <xtf:group>Japanese Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>arts--wyoming--heart mountain</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>concentration camps in art</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--evacuation and relocation, 1942-1945</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--evacuation and relocation, 1942-1945--education</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--evacuation and relocation, 1942-1945--poetry</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--reparations</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>japanese americans--wyoming--heart mountain</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>wood sculpture--wyoming--heart mountain</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>world war, 1939-1945--concentration camps</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>world war, 1939-1945--concentration camps--wyoming</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>world war, 1939-1945--japanese americans</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>world war, 1939-1945--reparations</xtf:subject>
+            <xtf:group>Japanese Americans, evacuation and relocation</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>korean americans--california</xtf:subject>
+            <xtf:group>Korean Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>korean americans--california--los angeles--newspapers</xtf:subject>
+            <xtf:group>Korean Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>korean americans--california--newspapers</xtf:subject>
+            <xtf:group>Korean Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>korean americans--california--politics and government</xtf:subject>
+            <xtf:group>Korean Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>laotian americans</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>laotian americans--california</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>laotian americans--services for</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>laotians</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>laotians--california</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>laotians--united states</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>political refugees--laos</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--laos</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--laos--social conditions</xtf:subject>
+            <xtf:group>Laotian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>philippine americans</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>filipino americans</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>filipino americans--california--anaheim</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>filipino americans-california-san joaquin county</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>filipino americans--music</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>filipino community of ventura county, inc</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>filipino community of ventura county, inc</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>James Earl Wood Photograph Collection Relating to Filipinos in California</xtf:subject>
+            <xtf:group>Filipino Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pacific islander americans</xtf:subject>
+            <xtf:group>Pacific Islander Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pacific islander americans--california--orange county</xtf:subject>
+            <xtf:group>Pacific Islander Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pacific islanders education california</xtf:subject>
+            <xtf:group>Pacific Islander Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>political refugees--legal status, laws, etc</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugee camps--china--hong kong--social conditions</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugee camps--philipines--bataan</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees and immigrants</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--california--orange county</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--government policy--united states</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--indochina</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--minnesota--minneapolis</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--minnesota--saint paul</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--missouri--saint louis--social conditions</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--pennsylvania--philadelphia</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--services for--united states</xtf:subject>
+            <xtf:group>Asian Americans, Refugees</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>asia, southeastern--social life and customs</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>iu mien (southeast asian people)</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>khmers asia, southeastern</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>khmers--thailand</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>khmu' (southeast asian people)--california</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>khmu' (southeast asian people)</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugee camps--asia, southeastern</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--asia, southeastern</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>southeast asian americans</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>southeast asians</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>southeast asians--california</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>southeast asians--california--san diego--social life and customs</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yao (southeast asian people)--california</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yao (southeast asian people)--folklore</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yao (southeast asian people)--laos</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yao (southeast asian people)--social life and customs</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yao (southeast asian people)--united states--cultural assimilation</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yao (southeast asian people)--united states--food</xtf:subject>
+            <xtf:group>Southeast Asian Americans</xtf:group>
+        </xtf:mapping>
+
+
+
+
+
+
+       <xtf:mapping>
+            <xtf:subject>Little Saigon (Westminster, Calif.)</xtf:subject>
+            <xtf:group>Vietnamese Americans, Little Saigon</xtf:group>
+        </xtf:mapping>
+
+      <xtf:mapping>
+            <xtf:subject>little saigon</xtf:subject>
+            <xtf:group>Vietnamese Americans, Little Saigon</xtf:group>
+        </xtf:mapping>
+
+
+
+        <xtf:mapping>
+            <xtf:subject>political refugees--vietnam</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugee children--vietnam--crimes against</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees, vietnamese</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--vietnam</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--vietnamese</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>refugees--vietnam--social conditions</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnam--description and travel</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese american art--california--orange county--exhibitions</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese american art--exhibitions</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese american business enterprises--california--westminster</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--california--attitudes</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--california--orange county</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--california--westminster--politics and government--21st century</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--commerce--california--westminster</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--health and hygiene--california--orange county</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--medical care--california--orange county</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese americans--services for</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>vietnamese--united states</xtf:subject>
+            <xtf:group>Vietnamese Americans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>alien labor, mexican</xtf:subject>
+            <xtf:group>Hispanic Americans, Migrant workers</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>alien labor, mexican--california</xtf:subject>
+            <xtf:group>Hispanic Americans, Migrant workers</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>alien labor, mexican--california--los angeles region</xtf:subject>
+            <xtf:group>Hispanic Americans, Migrant workers</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>alien labor, mexican-imperial valley (calif. and mexico)</xtf:subject>
+            <xtf:group>Hispanic Americans, Migrant workers</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>alien labor, salvadoran--california</xtf:subject>
+            <xtf:group>Hispanic Americans, Migrant workers</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>art, mexican</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>lithography, mexican</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican film posters</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexicans in art</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican wrestling masks</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american art</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american artists</xtf:subject>
+            <xtf:group>Mexican American Art</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>xicanindio art</xtf:subject>
+            <xtf:group>Mexican American Art, Xicanindio</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>tortilla art</xtf:subject>
+            <xtf:group>Mexican American Art, Tortilla</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pinto art</xtf:subject>
+            <xtf:group>Mexican American Art, Pinto</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>bandidos</xtf:subject>
+            <xtf:group>Hispanic Americans, Bandidos</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>barrios</xtf:subject>
+            <xtf:group>Hispanic Americans, Barrios</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>guadalupanismo</xtf:subject>
+            <xtf:group>Hispanic Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>guadalupe, our lady of</xtf:subject>
+            <xtf:group>Hispanic Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american catholics</xtf:subject>
+            <xtf:group>Hispanic Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>ojo de dios (talisman)</xtf:subject>
+            <xtf:group>Hispanic Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--religion</xtf:subject>
+            <xtf:group>Hispanic Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--rites and ceremonies</xtf:subject>
+            <xtf:group>Hispanic Americans, Beliefs</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Chavez, Cesar, 1927-</xtf:subject>
+            <xtf:group>Chavez, Cesar</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Chávez, Cesar, 1927-1993</xtf:subject>
+            <xtf:group>Chavez, Cesar</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>border patrols</xtf:subject>
+            <xtf:group>Hispanic Americans, Border Patrol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>border patrols--mexican-american border region</xtf:subject>
+            <xtf:group>Hispanic Americans, Border Patrol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>border patrols--mexico</xtf:subject>
+            <xtf:group>Hispanic Americans, Border Patrol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>border patrols--united states</xtf:subject>
+            <xtf:group>Hispanic Americans, Border Patrol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american border region</xtf:subject>
+            <xtf:group>Hispanic Americans, Border Patrol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chicano movement</xtf:subject>
+            <xtf:group>Hispanic Americans, Chicano Movement</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>m.e.ch.a</xtf:subject>
+            <xtf:group>Hispanic Americans, Chicano Movement</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cholas</xtf:subject>
+            <xtf:group>Hispanic Americans, Cholas</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cholos</xtf:subject>
+            <xtf:group>Hispanic Americans, Cholos</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>ballet folklorico</xtf:subject>
+            <xtf:group>Hispanic Americans, Dance</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>folk dancing, mexican</xtf:subject>
+            <xtf:group>Hispanic Americans, Dance</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>salsa (music)</xtf:subject>
+            <xtf:group>Hispanic Americans, Dance</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hispanic americans education</xtf:subject>
+            <xtf:group>Hispanic Americans, Education</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cinco de mayo (mexican holiday)</xtf:subject>
+            <xtf:group>Hispanic Americans, Holidays</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>día de la raza (mexican holiday)</xtf:subject>
+            <xtf:group>Hispanic Americans, Holidays</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>día de la virgen</xtf:subject>
+            <xtf:group>Hispanic Americans, Holidays</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>día de los muertos</xtf:subject>
+            <xtf:group>Hispanic Americans, Holidays</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>día de los muertos celebrations</xtf:subject>
+            <xtf:group>Hispanic Americans, Holidays</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pan de muerto</xtf:subject>
+            <xtf:group>Hispanic Americans, Holidays</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mestizaje</xtf:subject>
+            <xtf:group>Hispanic Americans, Mestizaje</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>sleepy lagoon</xtf:subject>
+            <xtf:group>Hispanic Americans, Sleepy Lagoon Trial</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>sleepy lagoon defense committee</xtf:subject>
+            <xtf:group>Hispanic Americans, Sleepy Lagoon Trial</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>sleepy lagoon trial, los angeles, 1942-1943</xtf:subject>
+            <xtf:group>Hispanic Americans, Sleepy Lagoon Trial</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>sleepy lagoon trial, los angeles, 1942-1943--drama</xtf:subject>
+            <xtf:group>Hispanic Americans, Sleepy Lagoon Trial</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>sleepy lagoon defendants</xtf:subject>
+            <xtf:group>Hispanic Americans, Sleepy Lagoon Trial</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans</xtf:subject>
+            <xtf:group>Mexican Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american women</xtf:subject>
+            <xtf:group>Mexican Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--press coverage</xtf:subject>
+            <xtf:group>Mexican Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--societies, etc</xtf:subject>
+            <xtf:group>Mexican Americans, General</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--los angeles</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american children--education--california--los angeles</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american college students--california--east los angeles--societies, etc</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american neighborhoods--california--los angeles</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--housing--california--los angeles</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american women--california--los angeles</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american families--california--los angeles region</xtf:subject>
+            <xtf:group>Mexican Americans, Los Angeles</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american political activists</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american politicians</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american politicians--california--los angeles county</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american radicals</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--los angeles region--politics and government</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--los angeles--politics and government</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--los angeles--politics and government--societies, etc</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--los angeles--public opinion</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--politics and government</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--california--politics and government--societies, etc</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican americans--southwest, new--politics and government</xtf:subject>
+            <xtf:group>Mexican Americans, political activity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american actors</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american agricultural laborers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american agricultural laborers--texas</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american authors</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american baseball players</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american boxers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american business enterprises</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american dancers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american dramatists</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american entertainers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american farmers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american musicians</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american poets</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american soldiers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american state legislators--california</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american teachers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american tennis players</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american journalists</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american migrant agricultural laborers</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican american police</xtf:subject>
+            <xtf:group>Mexican Americans, professions</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>independence day (mexico)</xtf:subject>
+            <xtf:group>Hispanic Americans, Mexican Independence Day</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexico-history-revolution, 1910-1920</xtf:subject>
+            <xtf:group>Hispanic Americans, Mexican Revolution, 1910-1920</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican war, 1846-1848</xtf:subject>
+            <xtf:group>Hispanic Americans, Mexican War, 1846-1848</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican war, 1846-1848</xtf:subject>
+            <xtf:group>Hispanic Americans, Mexican War, 1846-1848</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican war, 1846-1848 maps</xtf:subject>
+            <xtf:group>Hispanic Americans, Mexican War, 1846-1848</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mexican war,1846-1848 maps</xtf:subject>
+            <xtf:group>Hispanic Americans, Mexican War, 1846-1848</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pachucas</xtf:subject>
+            <xtf:group>Hispanic Americans, Pachucas</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pachucos</xtf:subject>
+            <xtf:group>Hispanic Americans, Pachucos</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>puerto ricans</xtf:subject>
+            <xtf:group>Hispanic Americans, Puerto Rico</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>puerto rico-history--nationalist insurrection, 1950</xtf:subject>
+            <xtf:group>Hispanic Americans, Puerto Rico</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>women-puerto rico</xtf:subject>
+            <xtf:group>Hispanic Americans, Puerto Rico</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>united farm workers</xtf:subject>
+            <xtf:group>Hispanic Americans, United Farm Workers</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>zoot suit (motion picture)</xtf:subject>
+            <xtf:group>Hispanic Americans, Zoot Suit Riots</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>zoot suit riots, los angeles, calif., 1943</xtf:subject>
+            <xtf:group>Hispanic Americans, Zoot Suit Riots</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>zoot suit riots, los angeles, calif., 1943--drama</xtf:subject>
+            <xtf:group>Hispanic Americans, Zoot Suit Riots</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>zoot suits</xtf:subject>
+            <xtf:group>Hispanic Americans, Zoot Suit Riots</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>american indian movement</xtf:subject>
+            <xtf:group>American Indian Movement</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aymara indians</xtf:subject>
+            <xtf:group>Native Americans, Aymara</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aztec calendar</xtf:subject>
+            <xtf:group>Native Americans, Aztec</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aztec dance</xtf:subject>
+            <xtf:group>Native Americans, Aztec</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aztecs</xtf:subject>
+            <xtf:group>Native Americans, Aztec</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aztlan</xtf:subject>
+            <xtf:group>Native Americans, Aztec</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aztec goddesses</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>aztec gods</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>coatlicue (aztec deity)</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>huitzilopochtli (aztec deity)</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mictlantecuhtli (aztec deity)</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>quetzalcoatl (aztec deity)</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>tezcatlipoca (aztec deity)</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>tlaloc (aztec deity)</xtf:subject>
+            <xtf:group>Native Americans, Aztec, deity</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cuna art</xtf:subject>
+            <xtf:group>Native Americans, Cuna</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cuna indians</xtf:subject>
+            <xtf:group>Native Americans, Cuna</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cuna textile fabrics</xtf:subject>
+            <xtf:group>Native Americans, Cuna</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>huichol art</xtf:subject>
+            <xtf:group>Native Americans, Huichol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>huichol embroidery</xtf:subject>
+            <xtf:group>Native Americans, Huichol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>huichol textile fabrics</xtf:subject>
+            <xtf:group>Native Americans, Huichol</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of mexico</xtf:subject>
+            <xtf:group>Native Americans, Indians of Mexico</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of mexico-languages-writing</xtf:subject>
+            <xtf:group>Native Americans, Indians of Mexico</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians warfare california</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america southwest, new-maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america alaska</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california history 19th century sources</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california plumas national forest region maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california social life and customs</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california southern maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america california, northern maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america nevada maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america wars california</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america--california</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north americacalifornia maps</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians of north america--california--pictorial works</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>indians warfare california la purislma mission</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>native americans</xtf:subject>
+            <xtf:group>Native Americans, Indians of North America</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mayan languages-writing</xtf:subject>
+            <xtf:group>Native Americans, Mayans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mayans</xtf:subject>
+            <xtf:group>Native Americans, Mayans</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>mohawk indians</xtf:subject>
+            <xtf:group>Native Americans, Mohawk</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pomo indians</xtf:subject>
+            <xtf:group>Native Americans, Pomo</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pomo languages california maps</xtf:subject>
+            <xtf:group>Native Americans, Pomo</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>pomo indians</xtf:subject>
+            <xtf:group>Native Americans, Pomo</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yaqui indians</xtf:subject>
+            <xtf:group>Native Americans, Yaqui</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yuma indians--california</xtf:subject>
+            <xtf:group>Native Americans, Yuma</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>Sierra Miwok</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>coast miwok</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>miwok indians</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>miwok indians--california--yosemite valley--pictorial works</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>miwok indians--dances</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>miwok indians--structures</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>miwok languages</xtf:subject>
+            <xtf:group>Native Americans, Miwok</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>hupa</xtf:subject>
+            <xtf:group>Native Americans, Hupa</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>1a. tolowa</xtf:subject>
+            <xtf:group>Native Americans, Tolowa</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>tolowa</xtf:subject>
+            <xtf:group>Native Americans, Tolowa</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>yokuts</xtf:subject>
+            <xtf:group>Native Americans, Yokuts</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>cahuilla</xtf:subject>
+            <xtf:group>Native Americans, Cahuilla</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumash</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumashan</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumash data analysis</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumash field notes</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumash field photographs</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumash field school</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>chumash indians---antiquities</xtf:subject>
+            <xtf:group>Native Americans, Chumash</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>achomawi indians--california--pictorial works</xtf:subject>
+            <xtf:group>Native Americans, Achumawi</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>achomawi indians--california--research</xtf:subject>
+            <xtf:group>Native Americans, Aachumawi</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>achumawi</xtf:subject>
+            <xtf:group>Native Americans, Achumawi</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>atsugewi</xtf:subject>
+            <xtf:group>Native Americans, Atsugewi</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>6a. ko'-no-me'-ho (konomihu)</xtf:subject>
+            <xtf:group>Native Americans, Konomihu</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>23ee-ll. kah-we-sik-tem (cahuilla)</xtf:subject>
+            <xtf:group>Native Americans, Cahuilla</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>22o. cho-ki'-min-nah (chukamina)</xtf:subject>
+            <xtf:group>Native Americans, Chukamina</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>23a. northern piute</xtf:subject>
+            <xtf:group>Native Americans, Piute</xtf:group>
+        </xtf:mapping>
+        <xtf:mapping>
+            <xtf:subject>25b. tu'-bot-a-lob'-e-la (tubatulabal)</xtf:subject>
+            <xtf:group>Native Americans, Tubatulabal</xtf:group>
+        </xtf:mapping>
+   <xtf:mapping>
+            <xtf:subject>a-katch'-mah or luiseno</xtf:subject>
+            <xtf:group>Native Americans, Luiseno</xtf:group>
+        </xtf:mapping>
+   <xtf:mapping>
+            <xtf:subject>luiseno</xtf:subject>
+            <xtf:group>Native Americans, Luiseno</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>24a. tongva (gabrielino)</xtf:subject>
+            <xtf:group>Native Americans, Gabrielino</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>s. olhonean stock (costanoan)</xtf:subject>
+            <xtf:group>Native Americans, Costanoan</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>yuki</xtf:subject>
+            <xtf:group>Native Americans, Yuki</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>8b. kah-rah'-ko-hah (karok)</xtf:subject>
+            <xtf:group>Native Americans, Karok</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>karok</xtf:subject>
+            <xtf:group>Native Americans, Karok</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>yurok</xtf:subject>
+            <xtf:group>Native Americans, Yurok</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>yurok indians--legends</xtf:subject>
+            <xtf:group>Native Americans, Yurok</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>yurok indians--religion and mythology</xtf:subject>
+            <xtf:group>Native Americans, Yurok</xtf:group>
+        </xtf:mapping>
+
+
+ <xtf:mapping>
+            <xtf:subject>kumeyaay</xtf:subject>
+            <xtf:group>Native Americans, Kumeyaay</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>yahi</xtf:subject>
+            <xtf:group>Native Americans, Yahi</xtf:group>
+        </xtf:mapping>
+
+
+ <xtf:mapping>
+            <xtf:subject>650 0 paiute indians--california--pictorial works</xtf:subject>
+            <xtf:group>Native Americans, Paiute</xtf:group>
+        </xtf:mapping>
+ 
+ <xtf:mapping>
+            <xtf:subject>northern paiute</xtf:subject>
+            <xtf:group>Native Americans, Paiute</xtf:group>
+        </xtf:mapping>
+ 
+ <xtf:mapping>
+            <xtf:subject>paiute indians</xtf:subject>
+            <xtf:group>Native Americans, Paiute</xtf:group>
+        </xtf:mapping>
+ 
+ <xtf:mapping>
+            <xtf:subject>paiute indians--pictorial works</xtf:subject>
+            <xtf:group>Native Americans, Paiute</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>yana</xtf:subject>
+            <xtf:group>Native Americans, Yana</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>wiyot</xtf:subject>
+            <xtf:group>Native Americans, Wiyot</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>c. soolahteluk stock (wiyot)</xtf:subject>
+            <xtf:group>Native Americans, Wiyot</xtf:group>
+        </xtf:mapping>
+ 
+ <xtf:mapping>
+            <xtf:subject>tolowa</xtf:subject>
+            <xtf:group>Native Americans, Tolowa</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>unidentified tolowa individuals</xtf:subject>
+            <xtf:group>Native Americans, Tolowa</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>1a. tolowa</xtf:subject>
+            <xtf:group>Native Americans, Tolowa</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>14a. mohave</xtf:subject>
+            <xtf:group>Native Americans, Mohave</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>mohave</xtf:subject>
+            <xtf:group>Native Americans, Mohave</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>ohlone</xtf:subject>
+            <xtf:group>Native Americans, Ohlone</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>ohlone indians</xtf:subject>
+            <xtf:group>Native Americans, Ohlone</xtf:group>
+        </xtf:mapping>
+
+
+ <xtf:mapping>
+            <xtf:subject>panamint (koso)</xtf:subject>
+            <xtf:group>Native Americans, Panamint</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>panamints</xtf:subject>
+            <xtf:group>Native Americans, Panamint</xtf:group>
+        </xtf:mapping>
+
+
+ <xtf:mapping>
+            <xtf:subject>r. ennesen stock (salinan)</xtf:subject>
+            <xtf:group>Native Americans, Salinan</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>salinan</xtf:subject>
+            <xtf:group>Native Americans, Salinan</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>maidu</xtf:subject>
+            <xtf:group>Native Americans, Maidu</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>wintun</xtf:subject>
+            <xtf:group>Native Americans, Wintun</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>sinkyone</xtf:subject>
+            <xtf:group>Native Americans, Sinkyone Indians</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>nomlaki</xtf:subject>
+            <xtf:group>Native Americans, Nomlaki</xtf:group>
+        </xtf:mapping>
+
+ <xtf:mapping>
+            <xtf:subject>1d. 'hwil'-kut (whilkut)</xtf:subject>
+            <xtf:group>Native Americans, Whilkut</xtf:group>
+        </xtf:mapping>
+
+
+ <xtf:mapping>
+            <xtf:subject>e. southern division (wappo)</xtf:subject>
+            <xtf:group>Native Americans, Wappo</xtf:group>
+        </xtf:mapping>
+ <xtf:mapping>
+            <xtf:subject>wappo</xtf:subject>
+            <xtf:group>Native Americans, Wappo</xtf:group>
+        </xtf:mapping>
+
+
+
+ <xtf:mapping>
+            <xtf:subject>klamath river tribes</xtf:subject>
+            <xtf:group>Native Americans, Klamath River Tribes</xtf:group>
+        </xtf:mapping>
+
+
+
+
+
+        <xtf:mapping>
+            <xtf:subject>pre-columbian</xtf:subject>
+            <xtf:group>Native Americans, Pre-Columbian</xtf:group>
+        </xtf:mapping>
+
+
+
+
+<xtf:mapping>
+  <xtf:subject>Lee, Chol Soo</xtf:subject> 
+  <xtf:group>Asian Americans, Chol Soo Lee Case</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+  <xtf:subject>chicanos</xtf:subject> 
+  <xtf:group>Hispanic American, Chicanos</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+  <xtf:subject>chicanas</xtf:subject> 
+  <xtf:group>Hispanic American, Chicanas</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+  <xtf:subject>chicano art</xtf:subject> 
+  <xtf:group>Hispanic American, Chicano art</xtf:group> 
+  </xtf:mapping>
+
+
+<xtf:mapping>
+  <xtf:subject>chicana art</xtf:subject> 
+  <xtf:group>Hispanic American, Chicana art</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+  <xtf:subject>mexican film posters</xtf:subject> 
+  <xtf:group>Hispanic American, Mexican film posters</xtf:group> 
+  </xtf:mapping>
+
+<xtf:mapping>
+  <xtf:subject>mexican film posters</xtf:subject> 
+  <xtf:group>Hispanic American, Mexican film posters</xtf:group> 
+  </xtf:mapping>
+
+
+
+    </xtf:subject-map>
+</xtf:maps>

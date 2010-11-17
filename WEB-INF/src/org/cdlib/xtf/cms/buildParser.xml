@@ -1,0 +1,17 @@
+<project name="CMS Parser" default="parser" basedir=".">
+
+  <description>
+      CMS Parser
+  </description>
+
+  <!-- set global properties for this build -->
+  <property name="lib"     location="lib"/>
+
+  <target name="parser" description="compile the CMS parser">
+    <javacc target="CMSParser.jj"
+            javacchome="../../../../../lib"/>
+  </target>
+
+</project>
+
+

@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+
+<brand owner="eric.satzman@ucop.edu" href="default.xml" multi-use="default-breadcrumb">
+  <links>
+    <!-- link to the entry .css file; CHANGE THIS TO YOUR PROJECT'S ENTRY .css FILE, which includes the default.css -->
+    <link rel="stylesheet" href="/default/css/default.css" type="text/css" xmlns="http://www.w3.org/1999/xhtml" />
+    <link rel="stylesheet" href="/css/oac.css" type="text/css"/>
+	<link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="/default/css/print.css" type="text/css" media="print" />
+    <!-- link to the .js files -->
+    <script src="/default/js/nifty.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+    <script src="/js/nifty_config.js" type="text/javascript" xmlns="http://www.w3.org/1999/xhtml" />
+    <script src="/__utm.js" type="text/javascript"></script>
+  </links>
+  
+  <header>
+
+
+<!-- BEGIN PAGE CLASS -->
+<div class="brand-oac">
+
+<!-- BEGIN TOP HEADER -->
+               
+
+               <div class="top-header">
+                  
+                  <div class="top-header-left">
+                     <a href="/" target="_top">
+                        <img class="logo" src="/images/logos/oac_logo.gif" width="194" height="57"
+                             border="0"
+                             alt="Online Archive of California"
+                             title="Online Archive of California"></img>
+                     </a>
+
+                  </div>
+                  
+                  <div class="top-header-right">
+                                          
+                     <div class="site-search">
+                        
+                        <div class="search-oac">Search OAC</div>                        
+                        <form xmlns:mets="http://www.loc.gov/METS/" action="/search" target="_top" method="GET"
+                              class="search-form"
+                              name="search-form">
+                           <input type="hidden" name="developer" value="local"></input>
+                           <table>
+                              <tr>
+                                 <td>
+                                    <input name="query" type="text" class="text-field" size="30" maxlength="80"></input>
+                                 </td>
+                                 <td>
+                                    <input type="image" src="/images/buttons/go.gif" class="search-button" value="Search"
+                                           alt="Go"
+                                           title="Go"></input>
+                                 </td>
+                              </tr>
+                           </table>
+                        </form>
+
+                        <div class="more-search-options"></div>                        
+                     </div>
+                  </div>                  
+               </div>
+               
+               <!-- END TOP HEADER -->
+               
+               <!-- BEGIN TOP NAVIGATION -->
+               
+               <!--/findaid/local/htdocs/includes/topnav.html-->
+               
+			   
+			   <div class="topnav">
+                  
+                  <div class="topnav-inner">
+
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/" target="_top">Home</a>
+                     </span>
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/institutions/" target="_top">Browse Institutions</a>
+                     </span>
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/titles/" target="_top">Browse Collections</a>
+                     </span>
+                      <span class="topnav-item">
+                        <a class="topnav-off" href="/map/" target="_top">Browse Map</a>
+                     </span>                    
+					 <span class="topnav-item">
+                        <a class="topnav-off" href="/about/" target="_top">About OAC</a>
+                     </span>
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/help/" target="_top">Help</a>
+                     </span>
+                     <span class="topnav-item">
+
+                        <a class="topnav-off" href="/contact/" target="_top">Contact Us</a>
+                     </span>
+                  </div>
+                  
+               </div>
+               
+               <!-- END TOP NAVIGATION -->
+
+</div>
+<!-- END PAGE CLASS -->
+
+
+  </header>
+  
+  <header.dynaxml.header>
+    <!-- links should be target="_top" for the framed pages -->
+    <!-- <a href="http://yourproject/home.html" target="_top"><img src="/default/images/header.gif" border="0"/></a> -->
+
+
+
+<!-- BEGIN PAGE CLASS -->
+<div class="brand-oac">
+
+<!-- BEGIN TOP HEADER -->
+               
+
+               <div class="top-header">
+                  
+                  <div class="top-header-left">
+                     <a href="/" target="_top">
+                        <img class="logo" src="/images/logos/oac_logo.gif" width="194" height="57"
+                             border="0"
+                             alt="Online Archive of California"
+                             title="Online Archive of California"></img>
+                     </a>
+
+                  </div>
+                  
+                  <div class="top-header-right">
+                                          
+                     <div class="site-search">
+                        
+                        <div class="search-oac">Search OAC</div>                        
+                        <form xmlns:mets="http://www.loc.gov/METS/" action="/search" target="_top" method="GET"
+                              class="search-form"
+                              name="search-form">
+                           <input type="hidden" name="developer" value="local"></input>
+                           <table>
+                              <tr>
+                                 <td>
+                                    <input name="query" type="text" class="text-field" size="30" maxlength="80"></input>
+                                 </td>
+                                 <td>
+                                    <input type="image" src="/images/buttons/go.gif" class="search-button" value="Search"
+                                           alt="Go"
+                                           title="Go"></input>
+                                 </td>
+                              </tr>
+                           </table>
+                        </form>
+
+                        <div class="more-search-options"></div>                        
+                     </div>
+                  </div>                  
+               </div>
+               
+               <!-- END TOP HEADER -->
+               
+               <!-- BEGIN TOP NAVIGATION -->
+               
+               <!--/findaid/local/htdocs/includes/topnav.html-->
+               
+			   
+			   <div class="topnav">
+                  
+                  <div class="topnav-inner">
+
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/" target="_top">Home</a>
+                     </span>
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/institutions/" target="_top">Browse Institutions</a>
+                     </span>
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/titles/" target="_top">Browse Collections</a>
+                     </span>
+                      <span class="topnav-item">
+                        <a class="topnav-off" href="/map/" target="_top">Browse Map</a>
+                     </span> 
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/about/" target="_top">About OAC</a>
+                     </span>
+                     <span class="topnav-item">
+                        <a class="topnav-off" href="/help/" target="_top">Help</a>
+                     </span>
+                     <span class="topnav-item">
+
+                        <a class="topnav-off" href="/contact/" target="_top">Contact Us</a>
+                     </span>
+                  </div>
+                  
+               </div>
+               
+               <!-- END TOP NAVIGATION -->
+
+</div>
+<!-- END PAGE CLASS -->
+
+
+  </header.dynaxml.header>
+  
+  <footer>
+    <!-- links should be target="_top" for the framed pages -->
+
+				
+				<!-- BEGIN PAGE CLASS -->
+				<div class="brand-oac">
+ 
+
+                  
+                  <!--/findaid/local/htdocs/includes/footer.html-->
+                  <div class="footer">
+                     
+                     <div class="footer-left">
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/">Home</a>
+                        </span>
+                        
+						<span class="pipe">|</span>
+                        <span class="footer-item">
+
+                           <a class="footer-link" target="_top" href="/institutions/">Browse Institutions</a>
+                        </span>
+                        
+						<span class="pipe">|</span>
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/titles/">Browse Collections</a>
+                        </span>
+                        <span class="pipe">|</span>
+
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/map/">Browse Map</a>
+                        </span>
+                        <span class="pipe">|</span>
+
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/about/">About OAC</a>
+                        </span>
+                        <span class="pipe">|</span>
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/help/">Help</a>
+                        </span>
+
+                        <span class="pipe">|</span>
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/contact/">Contact Us</a>
+                        </span>
+						
+                        <span class="pipe">|</span>
+                        <span class="footer-item">
+                           <a class="footer-link" target="_top" href="/terms.html">Terms of Use</a>
+                        </span>						
+ 
+                     <div class="footer-copyright">The Online Archive of California is an initiative of the California Digital Library.</div>                     
+					 <div class="footer-copyright">Copyright &#169; 2009 The Regents of The University of California</div>  
+					 </div>
+                     
+                     
+
+                     
+                  </div>
+                 
+			 
+				 
+				  </div>
+				  <!-- END PAGE CLASS -->	  
+  </footer>
+<!-- END FOOTER -->
+
+  <print.footer>
+<div id="printable-footer" xmlns="http://www.w3.org/1999/xhtml">
+<a href="http://oac.cdlib.org/"><img border="0" src="/images/logos/oac-logo-sm.gif" width="120" height="35" alt="Online Archive of California" title="Online Archive of California" /></a>
+</div>
+  </print.footer>
+
+  
+  <!-- navigation arrows on the left-side of the object views --> 
+  <arrow.up src="/images/misc/blue_arrow_up.gif" width="9" height="11" border="0" />
+  <arrow.dn src="/images/misc/blue_arrow_dn.gif" width="11" height="9" border="0" />
+
+  <!-- the icon that says "Printable Version" -->
+  <print.img src="/default/images/printable_version.gif" width="110" height="16" />
+  
+  <!-- the search button  for searching within a TEI -->
+  <search.img>
+<input src="/images/buttons/search.gif" class="search-button" alt="Search" title="Search" type="image" />
+  </search.img>
+
+  <!-- previous and next buttons for jumping from hit to hit after searching within a TEI -->
+  <in.prev src="/default/images/b_inprev.gif" border="0" alt="previous hit" />
+  <in.next src="/default/images/b_innext.gif" border="0" alt="next hit" />
+
+</brand>

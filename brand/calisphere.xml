@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+
+<brand owner="eric.satzman@ucop.edu" href="calisphere.xml" multi-use="last search">
+<!-- LINKS -->
+  <links>
+  <link rel="shortcut icon" href="http://www.calisphere.universityofcalifornia.edu/favicon.ico" />
+ <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="http://www.calisphere.universityofcalifornia.edu/css/calisphere-entry.css" type="text/css" />
+<link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="http://www.calisphere.universityofcalifornia.edu/css/print.css" type="text/css" media="print" />
+    <script src="http://www.calisphere.universityofcalifornia.edu/js/calisphere.js" xmlns="http://www.w3.org/1999/xhtml" type="text/JavaScript" />
+    <script type="text/javascript" src="/default/js/nifty.js" xmlns="http://www.w3.org/1999/xhtml"/>
+  </links>
+
+<!-- HEADER -->
+  
+  <header>
+    <div id="header" xmlns="http://www.w3.org/1999/xhtml">
+      <div id="masthead">
+        <a href="http://www.calisphere.universityofcalifornia.edu/">
+          <img class="header-logo" src="http://www.calisphere.universityofcalifornia.edu/images/logos/calisphere_logo.gif" width="137" height="29" border="0" alt="Calisphere" title="Calisphere"/>
+        </a>
+        <img class="header-uc" src="http://www.calisphere.universityofcalifornia.edu/images/headers/uc2.gif" width="119" height="13" alt="University of California" title="University of California"/>
+      </div>
+      <div id="site-nav">
+        <a href="http://www.calisphere.universityofcalifornia.edu/browse-a-z.html">browse a-z</a>
+        <span class="bullet">.</span>
+        <a href="http://www.calisphere.universityofcalifornia.edu/about-cs.html">about</a>
+        <span class="bullet">.</span>
+        <a href="http://www.calisphere.universityofcalifornia.edu/contact-us-faq.html">contact us</a>
+      </div>
+      <br clear="all"/>
+    </div>
+  </header>
+
+  <header.dynaxml.header>
+    <div id="header" xmlns="http://www.w3.org/1999/xhtml">
+      <div id="masthead">
+        <a href="http://www.calisphere.universityofcalifornia.edu/" target="_top">
+          <img class="header-logo" src="http://www.calisphere.universityofcalifornia.edu/images/logos/calisphere_logo.gif" width="137" height="29" border="0" alt="Calisphere" title="Calisphere"/>
+        </a>
+        <img class="header-uc" src="http://www.calisphere.universityofcalifornia.edu/images/headers/uc2.gif" width="119" height="13" alt="University of California" title="University of California"/>
+      </div>
+      <div id="site-nav">
+       <a href="http://www.calisphere.universityofcalifornia.edu/browse-a-z.html" target="_top">browse a-z</a>
+        <span class="bullet">.</span>
+        <a href="http://www.calisphere.universityofcalifornia.edu/about-cs.html" target="_top">about</a>
+        <span class="bullet">.</span>
+        <a href="http://www.calisphere.universityofcalifornia.edu/contact-us-faq.html" target="_top">contact us</a>
+      </div>
+      <br clear="all"/>
+    </div>
+  </header.dynaxml.header>
+
+  <!-- FOOTER -->
+  <footer>
+   <div xmlns="http://www.w3.org/1999/xhtml" id="footer"> 
+
+<div class="footer-nav"><a href="http://www.calisphere.universityofcalifornia.edu/" target="_top">Home</a> <span class="pipe">|</span> <a href="http://www.calisphere.universityofcalifornia.edu/themed_collections/" target="_top">Themed Collections</a> <span class="pipe">|</span> <a href="http://www.calisphere.universityofcalifornia.edu/calcultures/" target="_top">California Cultures</a> <span class="pipe">|</span>  <a href="http://www.calisphere.universityofcalifornia.edu/jarda/" target="_top">JARDA</a> <span class="pipe">|</span> <a href="http://www.calisphere.universityofcalifornia.edu/copyright-cs.html" target="_top">Terms of Use</a> | <a href="http://www.calisphere.universityofcalifornia.edu/privacy.html">Privacy Policy</a> <span class="pipe">|</span> <a href="http://www.calisphere.universityofcalifornia.edu/site-map.html" target="_top">Site Map</a></div>
+
+<div class="footer-sentence1">Calisphere is a service of the <a href="http://libraries.universityofcalifornia.edu" target="_top">UC Libraries</a>, powered by the <a href="http://www.cdlib.org/" target="_top">California Digital Library</a>.</div> 
+<div class="footer-sentence2">Copyright &#169; 2010 The Regents of The University of California.</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+<script>
+var _gaq = _gaq || [];
+_gaq.push( ['_gat._anonymizeIp'], ['cst._setAccount', 'UA-438369-1']);
+/* page can be served via reverse proxy from multiple hosts */
+if (window.location.host.indexOf("calisphere") != -1) { // .contains http://stackoverflow.com/questions/1789945/
+  _gaq.push( ['cst._setAllowHash', false], ['cst._trackPageview']);
+} else {
+  _gaq.push( ['cst._setDomainName', 'none'], ['cst._setAllowLinker', true], ['cst._trackPageview']);
+  $("a[href^=http://www.calisphere]").click(function () {
+    _gaq.push(['_link', this.href]); 
+  });
+} // google async load
+(function() {
+    var ga = document.createElement('script');     ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+$("a#zoomMe").click(function () {
+  _gaq.push(['cst._trackEvent', 'Image', 'Larger Image View', window.title ]);
+});
+</script>
+
+</div>
+  </footer>
+<!-- END FOOTER -->
+
+  <print.footer>
+<div id="printable-footer" xmlns="http://www.w3.org/1999/xhtml">
+<a href="http://calisphere.universityofcalifornia.edu/"><img border="0" src="http://www.calisphere.universityofcalifornia.edu/images/logos/logo_sm.gif" width="120" height="25" alt="Calisphere" title="Calisphere" /></a>
+</div>
+  </print.footer>
+
+  <search.box>  
+   <div id="site-search" class="searchbox-outer nifty1" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="box1">
+    <div class="searchbox-inner">
+      <form action="/search" class="search-form" name="search-form" method="get" id="search-form" target="_top">
+            <input type="hidden" name="facet" value="type-tab"></input>
+            <input type="hidden" name="relation" value="calisphere.universityofcalifornia.edu"></input>
+            <input type="hidden" name="style" value="cui"></input>
+            <input name="keyword" type="text" class="text-field" size="18" maxlength="80"/>
+            <input type="image" src="/default/images/search-grn_wht_bg.gif" class="search-button" alt="Search" title="Search"/>
+          </form>
+          <script type="text/javascript" language="JavaScript"></script>
+        </div>
+      </div>
+    </div>
+  </search.box>
+  
+   <arrow.up src="/default/images/icons/arrows/orange_arrow_up.gif" width="9" height="11" border="0"/>
+  
+  <arrow.dn src="/default/images/icons/arrows/orange_arrow_dn.gif" width="11" height="9" border="0"/>
+
+  <print.img src="/default/images/icons/headings_text/printable_version.gif" width="110" height="16" />
+  
+  <breadcrumb.base>
+    <a href="http://www.calisphere.universityofcalifornia.edu/">Calisphere</a>
+  </breadcrumb.base>
+
+  <search.img>
+<input src="/default/images/search-grn_wht_bg.gif" class="search-button" alt="Search" title="Search" type="image"/>
+  </search.img>
+
+  <in.prev src="/default/images/icons/arrows/b_inprev_calisphere.gif" border="0" alt="previous hit" />
+
+  <in.next src="/default/images/icons/arrows/b_innext_calisphere.gif" border="0" alt="next hit" />
+
+</brand>

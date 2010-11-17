@@ -1,94 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE web-app
-    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
-    "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
-    
-    <web-app>
 
-        <servlet>
-            <servlet-name>crossQuery</servlet-name>
-            <servlet-class>org.cdlib.xtf.crossQuery.CrossQuery</servlet-class>
-        </servlet>
-        
-        <servlet>
-            <servlet-name>rawQuery</servlet-name>
-            <servlet-class>org.cdlib.xtf.crossQuery.raw.RawQuery</servlet-class>
-        </servlet>
-        
-        <servlet>
-            <servlet-name>dynaXML</servlet-name>
-            <servlet-class>org.cdlib.xtf.dynaXML.DynaXML</servlet-class>
-        </servlet>
-        
-        <servlet>
-            <servlet-name>SRU</servlet-name>
-            <servlet-class>org.cdlib.xtf.zing.SRU</servlet-class>
-        </servlet>
-        
-        <servlet>
-            <servlet-name>org.cdlib.xtf.dynaXML.DynaXML</servlet-name>
-            <servlet-class>org.cdlib.xtf.dynaXML.DynaXML</servlet-class>
-        </servlet>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  version="2.5">
 
-        <servlet>
-            <servlet-name>org.cdlib.xtf.crossQuery.CrossQuery</servlet-name>
-            <servlet-class>org.cdlib.xtf.crossQuery.CrossQuery</servlet-class>
-        </servlet>
+  <!-- Servlet Definitions -->
 
-        <servlet>
-            <servlet-name>org.cdlib.xtf.zing.SRU</servlet-name>
-            <servlet-class>org.cdlib.xtf.zing.SRU</servlet-class>
-        </servlet>
-        
-        <servlet-mapping>
-            <servlet-name>crossQuery</servlet-name>
-            <url-pattern>/search</url-pattern>
-        </servlet-mapping>
+  <servlet>
+    <servlet-name>CMS</servlet-name>
+    <servlet-class>org.cdlib.xtf.cms.CMS</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>crossQuery</servlet-name>
+    <servlet-class>org.cdlib.xtf.crossQuery.CrossQuery</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>dynaXML</servlet-name>
+    <servlet-class>org.cdlib.xtf.dynaXML.DynaXML</servlet-class>
+  </servlet>
 
-        <servlet-mapping>
-           <servlet-name>crossQuery</servlet-name>
-           <url-pattern>/oai</url-pattern>
-        </servlet-mapping>
-        
-        <servlet-mapping>
-            <servlet-name>crossQuery</servlet-name>
-            <url-pattern>/openurl</url-pattern>
-        </servlet-mapping>
-        
-        <servlet-mapping>
-            <servlet-name>rawQuery</servlet-name>
-            <url-pattern>/rawQuery</url-pattern>
-        </servlet-mapping>
+  <servlet>
+    <servlet-name>dynaXMLcached</servlet-name>
+    <servlet-class>org.cdlib.xtf.dynaXML.DynaXML</servlet-class>
+  </servlet>
 
-        <servlet-mapping>
-            <servlet-name>dynaXML</servlet-name>
-            <url-pattern>/view</url-pattern>
-        </servlet-mapping>
-        
-        <servlet-mapping>
-            <servlet-name>dynaXML</servlet-name>
-            <url-pattern>/erc/*</url-pattern>
-        </servlet-mapping>
-        
-        <servlet-mapping>
-            <servlet-name>SRU</servlet-name>
-            <url-pattern>/SRU</url-pattern>
-        </servlet-mapping>
-        
-        <servlet-mapping>
-            <servlet-name>org.cdlib.xtf.dynaXML.DynaXML</servlet-name>
-            <url-pattern>/servlet/org.cdlib.xtf.dynaXML.DynaXML</url-pattern>
-        </servlet-mapping>
+       	<servlet> 
+		<servlet-name>rawQuery</servlet-name> 
+		<servlet-class>org.cdlib.xtf.crossQuery.raw.RawQuery</servlet-class> 
+	</servlet> 
 
-        <servlet-mapping>
-            <servlet-name>org.cdlib.xtf.crossQuery.CrossQuery</servlet-name>
-            <url-pattern>/servlet/org.cdlib.xtf.crossQuery.CrossQuery</url-pattern>
-        </servlet-mapping>
 
-        <servlet-mapping>
-            <servlet-name>org.cdlib.xtf.zing.SRU</servlet-name>
-            <url-pattern>/servlet/org.cdlib.xtf.zing.SRU</url-pattern>
-        </servlet-mapping>
-    
-    </web-app>
+  <!-- Servlet Mappings -->
+
+  <servlet-mapping>
+    <url-pattern>/servlet/org.cdlib.xtf.cms.CMS</url-pattern>
+    <servlet-name>CMS</servlet-name>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <url-pattern>/search</url-pattern>
+    <servlet-name>crossQuery</servlet-name>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>crossQuery</servlet-name>
+    <url-pattern>/oai</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <url-pattern>/servlet/org.cdlib.xtf.crossQuery.CrossQuery</url-pattern>
+    <servlet-name>crossQuery</servlet-name>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <url-pattern>/view</url-pattern>
+    <servlet-name>dynaXML</servlet-name>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <url-pattern>/dynaXMLcached</url-pattern>
+    <servlet-name>dynaXMLcached</servlet-name>
+  </servlet-mapping>
+
+ <servlet-mapping> 
+    <servlet-name>rawQuery</servlet-name> 
+    <url-pattern>/rawQuery</url-pattern> 
+ </servlet-mapping> 
+
+
+  <servlet-mapping>
+    <url-pattern>/servlet/org.cdlib.xtf.dynaXML.DynaXML</url-pattern>
+    <servlet-name>dynaXML</servlet-name>
+  </servlet-mapping>
+
+  
+  <!-- For Backwards Compatibility -->
+
+  <servlet-mapping>
+    <url-pattern>/servlet/BookView</url-pattern>
+    <servlet-name>dynaXML</servlet-name>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <url-pattern>/servlet/DirectSearch</url-pattern>
+    <servlet-name>dynaXML</servlet-name>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <url-pattern>/servlet/PreviewXML</url-pattern>
+    <servlet-name>dynaXML</servlet-name>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>expires-12h</filter-name>
+    <filter-class>com.samaxes.filter.CacheFilter</filter-class>
+    <init-param>
+      <param-name>privacy</param-name>
+      <param-value>public</param-value>
+    </init-param>
+    <init-param>
+      <param-name>expirationTime</param-name>
+      <param-value>43200</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <servlet-name>crossQuery</servlet-name>
+    <filter-name>expires-12h</filter-name>
+  </filter-mapping>
+
+  <filter-mapping>
+    <servlet-name>dynaXMLcached</servlet-name>
+    <filter-name>expires-12h</filter-name>
+  </filter-mapping>
+
+</web-app>
+
