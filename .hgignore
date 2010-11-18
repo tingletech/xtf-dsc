@@ -1,5 +1,5 @@
-^data/
-^index/
+^data.*
+^index.*
 ^WEB-INF/classes/
 ^WEB-INF/lib/src/
 ^WEB-INF/dist/
@@ -9,3 +9,5 @@
 ^regress/.*/.*\.log$
 .*\.swp$
 .*.orig$
+^mets-support
+^style/common

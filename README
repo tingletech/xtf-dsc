@@ -65,3 +65,9 @@
                            
                 http://www.calisphere.universityofcalifornia.edu/
 
+also requires
+	http://bitbucket.org/btingle/mets-support/ 
+	create a symlink to the above in the root (this) directory
+	create a symlink to /mets-support/xslt/view/common in style
+
+	http://bitbucket.org/btingle/config_reader/src is used to manage database passwords
