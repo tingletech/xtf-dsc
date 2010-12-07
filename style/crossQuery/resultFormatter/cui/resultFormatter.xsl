@@ -61,10 +61,7 @@
   <!-- Local Parameters                                                       -->
   <!-- ====================================================================== -->
   
-  <!-- Removing port for CDL -->
-  <!-- Forcing texts to content for CDL -->
-  <!-- xsl:param name="xtfURL" select="replace(replace($root.path, ':[0-9]{4}/', '/'), 'texts', 'content')"/ -->
-  <xsl:param name="xtfURL" select="replace(replace(replace($root.path, ':[0-9]{4}/', '/'), 'texts', 'content'), '/xtf0s', '/xtf')"/>
+  <xsl:param name="xtfURL" select="'/'"/>
   
   <!-- ====================================================================== -->
   <!-- Root Template                                                          -->
