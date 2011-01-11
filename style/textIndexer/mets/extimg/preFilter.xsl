@@ -314,8 +314,9 @@
   </xsl:template>
 
 	<xsl:template name="zoom">
-		<xsl:variable name="jp2shadow" select="replace(replace($base,'/[^/]*$','/'),'/xtf/data/','/var/jp2shadow/')"/>
-		<!-- xsl:message><xsl:value-of select="$jp2shadow"/></xsl:message -->
+		<xsl:variable name="jp2shadow" select="replace(replace($base,'/[^/]*$','/'),'/xtf/data/','/xtf/jp2shadow/')"/>
+		<!-- xsl:message><xsl:value-of select="$base"/></xsl:message>
+		<xsl:message><xsl:value-of select="$jp2shadow"/></xsl:message -->
 		<xsl:if test="FileUtils:exists($jp2shadow)">
 			<format q="x" xtf:meta="true">jp2</format>
 		</xsl:if>
