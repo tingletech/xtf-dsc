@@ -7,7 +7,7 @@
 
     <link media="screen" type="text/css" rel="stylesheet" href="http://oac.cdlib.org:8083/css/oacstyle.css"/>
     <link media="print" type="text/css" rel="stylesheet" href="http://oac.cdlib.org:8083/css/oacstyle-print.css"/>
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex"/>
 
   </links>
   
