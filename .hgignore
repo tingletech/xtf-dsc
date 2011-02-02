@@ -1,5 +1,6 @@
 ^data.*
 ^index.*
+^jp2shadow.*
 ^WEB-INF/classes/
 ^WEB-INF/lib/src/
 ^WEB-INF/dist/
@@ -11,3 +12,4 @@
 .*.orig$
 ^mets-support
 ^style/common
+^.twill-history.*
