@@ -715,11 +715,15 @@ accessrestrict| accruals| acqinfo| altformavail| appraisal| arrangement| bibliog
 		select="$page/ead/facet-institution[1]"
 	/>
 	<img class="car-icon" src="/images/icons/car_icon.gif" width="17" height="13" alt="Collection location" title="Collection location"/>
-	<span class="location"><a class="location-link" href="{$page/ead/institution-url}">Offline.  Contact <xsl:value-of select="$location"/> </a></span>
+	<span class="location"><a class="location-link" href="{$page/ead/institution-url}">Contact <xsl:value-of select="$location"/> </a></span>
 	</xsl:element>
 </xsl:template>
 
 <xsl:template match="*[@tmpl:insert='collection-items']">
+	<xsl:element name="{name()}">
+	<xsl:call-template name="copy-attributes">
+		<xsl:with-param name="element" select="."/>
+	</xsl:call-template>
    <xsl:choose>
 	<xsl:when test="($page)/ead/facet-onlineItems='Items online'">
 
@@ -774,6 +778,7 @@ accessrestrict| accruals| acqinfo| altformavail| appraisal| arrangement| bibliog
 				<span class="no-online-items">No online items</span>
 	</xsl:otherwise>
   </xsl:choose>
+</xsl:element>
 </xsl:template>
 
 <xsl:template match="*[@tmpl:process='overview-description']">
