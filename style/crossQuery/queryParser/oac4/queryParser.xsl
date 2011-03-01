@@ -102,6 +102,8 @@
   <xsl:param name="sortDocsBy"/>
 
   <xsl:param name="type"/>
+	
+  <xsl:variable name="strQuery" select="replace(lower-case(/crossQueryResult/parameters/param[@name='query']/@value),'(.*\w)-(\w.*)','$1 $2')"/>
   
 <!-- ====================================================================== -->
 <!-- Root Template                                                          -->
@@ -259,7 +261,6 @@
 
   <xsl:template match="/" mode="facetcomplete">
     	<xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/oac4/autoFormatter.xsl'"/>
-	<xsl:variable name="strQuery" select="lower-case(parameters/param[@name='query']/@value)"/>
 	<xsl:variable name="parsed" select="if ($strQuery) then freeformQuery:parse($strQuery) else parameters"/>
        	<query indexPath="index" termLimit="1000" workLimit="20000000"
                 style="{$stylesheet}" startDoc="{$startDoc}" maxDocs="0" normalizeScores="false">
@@ -320,7 +321,6 @@
 			else ('style/crossQuery/resultFormatter/oac4/attached.xsl')
 		"
 	/>
-	<xsl:variable name="strQuery" select="lower-case(parameters/param[@name='query']/@value)"/>
 	<xsl:variable name="parsed" select="if ($strQuery) then freeformQuery:parse($strQuery) else parameters"/>
 
        	<query indexPath="index" termLimit="1000" workLimit="20000000"
@@ -336,7 +336,6 @@
 
   <xsl:template match="/" mode="titlesAZ">
     	<xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/oac4/titlesFormatter.xsl'"/>
-	<xsl:variable name="strQuery" select="lower-case(parameters/param[@name='query']/@value)"/>
         <xsl:variable name="parsed" select="if ($strQuery) then freeformQuery:parse($strQuery) else parameters"/>
 
 
@@ -374,14 +373,14 @@
 
   <xsl:template match="/" mode="ModsView">
     	<xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/oac4/modsFormatter.xsl'"/>
-	<xsl:variable name="strQuery" select="parameters/param[@name='id' or @name='idT']"/>
+	<xsl:variable name="idQuery" select="parameters/param[@name='id' or @name='idT']"/>
     	<query indexPath="index" termLimit="1000" workLimit="20000000" 
 		style="{$stylesheet}" startDoc="{$startDoc}" maxDocs="1" normalizeScores="false">
 		<!-- and field="id"><term><xsl:value-of select="$id"/></term></and -->
 		<and>
 			<and field="oac4-tab" maxSnippets="0"><term>*</term></and>
-			<!-- xsl:apply-templates select="$strQuery"/ -->
-			<and field="id" maxSnippets="0"><term><xsl:value-of select="replace($strQuery/@value,'\|','*')"/></term></and>
+			<!-- xsl:apply-templates select="$idQuery"/ -->
+			<and field="id" maxSnippets="0"><term><xsl:value-of select="replace($idQuery/@value,'\|','*')"/></term></and>
 		</and>
     	</query>
   </xsl:template>
@@ -389,7 +388,6 @@
 
   <xsl:template match="/" mode="resultF">
     	<xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/oac4/resultFormatter.xsl'"/>
-	<xsl:variable name="strQuery" select="lower-case(parameters/param[@name='query']/@value)"/>
 	<xsl:variable name="parsed" select="if ($strQuery) then freeformQuery:parse($strQuery) else parameters"/>
     	<query indexPath="index" termLimit="1000" workLimit="20000000" 
 		style="{$stylesheet}" startDoc="{$startDoc}" maxDocs="0" normalizeScores="false">
@@ -405,17 +403,7 @@
       		</facet -->
 		<and>
 			<and field="oac4-tab"><term>*</term></and>
-			<xsl:if test="$ff!='0'">
-				<xsl:apply-templates select="$parsed/query/*" mode="freeform"/>
-			</xsl:if>
-			<xsl:if test="$ff='0'">
-<and fields="text title creator subject description publisher contributor date type format identifier source language relation coverage rights year" slop="10" maxTextSnippets="2" maxMetaSnippets="2">
-	<xsl:for-each select="parameters/param[@name='query']/token[@isWord='yes']">
-		<term><xsl:value-of select="@value"/></term>
-	</xsl:for-each>
-</and>
-
-			</xsl:if>
+			<xsl:apply-templates select="$parsed/query/*" mode="freeform"/>
 			<xsl:if test="$decade">
 				<and field="facet-decade"><term><xsl:value-of select="$decade"/></term></and>
 			</xsl:if>
@@ -438,7 +426,6 @@
 
   <xsl:template match="/" mode="limitF">
     	<xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/oac4/limitFormatter.xsl'"/>
-	<xsl:variable name="strQuery" select="lower-case(parameters/param[@name='query']/@value)"/>
 	<xsl:variable name="parsed" select="if ($strQuery) then freeformQuery:parse($strQuery) else parameters"/>
     	<query indexPath="index" termLimit="1000" workLimit="20000000" 
 		style="{$stylesheet}" startDoc="{$startDoc}" maxDocs="0" normalizeScores="false">
@@ -484,16 +471,7 @@
 			</xsl:variable>
 			<and field="oac4-tab"><term><xsl:value-of select="$wtf"/></term></and>
 
-                        <xsl:if test="$ff!='0'">
-                                <xsl:apply-templates select="$parsed/query/*" mode="freeform"/>
-                        </xsl:if>
-                        <xsl:if test="$ff='0'">
-<and fields="text title creator subject description publisher contributor date type format identifier source language relation coverage rights year" slop="10" maxTextSnippets="2" maxMetaSnippets="2">
-        <xsl:for-each select="parameters/param[@name='query']/token[@isWord='yes']">
-                <term><xsl:value-of select="@value"/></term>
-        </xsl:for-each>
-</and>
-                        </xsl:if>
+                        <xsl:apply-templates select="$parsed/query/*" mode="freeform"/>
 			<xsl:if test="$decade">
 				<and field="facet-decade"><term><xsl:value-of select="$decade"/></term></and>
 			</xsl:if>
@@ -515,7 +493,6 @@
   </xsl:template>
   <xsl:template match="/" mode="viewAll">
     	<xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/oac4/limitFormatter.xsl'"/>
-	<xsl:variable name="strQuery" select="lower-case(parameters/param[@name='query']/@value)"/>
 	<xsl:variable name="parsed" select="if ($strQuery) then freeformQuery:parse($strQuery) else parameters"/>
     	<query indexPath="index" termLimit="1000" workLimit="20000000" 
 		style="{$stylesheet}" startDoc="{$startDoc}" maxDocs="0" normalizeScores="false">
