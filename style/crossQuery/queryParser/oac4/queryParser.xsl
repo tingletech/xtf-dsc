@@ -103,7 +103,7 @@
 
   <xsl:param name="type"/>
 	
-  <xsl:variable name="strQuery" select="replace(lower-case(/crossQueryResult/parameters/param[@name='query']/@value),'(.*\w)-(\w.*)','$1 $2')"/>
+  <xsl:variable name="strQuery" select="replace(lower-case(/parameters/param[@name='query']/@value),'(.*\w)-(\w.*)','$1 $2')"/>
   
 <!-- ====================================================================== -->
 <!-- Root Template                                                          -->
