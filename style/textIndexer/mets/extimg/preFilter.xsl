@@ -8,6 +8,7 @@
 	xmlns:mods="http://www.loc.gov/mods/v3"
 	xmlns:xlink="http://www.w3.org/TR/xlink"
 	xmlns:ead="http://www.loc.gov/EAD/"
+        xmlns:cdl="http://www.cdlib.org/"
 	xmlns:decade="java:org.cdlib.dsc.util.FacetDecade"
   xmlns:FileUtils="java:org.cdlib.xtf.xslt.FileUtils"
         extension-element-prefixes="date"
@@ -89,10 +90,11 @@
       </xsl:if>
 			<xsl:comment>get-meta</xsl:comment>
       <xsl:call-template name="get-meta"/>
-			<xsl:comment>mets</xsl:comment>
+      <xsl:call-template name="reference-image"/>
+      <xsl:comment>zoom</xsl:comment>
+      <xsl:call-template name="zoom"/>
+      <xsl:comment>mets</xsl:comment>
       <xsl:apply-templates mode="mets"/>
-			<xsl:comment>zoom</xsl:comment>
-			<xsl:call-template name="zoom"/>
     </xsl:copy>
   </xsl:template>
 
@@ -118,7 +120,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:template xmlns:cdl="http://www.cdlib.org/" match="mets:fileSec[//mets:file/@ID='thumbnail']" mode="mets">
+  <xsl:template match="mets:fileSec[//mets:file/@ID='thumbnail']" mode="mets">
     <thumbnail xtf:meta="true"
 	X="{/mets:mets/mets:structMap//mets:fptr[@FILEID='thumbnail']/@cdl:X}" 
 	Y="{/mets:mets/mets:structMap//mets:fptr[@FILEID='thumbnail']/@cdl:Y}" 
@@ -330,6 +332,16 @@
     <xsl:if test="$page/m:mets/m:fileSec//m:fileGrp[contains(@USE,'application')]/m:file[@MIMETYPE='application/pdf']">
 			<format q="x" xtf:meta="true">pdf</format>
 		</xsl:if>
+  </xsl:template>
+
+  <xsl:template name="reference-image">
+  <xsl:apply-templates select="/m:mets/m:structMap/m:div/m:div[
+    @LABEL='med-res' or @LABEL='hi-res' or starts-with(@TYPE,'reference')
+                                             ][m:fptr/@cdl:X]" mode="reference-image"/>
+  </xsl:template>
+
+  <xsl:template match="m:div" mode="reference-image">
+    <reference-image xtf:meta="true" X="{m:fptr/@cdl:X}" Y="{m:fptr/@cdl:Y}" src="/{/m:mets/@OBJID}/{m:fptr/@FILEID}"/>
   </xsl:template>
 
 </xsl:stylesheet>

@@ -158,7 +158,7 @@
   <xsl:template match="/">
     
     <!-- stylesheet -->
-    <xsl:variable name="stylesheet" select="'style/crossQuery/resultFormatter/cui/resultFormatter.xsl'"/>
+    <xsl:variable name="stylesheet" select="if ($rmode='json') then 'style/crossQuery/resultFormatter/json/crossQuery-to-json.xslt' else 'style/crossQuery/resultFormatter/cui/resultFormatter.xsl'"/>
 
     <!-- The top-level query element tells what stylesheet will be used to
        format the results, which document to start on, and how many documents
@@ -356,8 +356,8 @@
             <xsl:when test="matches(@name, 'keyword')">
                 <xsl:attribute name="fields" select="$fieldList"/>
                 <xsl:attribute name="slop" select="'10'"/>
-                <xsl:attribute name="maxTextSnippets" select="'2'"/>
-                <xsl:attribute name="maxMetaSnippets" select="'all'"/>
+                <!-- xsl:attribute name="maxTextSnippets" select="if ($rmode='json') then '0' else '2'"/ -->
+                <xsl:attribute name="maxSnippets" select="if ($rmode='json') then '0' else 'all'"/>
             </xsl:when>
             <xsl:when test="matches(@name, 'text')">
                 <xsl:attribute name="field" select="'text'"/>
