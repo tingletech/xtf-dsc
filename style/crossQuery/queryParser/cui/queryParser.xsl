@@ -356,7 +356,7 @@
             <xsl:when test="matches(@name, 'keyword')">
                 <xsl:attribute name="fields" select="$fieldList"/>
                 <xsl:attribute name="slop" select="'10'"/>
-                <!-- xsl:attribute name="maxTextSnippets" select="if ($rmode='json') then '0' else '2'"/ -->
+                <xsl:attribute name="maxTextSnippets" select="if ($rmode='json') then '0' else '2'"/>
                 <xsl:attribute name="maxSnippets" select="if ($rmode='json') then '0' else 'all'"/>
             </xsl:when>
             <xsl:when test="matches(@name, 'text')">
