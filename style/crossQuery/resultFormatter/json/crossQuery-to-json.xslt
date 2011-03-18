@@ -14,7 +14,7 @@
       <xsl:value-of select="replace(replace($callback,'[^\c]',''),':','')"/>
       <xsl:text>(</xsl:text>
     </xsl:if>
-    <xsl:text>{"objset_total":</xsl:text>
+    <xsl:text>{"api":{"version":"x-001","license":"All Rights Reserved; Unauthorized use is strictly prohibited; http://www.oac.cdlib.org/terms.html"},"objset_total":</xsl:text>
     <xsl:value-of select="//*[docHit]/@totalDocs"/>
     <xsl:text>,"objset_start":</xsl:text>
     <xsl:value-of select="//*[docHit]/@startDoc"/>
