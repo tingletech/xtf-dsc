@@ -272,7 +272,8 @@
                                                                    and not(matches(@name, '.*-prox')) 
                                                                    and not(matches(@name, '.*-max')) 
                                                                    and not(matches(@name, '.*-add')) 
-                                                                   and not(matches(@name, '.*-ignore'))]"/>
+                                                                   and not(matches(@name, '.*-ignore'))
+                                                                   and not(@name='callback') ]"/>
 
     <!-- Find the full-text query, if any -->
     <xsl:variable name="textParam" select="$queryParams[matches(@name, 'text|query')]"/>

@@ -5,8 +5,15 @@
 >
   <xsl:output indent="no" method="text" encoding="UTF-8" media-type="application/json"/>
   <xsl:strip-space elements="*"/>
+  <xsl:param name="callback"/>
 
   <xsl:template match="/">
+    <!-- regex on callback parameter to sanitize user input -->
+    <!-- http://www.w3.org/TR/xmlschema-2/ '\c' = the set of name characters, those ·match·ed by NameChar -->
+    <xsl:if test="$callback">
+      <xsl:value-of select="replace(replace($callback,'[^\c]',''),':','')"/>
+      <xsl:text>(</xsl:text>
+    </xsl:if>
     <xsl:text>{"objset_total":</xsl:text>
     <xsl:value-of select="//*[docHit]/@totalDocs"/>
     <xsl:text>,"objset_start":</xsl:text>
@@ -16,6 +23,9 @@
     <xsl:text>,"objset":[</xsl:text>
     <xsl:apply-templates select="/crossQueryResult//docHit/meta" mode="x"/>
     <xsl:text>],}</xsl:text>
+    <xsl:if test="$callback">
+      <xsl:text>)</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="meta" mode="x">
