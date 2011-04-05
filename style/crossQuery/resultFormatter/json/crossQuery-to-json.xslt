@@ -246,7 +246,7 @@
   </xsl:template>
 
   <xsl:template match="thumbnail">
-    <xsl:text>{"src":"/xsl:text>
+    <xsl:text>{"src":"</xsl:text>
     <xsl:apply-templates select="../identifier[1]" mode="value"/>
     <xsl:text>/thumbnail"</xsl:text>
     <xsl:if test="@X!='' and @Y!=''">
