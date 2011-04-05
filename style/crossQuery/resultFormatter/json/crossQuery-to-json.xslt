@@ -259,7 +259,7 @@
   </xsl:template>
 
   <xsl:template match="reference-image">
-    <xsl:text>{"src":"http://ark.cdlib.org/</xsl:text>
+    <xsl:text>{"src":"http://ark.cdlib.org</xsl:text>
     <xsl:apply-templates select="@src"/>
     <xsl:text>","x":</xsl:text>
     <xsl:value-of select="@X"/>
