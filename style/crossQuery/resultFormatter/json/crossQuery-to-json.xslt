@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2011 Regents of the University of California
+  All rights reserved.  
+
+  some portions of this file derived from 
+  http://code.google.com/p/xml2json-xslt/source/browse/trunk/xml2json.xslt
+
+  Copyright (c) 2006,2008 Doeke Zanstra
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without modification, 
+  are permitted provided that the following conditions are met:
+
+  Redistributions of source code must retain the above copyright notice, this 
+  list of conditions and the following disclaimer. Redistributions in binary 
+  form must reproduce the above copyright notice, this list of conditions and the 
+  following disclaimer in the documentation and/or other materials provided with 
+  the distribution.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+  THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
 <xsl:stylesheet 
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   version="2.0"
@@ -37,7 +68,6 @@
       <xsl:for-each select="
         'title', 'creator', 'subject', 'description', 'publisher', 'contributor', 'date', 
         'type', 'format', 'identifier', 'source', 'language', 'relation', 'coverage', 'rights'" >
-      <!-- xsl:for-each select="'title', 'creator', 'subject', 'description'"  -->
         <xsl:call-template name="dc-json-element">
           <xsl:with-param name="element-name" select="."/>
           <xsl:with-param name="result" select="$result"/>
@@ -108,6 +138,7 @@
     </xsl:call-template>
     <xsl:text>},</xsl:text>
   </xsl:template>
+
   
   <!-- ignore document text -->
   <xsl:template match="text()[preceding-sibling::node() or following-sibling::node()]"/>
@@ -215,7 +246,7 @@
   </xsl:template>
 
   <xsl:template match="thumbnail">
-    <xsl:text>{"src":"</xsl:text>
+    <xsl:text>{"src":"/xsl:text>
     <xsl:apply-templates select="../identifier[1]" mode="value"/>
     <xsl:text>/thumbnail"</xsl:text>
     <xsl:if test="@X!='' and @Y!=''">
@@ -228,7 +259,7 @@
   </xsl:template>
 
   <xsl:template match="reference-image">
-    <xsl:text>{"src":"</xsl:text>
+    <xsl:text>{"src":"http://ark.cdlib.org/</xsl:text>
     <xsl:apply-templates select="@src"/>
     <xsl:text>","x":</xsl:text>
     <xsl:value-of select="@X"/>
