@@ -70,21 +70,21 @@ import org.apache.fop.apps.Fop;
 import org.apache.fop.apps.FopFactory;
 import org.apache.fop.apps.MimeConstants;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.pdf.BadPdfFormatException;
-import com.itextpdf.text.pdf.PdfContentByte;
-import com.itextpdf.text.pdf.PdfCopy;
-import com.itextpdf.text.pdf.PdfDictionary;
-import com.itextpdf.text.pdf.PdfImportedPage;
-import com.itextpdf.text.pdf.PdfName;
-import com.itextpdf.text.pdf.PdfObject;
-import com.itextpdf.text.pdf.PdfReader;
-import com.itextpdf.text.pdf.PdfString;
-import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.text.pdf.SimpleBookmark;
-import com.itextpdf.text.pdf.PdfCopy.PageStamp;
+import com.lowagie.text.Document;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Image;
+import com.lowagie.text.pdf.BadPdfFormatException;
+import com.lowagie.text.pdf.PdfContentByte;
+import com.lowagie.text.pdf.PdfCopy;
+import com.lowagie.text.pdf.PdfDictionary;
+import com.lowagie.text.pdf.PdfImportedPage;
+import com.lowagie.text.pdf.PdfName;
+import com.lowagie.text.pdf.PdfObject;
+import com.lowagie.text.pdf.PdfReader;
+import com.lowagie.text.pdf.PdfString;
+import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.text.pdf.SimpleBookmark;
+import com.lowagie.text.pdf.PdfCopy.PageStamp;
 
 import net.sf.saxon.expr.Expression;
 import net.sf.saxon.expr.XPathContext;
@@ -166,7 +166,7 @@ public class PipeFopElement extends ElementWithContent
       
       // Merge mode (if any)
       MergeMode mergeMode = MergeMode.SEQUENTIAL;
-      String tmp = getAttribStr("mergeMode", context);
+      String tmp = getAttribStr("mergeMode", context, "sequential");
       if (tmp.equalsIgnoreCase("sequential"))
         mergeMode = MergeMode.SEQUENTIAL;
       else if (tmp.equalsIgnoreCase("overlay"))
@@ -174,18 +174,18 @@ public class PipeFopElement extends ElementWithContent
       else if (tmp.equalsIgnoreCase("underlay"))
         mergeMode = MergeMode.UNDERLAY;
       else
-        dynamicError("Unrecognized merge mode '" + tmp + "'", "PIPE_FOP_008", context);
+        dynamicError("Unrecognized mergeMode '" + tmp + "'", "PIPE_FOP_008", context);
         
       // Merge location (if any)
       MergeAt mergeAt = MergeAt.START;
-      tmp = getAttribStr("mergeAt", context);
+      tmp = getAttribStr("mergeAt", context, "start");
       if (tmp.equalsIgnoreCase("start"))
         mergeAt = MergeAt.START;
       else if (tmp.equalsIgnoreCase("end"))
         mergeAt = MergeAt.END;
       else
-        dynamicError("Unrecognized merge at '" + tmp + "'", "PIPE_FOP_009", context);
-      
+        dynamicError("Unrecognized mergeAt '" + tmp + "'", "PIPE_FOP_009", context);
+        
       try {
 
         // Interesting workaround: using FOP normally results in an AWT "Window"
@@ -490,26 +490,46 @@ public class PipeFopElement extends ElementWithContent
 
       for (int i = 0; i < nOutPages; i++)
       {
-        PageInfo base = basePages[i];
-        base.impPage = pdfWriter.getImportedPage(base.reader, base.pageNum);
+        PageInfo basePage = basePages[i];
+        PageInfo mergePage = mergePages[i];
+        boolean over = mergeMode == MergeMode.OVERLAY;
+
+        basePage.impPage = pdfWriter.getImportedPage(basePage.reader, basePage.pageNum);
         
-        if (mergePages[i] != null)
+        if (mergePage != null)
         {
-          PageStamp ps = pdfWriter.createPageStamp(base.impPage);
+          PageStamp ps = pdfWriter.createPageStamp(basePage.impPage);
           PdfContentByte contentBuf = null;
-          if (mergeMode == MergeMode.OVERLAY)
+          if (over)
             contentBuf = ps.getOverContent();
-          else if (mergeMode == MergeMode.UNDERLAY)
-            contentBuf = ps.getUnderContent();
           else
-            assert false : "page offset calculations were wrong";
+            contentBuf = ps.getUnderContent();
           
-          Image img = Image.getInstance(mergePages[i].image); // this is the trick
-          contentBuf.addImage(img, base.impPage.getWidth(), 0, 0, base.impPage.getHeight(), 0, 0);
+          Image img = Image.getInstance(mergePage.image); // this is the trick
+          
+          // When adding the image, we need to construct a matrix that will properly orient it.
+          int rotation = mergePage.reader.getPageRotation(mergePage.pageNum);
+          float w = basePage.impPage.getWidth();
+          float h = basePage.impPage.getHeight();
+          switch (rotation)
+          {
+            case 0:
+              contentBuf.addImage(img, w, 0, 0, h, 0, 0);
+              break;
+            case 90:
+              contentBuf.addImage(img, 0, -h, w, 0, 0, h);
+              break;
+            case 180:
+              contentBuf.addImage(img, -w, 0, 0, -h, w, h);
+              break;
+            case 270:
+              contentBuf.addImage(img, 0, h, -w, 0, w, 0);
+              break;
+          }
           ps.alterContents();
         }
         
-        pdfWriter.addPage(base.impPage);
+        pdfWriter.addPage(basePage.impPage);
       }
             
       // Set the combined bookmarks.

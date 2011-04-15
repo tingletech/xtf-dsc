@@ -73,7 +73,7 @@ import org.cdlib.xtf.textIndexer.TextIndexer;
 import org.cdlib.xtf.util.CircularQueue;
 import org.cdlib.xtf.util.DiskHashWriter;
 import org.cdlib.xtf.util.FastIntCache;
-import org.cdlib.xtf.util.FastStringCache;
+import org.cdlib.xtf.util.FastCache;
 import org.cdlib.xtf.util.IntHash;
 import org.cdlib.xtf.util.IntMultiMap;
 import org.cdlib.xtf.util.Path;
@@ -134,7 +134,7 @@ public class RegressTest
     XtfBigramQueryRewriter.tester.test();
     TagFilter.tester.test();
     FastIntCache.tester.test();
-    FastStringCache.tester.test();
+    FastCache.tester.test();
     TagArray.tester.test();
     IntMultiMap.tester.test();
 
@@ -324,12 +324,13 @@ public class RegressTest
     // It may also contain a marker telling us to do a search-annotated
     // tree rather than a CrossQuery-style output.
     //
+    IndexWarmer indexWarmer = null;
     try 
     {
       String inSpec = readFile(inFile);
       QueryProcessor processor = new DefaultQueryProcessor();
       processor.setXtfHome(dir);
-      IndexWarmer indexWarmer = new IndexWarmer(Path.normalizePath(dir), 5);
+      indexWarmer = new IndexWarmer(Path.normalizePath(dir), 5);
       processor.setIndexWarmer(indexWarmer);
       QueryRequest request = new QueryRequestParser().parseRequest(queryDoc,
                                                                    new File(dir));
@@ -408,6 +409,12 @@ public class RegressTest
         new OutputStreamWriter(new FileOutputStream(testFile), "UTF-8"));
       out.println("Exception encountered:\n" + e);
       out.close();
+    }
+    finally 
+    {
+      // Shut down the index warmer's background thread.
+      if (indexWarmer != null)
+        indexWarmer.close();
     }
 
     // See if there's a gold file, and if so, compare it.
