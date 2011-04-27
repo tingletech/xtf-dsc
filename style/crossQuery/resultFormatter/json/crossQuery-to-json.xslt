@@ -53,7 +53,7 @@
     <xsl:value-of select="//*[docHit]/@endDoc"/>
     <xsl:text>,"objset":[</xsl:text>
     <xsl:apply-templates select="/crossQueryResult//docHit/meta" mode="x"/>
-    <xsl:text>],}</xsl:text>
+    <xsl:text>]}</xsl:text>
     <xsl:if test="$callback">
       <xsl:text>)</xsl:text>
     </xsl:if>
@@ -65,23 +65,24 @@
     <xsl:text>
 {"qdc":{</xsl:text>
       <xsl:variable name="result" select="."/>
-      <xsl:for-each select="
-        'title', 'creator', 'subject', 'description', 'publisher', 'contributor', 'date', 
-        'type', 'format', 'identifier', 'source', 'language', 'relation', 'coverage', 'rights'" >
-        <xsl:call-template name="dc-json-element">
-          <xsl:with-param name="element-name" select="."/>
-          <xsl:with-param name="result" select="$result"/>
-        </xsl:call-template>
-      </xsl:for-each>
+      <xsl:variable name="ordered-dc">
+        <xsl:for-each select="
+          title, creator, subject, description, publisher, contributor, date, 
+          type, format, identifier, source, language, relation, coverage, rights">
+            <xsl:copy-of select="."/>
+        </xsl:for-each>
+      </xsl:variable>
+      <xsl:apply-templates select="$ordered-dc" mode="dc-json-element"/>
     <xsl:text>
-},"files":{</xsl:text>
+},
+"files":{</xsl:text>
     <xsl:if test="$result/thumbnail">
       <xsl:text>"thumbnail":</xsl:text>
       <xsl:apply-templates select="$result/thumbnail"/>
       <xsl:text></xsl:text>
     </xsl:if>
     <xsl:variable name="reference-count" select="count($result/reference-image)"/>
-    <xsl:if test="$reference-count &gt; 0">
+    <xsl:if test="$reference-count &gt; 400">
       <xsl:text>"reference":</xsl:text>
       <xsl:choose>
         <xsl:when test="$reference-count = 1">
@@ -94,29 +95,41 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:if>
-    <xsl:text>},
-},</xsl:text>
+    <xsl:text>}
+}</xsl:text><!-- end of the record/object -->
+    <xsl:if test="following::meta">
+      <xsl:text>,
+</xsl:text>
+    </xsl:if>
   </xsl:template>
 
-  <xsl:template name="dc-json-element">
-    <xsl:param name="element-name"/>
-    <xsl:param name="result"/>
-    <xsl:variable name="element-count" select="count($result/*[name()=$element-name][text()])"/>
+  <xsl:template match="*[text()]" mode="dc-json-element">
+    <xsl:variable 
+      name="element-count" 
+      select="
+        count(following-sibling::*[name()=name(current())][text()])
+        + count(preceding-sibling::*[name()=name(current())][text()])
+        + count(self::*[text()])
+    "/>
     <xsl:if test="$element-count &gt; 0">
-      <xsl:text>
+      <xsl:if test="not(preceding-sibling::*[name()=name(current())][text()])">
+        <xsl:text>
 "</xsl:text>
-      <xsl:value-of select="$element-name"/>
-      <xsl:text>":</xsl:text>
-      <xsl:choose>
-        <xsl:when test="$element-count = 1">
-          <xsl:apply-templates select="$result/*[name()=$element-name][text()]" mode="dcel"/>
-        </xsl:when>
-        <xsl:otherwise>
+        <xsl:value-of select="name()"/>
+        <xsl:text>":</xsl:text>
+        <xsl:if test="$element-count &gt; 1">
           <xsl:text>[</xsl:text>
-          <xsl:apply-templates select="$result/*[name()=$element-name][text()]" mode="dcel"/>
-          <xsl:text>],</xsl:text>
-        </xsl:otherwise>
-      </xsl:choose>
+        </xsl:if>
+      </xsl:if>
+      <xsl:apply-templates select=".[text()]" mode="dcel"/>
+      <xsl:if test="not(following-sibling::*[name()=name(current())][text()])">
+        <xsl:if test="$element-count &gt; 1">
+          <xsl:text>]</xsl:text>
+        </xsl:if>
+        <xsl:if test="following-sibling::*[text()]">
+          <xsl:text>,</xsl:text>
+        </xsl:if>
+      </xsl:if>
     </xsl:if>
   </xsl:template>
 
@@ -124,7 +137,9 @@
     <xsl:call-template name="escape-string">
       <xsl:with-param name="s" select="."/>
     </xsl:call-template>
-    <xsl:text>,</xsl:text>
+    <xsl:if test="following-sibling::*[name()=name(current())][text()]">
+      <xsl:text>,</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="*[text()][@q]" mode="dcel">
@@ -136,7 +151,10 @@
     <xsl:call-template name="escape-string">
       <xsl:with-param name="s" select="."/>
     </xsl:call-template>
-    <xsl:text>},</xsl:text>
+    <xsl:text>}</xsl:text>
+    <xsl:if test="following-sibling::*[name()=name(current())][text()]">
+      <xsl:text>,</xsl:text>
+    </xsl:if>
   </xsl:template>
 
   
@@ -255,7 +273,7 @@
       <xsl:text>,"y":</xsl:text>
       <xsl:value-of select="@Y"/>
     </xsl:if>
-    <xsl:text>,},</xsl:text>
+    <xsl:text>}</xsl:text>
   </xsl:template>
 
   <xsl:template match="reference-image">
@@ -265,7 +283,7 @@
     <xsl:value-of select="@X"/>
     <xsl:text>,"y":</xsl:text>
     <xsl:value-of select="@Y"/>
-    <xsl:text>,},</xsl:text>
+    <xsl:text>}</xsl:text>
   </xsl:template>
 
 </xsl:stylesheet>
