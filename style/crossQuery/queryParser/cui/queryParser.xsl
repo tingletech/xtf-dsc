@@ -353,6 +353,9 @@
         <xsl:choose>
             <xsl:when test="not(matches(@name, 'text|query|keyword'))">
                 <xsl:attribute name="field" select="$metaField"/>
+                <xsl:if test="$rmode='json'">
+                    <xsl:attribute name="maxSnippets" select="'0'"/>
+                </xsl:if>
             </xsl:when>
             <xsl:when test="matches(@name, 'keyword')">
                 <xsl:attribute name="fields" select="$fieldList"/>
